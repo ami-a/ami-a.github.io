@@ -1,1 +1,24 @@
 theme: jekyll-theme-cayman
+title: Amitai.A.
+title1: Amitai
+title2: .A
+google_analytics: UA-164229768-1
+show_downloads: true
+description: This site contains information about some of my projects over the years.
+url: "https://amitaiassayag.github.io"
+purl: "/projects/"
+email: amitai.a.job@gmail.com
+phone: 050-9311-121
+ccode: 972
+
+collections:
+   projects:
+     output: true
+defaults:
+  -
+    scope:
+        type: "projects"
+    values:
+      layout: "default"
+
+spcolors: ["#ff7214","#14ffc4","#ff148f","#edff14","#ff144a","#82ff14","#bc13fe","#69D1C4","#FF00FF"]

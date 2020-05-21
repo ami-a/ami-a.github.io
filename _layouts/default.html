@@ -43,9 +43,13 @@
       {% if site.show_downloads %}	  
 	  <div class="divv">	  
 	  {% assign projects = site.projects | sort: 'ind' %}
+	  {% assign curryear = 'now' | date: "%Y" %}
 	  {% for page in projects %}  
 	   <a data-content-b="{{ page.tag }}" href="{{ site.url }}{{ page.url }}#content" class="btn tooltip"><span class="contentt">{{ page.title }}</span>
 		<div class="tooltiptext">{{ page.sdisc }}</div>
+		{% if page.year contains curryear %}
+		<span class="hot">NEW!</span>
+		{% endif %}
 	   </a><br style="display: none;">
 	   {% assign ind = forloop.index | modulo: 4 %}
 	   {% if ind<1 %}
@@ -62,6 +66,7 @@
 	<h1 style="display: inline-block;margin-bottom:0;"><b>{{ page.title }}</b></h1>
 	<div class="head-year-div"><h6 class="project-year">{{ page.year }}</h6><h6 class="tooltiptext">This project started in {{ page.year }}.</h6></div>
 	<h4 style="margin-top:0;border-bottom: solid 1px #ffffff;">{{ page.disc }}</h4>
+	{{ content }}
 	<div class="sub-project">
 	<ul class="project-topls">
 	  <li><span>Programmed in 
@@ -164,7 +169,7 @@
 	
 </div>
 	{% endif %}
-    {{ content }}
+    
 	
       <footer class="site-footer">
         <span class="site-footer-credits"><a href="https://pages.github.com" style="color:#00ff99;">GitHub Pages</a></span>

@@ -1,0 +1,29 @@
+
+<script src="dh/tensorflow/tfjs-core.js"></script>
+  <script src="dh/tensorflow/tfjs-converter.js"></script>
+  <script src="dh/tensorflow/handpose.js"></script>
+  <script src="dh/AsyncInt.js"></script>
+  <script src="dh/Geo.js"></script>
+  <script src="dh/gsap.min.js"></script>
+  <link rel="stylesheet" href="dh/hands.css" />
+  <div id="wraper-hands">
+      <div id="main-handpro-div">
+        <video
+          autoplay="true"
+          id="videoElement"
+          style="top: 0; left: 0; position: relative;"
+        ></video>
+        <div id="fmarksdiv"></div>
+      </div>
+      <br id="hide_bar1">
+      <div id="look" class="press"></div><br id="hide_bar2">
+      <a id="start-btn" class="press" onClick="startPro()" style="cursor: pointer;">Start!
+        <div class="tooltiptext-div-hand">Try touching your thumb with one of the other fingers, like:
+          <br><img src="dh/dh_ex1.jpg" height="100px"/>
+          <img src="dh/dh_ex2.jpg" height="100px"/>
+        </div></a> 
+    </div>
+  
+    
+  
+   

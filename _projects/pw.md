@@ -5,7 +5,7 @@ ind: 12
 year: 2012
 sdisc: "A simple ASP.NET website that was designed for personal use."
 disc: "This project is a personal website with options like users and forums. It served as a discussion ground for different projects and used RSA encryption in its database, HTML5, CSS3, and the JQuery library in JavaScript. The website is no longer maintained do to this website.<br>&nbsp;"
-tag: "ASP.NET, C#, SQL, JS, CSS & HTML"
+tag: "ASP, C#, SQL, JS, CSS & HTML"
 lang: ["ASP.NET","C#","SQL","JS","CSS","HTML"]
 LOC: "8<i style=\"color:#edff14;\">,</i>500"
 parts:

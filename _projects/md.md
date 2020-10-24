@@ -4,7 +4,7 @@ is_project: true
 ind: -4
 year: "2020"
 sdisc: "This project uses coustome CNNs and my TrackEverything package to track and detect persons without masks (Even when their back is turned)."
-disc: "This section will be filled in the next few days(12-10-2020)<br>&nbsp;"
+disc: "<h1>This section will be filled in the next few days(24-10-2020)</h1><br>&nbsp;"
 tag: "Python"
 lang: ["Python"]
 LOC: "2600"

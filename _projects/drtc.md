@@ -4,7 +4,7 @@ is_project: true
 ind: -5
 year: "2020"
 sdisc: "MAFAT Radar Challenge —distinguishing between humans and animals in doppler-pulse radar tracks."
-disc: "This section will be filled in the next few days(12-10-2020)<br>&nbsp;"
+disc: "<span style=\"color:red;font-size:40px;\">This section will be filled in the next few days(24-10-2020)</span><br>&nbsp;"
 tag: "Python"
 lang: ["Python"]
 LOC: "2600"

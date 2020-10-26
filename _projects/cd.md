@@ -37,7 +37,8 @@ a    {text-decoration: underline;color: red;}
 # Cops Detection and Tracking - Pipeline Overview
 
 <span style="color:white;">
-You can find a small part of this project in one of my repositories [here](https://gitlab.com/Byakugan/police), this repository only contains the small implementation part for webcams and not the whole project.
+This project inspired the TrackEverything package and now has an example using it in [this](https://github.com/ami-a/CopDetection) repository.
+You can find an old part of this project in one of my repositories [here](https://gitlab.com/Byakugan/police), this repository only contains the small implementation part for webcams and not the whole project.
 </span>
 ## The Pipeline
 <span style="color:white;">

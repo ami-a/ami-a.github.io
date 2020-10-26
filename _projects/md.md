@@ -4,7 +4,7 @@ is_project: true
 ind: -4
 year: "2020"
 sdisc: "This project uses coustome CNNs and my TrackEverything package to track and detect persons without masks (Even when their back is turned)."
-disc: "<span style=\"color:red;font-size:40px;\">This section will be filled in the next few days (24-10-2020)</span><br>&nbsp;"
+disc: "<span style=\"color:red;font-size:40px;\">This section will be filled in the next few days (24-10-2020). You can view the <a href=\"https://github.com/ami-a/MaskDetection\">repository</a> in the meantime.</span><br>&nbsp;"
 tag: "Python"
 lang: ["Python"]
 LOC: "2600"

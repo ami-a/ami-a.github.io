@@ -13,7 +13,7 @@ parts:
     con: "used in"
     term: "Python"
 tablea: [["Python","3.8.1"],["OpenCV","4.2.0.34"],["NumPy","1.18.4"],["SciPy","1.4.1"],["Pillow","7.1.2"],["TensorFlow","2.2.0"]]
-tableb: [["Type","Python Package"],["Input","Camera/Video Feed"],["Output","Enhanced object tracking and classification"]]
+tableb: [["Type","Python Package"],["Input","Camera/Video Feed"],["Output","Enhanced Object Tracking & Classification"]]
 ---
 
 

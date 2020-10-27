@@ -3,18 +3,18 @@ title: "Mask and Proximity Detection"
 is_project: true
 ind: -4
 year: "2020"
-sdisc: "This project uses coustome CNNs and my TrackEverything package to track and detect persons without masks (Even when their back is turned)."
+sdisc: "This project is a demonstration of my TrackEverything package, it uses different models to track and detect persons with/without masks (even when their back is turned)."
 disc: "<span style=\"color:red;font-size:40px;\">This section will be filled in the next few days (24-10-2020). You can view the <a href=\"https://github.com/ami-a/MaskDetection\">repository</a> in the meantime.</span><br>&nbsp;"
 tag: "Python"
 lang: ["Python"]
-LOC: "2600"
+LOC: "3.3K"
 parts:
-  - lib: ["TensorFlow","OpenCV","NumPy","Pandas","Pillow","Requests","<br>SciPy","MultiProcessing"]
+  - lib: ["TrackEverything","TensorFlow","OpenCV","NumPy","Pillow","SciPy"]
     con: "used in"
     term: "Python"
-tablea: [["Python","3.8.1"],["TensorFlow","2.2.0"],["OpenCV","4.2.0.34"],["Jupyter","1.0.0"],["Matplotlib","3.2.1"],["NumPy","1.18.4"],["Pandas","1.0.4"],["Pillow","7.1.2"],["Requests","2.23.0"],["SciPy","1.4.1"],["TF-Slim","1.1.0"],["MultiProcessing","in Python 3.8"]]
-tableb: [["Type","Python Scripts & Jupyter Notebooks"],["Input","Camera Feed"],["Output","Persons in Frame Classification"],["Special Components","Camera"]]
-img: [["cd1.png","Example"],["cd2.png","Example"],["cd3.png","Example"],["cd4.png","Example"]]
+tablea: [["Python","3.8.1"],["TrackEverything","1.7.2"],["TensorFlow","2.2.0"],["OpenCV","4.2.0.34"],["NumPy","1.18.4"],["Pillow","7.1.2"],["SciPy","1.4.1"]]
+tableb: [["Type","Python Scripts"],["Input","Camera/Video Feed"],["Output","Persons in Frame Classification"],["Special Components","Camera"]]
+img: [["md1.png","Example"],["md2.png","Example"],["md3.png","Example"]]
 ---
 
 

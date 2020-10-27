@@ -27,7 +27,7 @@ You can find an old part of this project in one of my repositories [here](https:
 ## The Pipeline
 <span style="color:white;">
 The pipeline starts by receiving a series of images (frames) and outputs a list of tracker objects that contains the persons detected and the probability of them being a cop.</span>
-<p align="center"><img src="cd/images/charts/pro_flow.png" width="650" height="392" /></p>
+<p align="center"><img src="te/images/charts/pro_flow.png" width="650" height="392" /></p>
 
 ## Breaking it Down to 4 Steps
 

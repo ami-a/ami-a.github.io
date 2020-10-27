@@ -18,16 +18,15 @@ tableb: [["Type","Python Package"],["Input","Camera/Video Feed"],["Output","Enha
 <style>
 a    {text-decoration: underline;color: red;}
 </style>
-# Cops Detection and Tracking - Pipeline Overview
+# Track Everything - Pipeline Overview
 
 <span style="color:white;">
-This project inspired the TrackEverything package and now has an example using it in [this](https://github.com/ami-a/CopDetection) repository.
-You can find an old part of this project in one of my repositories [here](https://gitlab.com/Byakugan/police), this repository only contains the small implementation part for webcams and not the whole project.
+You can find this project in one of my repositories [here](https://github.com/ami-a/TrackEverything).
 </span>
 ## The Pipeline
 <span style="color:white;">
-The pipeline starts by receiving a series of images (frames) and outputs a list of tracker objects that contains the persons detected and the probability of them being a cop.</span>
-<p align="center"><img src="te/images/charts/pro_flow.png" width="650" height="392" /></p>
+The pipeline starts by receiving a series of images (frames) and outputs a list of tracker objects that contains the objects detected and the probability of them being in a class.</span>
+<p align="center"><img src="te/images/charts/pro_flow.png" width="650" height="424" /></p>
 
 ## Breaking it Down to 4 Steps
 

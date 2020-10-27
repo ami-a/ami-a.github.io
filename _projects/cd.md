@@ -22,7 +22,7 @@ I tested the program on different online videos and on a remote camera feed that
 </ul><br>&nbsp;"
 tag: "Python using TensorFlow, C#"
 lang: ["Python"]
-LOC: "2600"
+LOC: "2.8K"
 parts:
   - lib: ["TensorFlow","OpenCV","NumPy","Pandas","Pillow","Requests","<br>SciPy","MultiProcessing"]
     con: "used in"

@@ -4,7 +4,7 @@ is_project: true
 ind: -3
 year: "2020"
 sdisc: "This package can take any detection and/or classification model and upgrade them using tracking algorithms and statistics."
-disc: "<span style=\"color:red;font-size:40px;\">This section will be filled in the next few days (24-10-2020). You can view the <a href=\"https://github.com/ami-a/TrackEverything\">repository</a> in the meantime.</span><br>&nbsp;"
+disc: "This project is an open-source package built-in Python, it uses and combines the data form object detection models, classification models, tracking algorithms and statistics-based decision making. The project allows you to take any detection/classification models from any Python library like TensorFlow or PyTorch and add to them tracking algorithms and increase the accuracy using statistical data gathered from multiple frames.<br>&nbsp;"
 tag: "Python"
 lang: ["Python"]
 LOC: "0.9K"

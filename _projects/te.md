@@ -7,14 +7,13 @@ sdisc: "This package can take any detection and/or classification model and upgr
 disc: "<span style=\"color:red;font-size:40px;\">This section will be filled in the next few days (24-10-2020). You can view the <a href=\"https://github.com/ami-a/TrackEverything\">repository</a> in the meantime.</span><br>&nbsp;"
 tag: "Python"
 lang: ["Python"]
-LOC: "2600"
+LOC: "0.9K"
 parts:
-  - lib: ["TensorFlow","OpenCV","NumPy","Pandas","Pillow","Requests","<br>SciPy","MultiProcessing"]
+  - lib: ["OpenCV","NumPy","SciPy","Pillow","TensorFlow"]
     con: "used in"
     term: "Python"
-tablea: [["Python","3.8.1"],["TensorFlow","2.2.0"],["OpenCV","4.2.0.34"],["Jupyter","1.0.0"],["Matplotlib","3.2.1"],["NumPy","1.18.4"],["Pandas","1.0.4"],["Pillow","7.1.2"],["Requests","2.23.0"],["SciPy","1.4.1"],["TF-Slim","1.1.0"],["MultiProcessing","in Python 3.8"]]
-tableb: [["Type","Python Scripts & Jupyter Notebooks"],["Input","Camera Feed"],["Output","Persons in Frame Classification"],["Special Components","Camera"]]
-img: [["cd1.png","Example"],["cd2.png","Example"],["cd3.png","Example"],["cd4.png","Example"]]
+tablea: [["Python","3.8.1"],["OpenCV","4.2.0.34"],["NumPy","1.18.4"],["SciPy","1.4.1"],["Pillow","7.1.2"],["TensorFlow","2.2.0"]]
+tableb: [["Type","Python Package"],["Input","Camera/Video Feed"],["Output","Enhanced object tracking and classification"]]
 ---
 
 

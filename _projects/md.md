@@ -9,7 +9,7 @@ tag: "Python"
 lang: ["Python"]
 LOC: "3.3K"
 parts:
-  - lib: ["TrackEverything","TensorFlow","OpenCV","NumPy","Pillow","SciPy"]
+  - lib: ["TrackEverything","TensorFlow","OpenCV","<br>NumPy","Pillow","SciPy"]
     con: "used in"
     term: "Python"
 tablea: [["Python","3.8.1"],["TrackEverything","1.7.2"],["TensorFlow","2.2.0"],["OpenCV","4.2.0.34"],["NumPy","1.18.4"],["Pillow","7.1.2"],["SciPy","1.4.1"]]

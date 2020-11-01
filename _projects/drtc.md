@@ -57,7 +57,8 @@ In the Private Test set metadata CSV file there are two fields 'segment_id' and 
 In addition to the Training set described above, the data set also contains auxiliary data:
 - <span style="color:white;">**Synthetic** low SNR segments that were created by transforming the high SNR signals from the train set.</span>
 - <span style="color:white;">**“Background”** segments – Segments that were recorded by a sensor in parallel to segments with tracks but at a different range. These segments contain the recorded “noise.” Each segment also contains a field mapping to the original High or Low SNR track id.</span>
-- <span style="color:white;">**“Experiment”** locations – In these locations, only humans were recorded in a controlled environment, which doesn't necessarily reflect a “natural” recording.</span> 
+- <span style="color:white;">**“Experiment”** locations – In these locations, only humans were recorded in a controlled environment, which doesn't necessarily reflect a “natural” recording. </span> 
+
 </span>
 
 ### Submission

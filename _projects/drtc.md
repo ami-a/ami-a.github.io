@@ -43,6 +43,7 @@ The metadata of a segment includes track id, location id, location type, day ind
 In Stage 1:
 - <span style="color:white;">5 Pickle files for the Training set, Public Test set (Public), and Auxiliary set (3 files).</span>
 - <span style="color:white;">5 CSV files for metadata of the Training set, Public Test set, and Auxiliary set (3 files).</span> 
+
 In the Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
 <br><br>
 In Stage 2:

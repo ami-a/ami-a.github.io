@@ -32,7 +32,9 @@ The radar’s raw, original received signal is a wave defined by amplitude, freq
 Upon reception, the raw data is converted to cartesian coordinates, i.e., I/Q values. The values in the matrix are complex numbers: I represents the real part, and Q represents the imaginary part.
 </span>
 <p align="center"><img src="drtc/images/graphs/rawInv.png" width="800"/><br>Example of a raw segment from the data, which was converted to power units. Each pulse was fired in “slow-time” intervals (32 times per segment).</p>
+
 ### Data
+Included with the competition is 5 CSV files containing the metadata, and 5 pickle files (serializing Python object structure format) containing doppler readings that track the object’s center of mass and slow/fast time readings in the form of a standardized I/Q matrix.
 ### Submission
 ## My Strategy
 ### Data Partition

@@ -18,7 +18,7 @@ tableb: [["Type","Python Scripts & Jupyter Notebooks"],["Input","Radar Raw Feed"
 # MAFAT Radar Challenge
 ## Introduction
 <span style="color:white;">
-This competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) tackles the challenge of classifying living, non-rigid objects detected by doppler-pulse radar systems.
+This competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) tackles the challenge of classifying living, non-rigid objects detected by doppler-pulse radar systems. The competition was divided into two stages, where the first stage was mainly for training and the second stage for testing. This challenge had more than **1K participants**.
 </span>
 
 ### The Radar
@@ -33,8 +33,20 @@ Upon reception, the raw data is converted to cartesian coordinates, i.e., I/Q va
 </span>
 <p align="center"><img src="drtc/images/graphs/rawInv.png" width="800"/><br>Example of a raw segment from the data, which was converted to power units. Each pulse was fired in “slow-time” intervals (32 times per segment).</p>
 
-### Data
-Included with the competition is 5 CSV files containing the metadata, and 5 pickle files (serializing Python object structure format) containing doppler readings that track the object’s center of mass and slow/fast time readings in the form of a standardized I/Q matrix.
+### Data & Dataset Structure
+<span style="color:white;">
+The metadata of a segment includes track id, location id, location type, day index, sensor id and the SNR level. The segments were collected from several different geographic locations, a unique id was given per location. Each location consists of one or more sensors, a sensor belongs to a single location. A unique id was given per sensor. Each sensor has been used in one or more days, each day is represented by an index. A single track appears in a single location, sensor and day. The segments were taken from longer tracks, each track was given a unique id.
+
+In Stage 1:
+- 5 Pickle files for the Training set, Public Test set (Public), and Auxiliary set (3 files). 
+- 5 CSV files for metadata of the Training set, Public Test set, and Auxiliary set (3 files). 
+In the Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
+
+Stage 2:
+- 2 Pickle files for the Private Test set and the full tracks of the Public Test set.
+- 2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set. 
+In the Private Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
+</span>
 ### Submission
 ## My Strategy
 ### Data Partition

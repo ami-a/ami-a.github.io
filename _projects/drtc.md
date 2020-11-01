@@ -46,7 +46,14 @@ Stage 2:
 - 2 Pickle files for the Private Test set and the full tracks of the Public Test set.
 - 2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set. 
 In the Private Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
+
+#### Auxiliary datasets
+In addition to the Training set described above, the data set also contains auxiliary data:
+- Synthetic low SNR segments that were created by transforming the high SNR signals from the train set.
+- “Background” segments – Segments that were recorded by a sensor in parallel to segments with tracks but at a different range. These segments contain the recorded “noise.” Each segment also contains a field mapping to the original High or Low SNR track id. 
+- “Experiment” locations – In these locations, only humans were recorded in a controlled environment, which doesn't necessarily reflect a “natural” recording. 
 </span>
+
 ### Submission
 ## My Strategy
 ### Data Partition

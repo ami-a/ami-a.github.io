@@ -36,7 +36,7 @@ Upon reception, the raw data is converted to cartesian coordinates, i.e., I/Q va
 ### Data & Dataset Structure
 <span style="color:white;">
 The metadata of a segment includes track id, location id, location type, day index, sensor id and the SNR level. The segments were collected from several different geographic locations, a unique id was given per location. Each location consists of one or more sensors, a sensor belongs to a single location. A unique id was given per sensor. Each sensor has been used in one or more days, each day is represented by an index. A single track appears in a single location, sensor and day. The segments were taken from longer tracks, each track was given a unique id.
-<br><br>
+<br><br></span><span style="color:white;">
 In Stage 1:
 - 5 Pickle files for the Training set, Public Test set (Public), and Auxiliary set (3 files). 
 - 5 CSV files for metadata of the Training set, Public Test set, and Auxiliary set (3 files). 
@@ -49,8 +49,8 @@ In the Private Test set metadata CSV file there are two fields 'segment_id' and 
 </span>
 
 #### Auxiliary datasets
-<span style="color:white;">
 
+<span style="color:white;">
 In addition to the Training set described above, the data set also contains auxiliary data:
 - **Synthetic** low SNR segments that were created by transforming the high SNR signals from the train set.
 - **“Background”** segments – Segments that were recorded by a sensor in parallel to segments with tracks but at a different range. These segments contain the recorded “noise.” Each segment also contains a field mapping to the original High or Low SNR track id. 

@@ -49,8 +49,9 @@ In the Test set metadata CSV file there are two fields 'segment_id' and 'snr_typ
 In Stage 2:
 * 2 Pickle files for the Private Test set and the full tracks of the Public Test set.
 * 2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set.
-<br><br>
+
 In the Private Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
+
 </span>
 
 ### Auxiliary datasets

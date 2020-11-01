@@ -37,19 +37,19 @@ Upon reception, the raw data is converted to cartesian coordinates, i.e., I/Q va
 <p align="center"><img src="drtc/images/graphs/rawInv.png" width="800"/><br>Example of a raw segment from the data, which was converted to power units. Each pulse was fired in “slow-time” intervals (32 times per segment).</p>
 
 ### Data & Dataset Structure
-<span style="color:white;">
+< style="color:white;">
 The metadata of a segment includes track id, location id, location type, day index, sensor id and the SNR level. The segments were collected from several different geographic locations, a unique id was given per location. Each location consists of one or more sensors, a sensor belongs to a single location. A unique id was given per sensor. Each sensor has been used in one or more days, each day is represented by an index. A single track appears in a single location, sensor and day. The segments were taken from longer tracks, each track was given a unique id.
 <br><br>
 In Stage 1:
 * 5 Pickle files for the Training set, Public Test set (Public), and Auxiliary set (3 files).
 * 5 CSV files for metadata of the Training set, Public Test set, and Auxiliary set (3 files).
-
+<br><br>
 In the Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
 <br><br>
 In Stage 2:
-</span>
-- <span style="color:white;">2 Pickle files for the Private Test set and the full tracks of the Public Test set.</span>
-- <span style="color:white;">2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set.</span> 
+* 2 Pickle files for the Private Test set and the full tracks of the Public Test set.
+* 2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set.
+<br><br>
 In the Private Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
 </span>
 

@@ -42,9 +42,8 @@ In Stage 1:
 - 5 Pickle files for the Training set, Public Test set (Public), and Auxiliary set (3 files). 
 - 5 CSV files for metadata of the Training set, Public Test set, and Auxiliary set (3 files). 
 In the Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
-<br><br>
+<br><br></span><span style="color:white;">
 In Stage 2:
-</span><span style="color:white;">
 - 2 Pickle files for the Private Test set and the full tracks of the Public Test set.
 - 2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set. 
 In the Private Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.

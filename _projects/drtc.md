@@ -48,8 +48,7 @@ In Stage 2:
 In the Private Test set metadata CSV file there are two fields 'segment_id' and 'snr_type'.
 </span>
 
-#### Auxiliary datasets
-
+### Auxiliary datasets
 <span style="color:white;">
 In addition to the Training set described above, the data set also contains auxiliary data:
 - **Synthetic** low SNR segments that were created by transforming the high SNR signals from the train set.

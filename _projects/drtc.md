@@ -17,8 +17,9 @@ tableb: [["Type","Python Scripts & Jupyter Notebooks"],["Input","Radar Raw Feed"
 ---
 # MAFAT Radar Challenge
 ## Introduction
-> The goal of the challenge is to explore the potential of advanced data science methods to improve and enhance the IMOD current data products. The winning method may eventually be applied to real data and the winners may be invited to further collaborate with the IMOD on future projects.
-- MAFAT Competition Coordinators
+<span style="color:white;">
+This competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) tackles the challenge of classifying living, non-rigid objects detected by doppler-pulse radar systems.
+</span>
 
 ### Radar,Doppler,SNR
 ### Data

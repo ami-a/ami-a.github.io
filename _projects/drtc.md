@@ -46,8 +46,8 @@ In Stage 1:</span>
 * 5 CSV files for metadata of the Training set, Public Test set, and Auxiliary set (3 files).
 
 <span style="color:white;">In Stage 2:</span>
-* <span style="color:white;">2 Pickle files for the Private Test set and the full tracks of the Public Test set.</span>
-* <span style="color:white;">2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set.</span>
+* 2 Pickle files for the Private Test set and the full tracks of the Public Test set.
+* 2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set.
 
 
 
@@ -55,9 +55,9 @@ In Stage 1:</span>
 <span style="color:white;">
 In addition to the Training set described above, the data set also contains auxiliary data:
 </span>
-* <span style="color:white;">**Synthetic** low SNR segments that were created by transforming the high SNR signals from the train set.</span>
-* <span style="color:white;">**“Background”** segments – Segments that were recorded by a sensor in parallel to segments with tracks but at a different range. These segments contain the recorded “noise.” Each segment also contains a field mapping to the original High or Low SNR track id.</span>
-* <span style="color:white;">**“Experiment”** locations – In these locations, only humans were recorded in a controlled environment, which doesn't necessarily reflect a “natural” recording. </span> 
+* **Synthetic** low SNR segments that were created by transforming the high SNR signals from the train set.
+* **“Background”** segments – Segments that were recorded by a sensor in parallel to segments with tracks but at a different range. These segments contain the recorded “noise.” Each segment also contains a field mapping to the original High or Low SNR track id.
+* **“Experiment”** locations – In these locations, only humans were recorded in a controlled environment, which doesn't necessarily reflect a “natural” recording.
 
 
 ### Submission

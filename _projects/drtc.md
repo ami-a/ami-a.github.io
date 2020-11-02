@@ -120,10 +120,15 @@ For example this is the code for the training dataset partition:
 <span style="color:white;">
 Together with the rest of the partitions we get a balanced training and validation sets in terms of targets, SNR and geolocations. 
 <br><br>
-I had to synthesize a new dataset to create new low SNR segments with animals. I added different noises, similar to the noise in other segments, to high animal SNR segments to create this new dataset.
+I had to synthesize a new dataset to create new low SNR segments with animals. I added different noises, similar to the noise in other segments, to high SNR animal segments to create this new dataset.
 </span>
 
 ### Spectrograms
+<span style="color:white;">
+By going to the frequency domain using the Fourier Transform we can interpret more clearly the radar data.
+<p align="center"><img src="drtc/images/graphs/rawInv.png" width="800"/><br>Example of a raw segment from the data, which was converted to power units. Each pulse was fired in “slow-time” intervals (32 times per segment).</p>
+</span>
+
 ### Micro Doppler Effect
 
 Since my rig was limited, I used my knowledge in Physics to look for an edge

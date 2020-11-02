@@ -126,7 +126,7 @@ I had to synthesize a new dataset to create new low SNR segments with animals. I
 ### Spectrograms
 <span style="color:white;">
 By going to the frequency domain using the Fourier Transform we can interpret more clearly the radar data.
-<p align="center"><img src="drtc/images/graphs/rawInv.png" width="800"/><br>Example of a raw segment from the data, which was converted to power units. Each pulse was fired in “slow-time” intervals (32 times per segment).</p>
+<p align="center"><img src="drtc/images/graphs/SpecInv.png" width="800"/><br>An example of the data included for the competition split by Animal/Human and High/Low Signal-Noise-Ratio. The I/Q matrices have been converted into spectrograms for visualization, and the target's doppler center-of-mass readings have been added as bright dots. </p>
 </span>
 
 ### Micro Doppler Effect

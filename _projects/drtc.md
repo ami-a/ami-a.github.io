@@ -60,11 +60,25 @@ In addition to the Training set described above, the data set also contains auxi
 * **“Experiment”** locations – In these locations, only humans were recorded in a controlled environment, which doesn't necessarily reflect a “natural” recording.
 
 
-### Submission
+### Submissions
+<span style="color:white;">
+In stage 1 we could submit, up to two times a day, the public test set. Submissions are evaluated on the Area Under the Receiver Operating Characteristic Curve (ROC AUC) between the predicted probability and the observed target.
+In the second stage we could submit up to two times total, the private test set.
+</span>
+
 ## My Strategy
+### My Tools
+<span style="color:white;">
+I only used my laptop for all the competition, it has a Nvidia GPU but with only 2GB of memory. Initially I had 32GB RAM but one of my sticks got fried from over processing so I got stuck with 16GB RAM close to the end (since there was a curfew so I could not have replaced it) .
+
+I mainly used **MATLAB** for testing different signal processing methods that will work well on the data. I used **Python** for implementing the signal processing methods I found and preprocess the data, train and test it using **Keras** models in **TensorFlow**.
+</span>
+
 ### Data Partition
 ### Spectrograms
 ### Micro Doppler Effect
+
+Since my rig was limited, I used my knowledge in Physics to look for an edge
 ### Model
 ## Results
 

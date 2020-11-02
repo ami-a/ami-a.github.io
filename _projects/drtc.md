@@ -79,7 +79,7 @@ It is important to ensure the data is balanced and unbiased as this can lead to 
 For example this is the code for the training dataset partition:
 </span>
 
-```
+```python
     geo1=((training_df["geolocation_id"]==1)&(training_df['segment_id'] % 4 == 0))#58
     geo2=((training_df["geolocation_id"]==2)&(training_df['segment_id'] % 3 == 0))#63
     geo3=((training_df["geolocation_id"]==3)&(training_df['segment_id'] % 16 == 0))#65

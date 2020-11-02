@@ -139,7 +139,7 @@ Since my rig was limited and training was taking days and I could not even use r
 Studding the MATLAB repository [kozubv/doppler_radar](https://github.com/kozubv/doppler_radar) I could simulate micro-Doppler effects that a human will create. First by creating a simulation of a human body walking:</span>
 <p align="center"><img src="drtc/images/graphs/h1d3.gif" width="600px"/><br>A simulation of human body walking in MATLAB. The dots are the spots where the light will reflect from in the radar simulation.</p>
 <span style="color:white;">
-And resulting micro-Doppler effect:</span>
+And the resulting micro-Doppler effect spectrogram:</span>
 <p align="center"><img src="drtc/images/graphs/Art_Mic_DopplerInv.png" width="600px"/><br>The resulting micro-Doppler effect spectrogram from the human walking simulation. The legitimates movement corresponds to the waves in the spectrogram. </p>
 
 ### Model

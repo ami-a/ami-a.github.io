@@ -126,7 +126,7 @@ I had to synthesize a new dataset to create new low SNR segments with animals. I
 ### Spectrograms
 <span style="color:white;">
 By going to the frequency domain using the Fourier Transform we can interpret the radar data qualit easily.</span>
-<p align="center"><img src="drtc/images/graphs/SpecInv.png" width="100%"/><br>An example of the data included for the competition split by Animal/Human and High/Low Signal-Noise-Ratio. The I/Q matrices have been converted into spectrograms for visualization, and the target's doppler center-of-mass readings have been added as blue dots. </p>
+<p align="center"><img src="drtc/images/graphs/SpecInv.png" width="600px"/><br>An example of the data included for the competition split by Animal/Human and High/Low Signal-Noise-Ratio. The I/Q matrices have been converted into spectrograms for visualization, and the target's doppler center-of-mass readings have been added as blue dots. </p>
 <span style="color:white;">
 As you can see it's not easy to identify the target only by the spectrogram (especially when units of measurement are not available), but using CNN we might detect patterns that are not easy to see.
 </span>
@@ -137,7 +137,7 @@ As you can see it's not easy to identify the target only by the spectrogram (esp
 Since my rig was limited and training was taking days and I could not even use relatively light model like ResNet, I used my knowledge in Physics to look for an edge. The Doppler effect in this case is the shift in the light frequency due to the relative speed of the target. But targets that has motions relative to itself (or it center of mass), like the rotation of the wheels on a car or the swinging of the hands when walking, creates additional shifts in the light frequency that is called Micro-Doppler Effect.
 <br><br>
 Studding the MATLAB repository [kozubv/doppler_radar](https://github.com/kozubv/doppler_radar) I could simulate micro-Doppler effects that a human will create. First by creating a simulation of a human body walking:</span>
-<p align="center"><img src="drtc/images/graphs/h1d3.gif" width="100%"/><br>A simulation of human body walking in MATLAB. The dots are the spots where the light will reflect from in the radar simulation.</p>
+<p align="center"><img src="drtc/images/graphs/h1d3.gif" width="600px"/><br>A simulation of human body walking in MATLAB. The dots are the spots where the light will reflect from in the radar simulation.</p>
 
 ### Model
 ## Results

@@ -47,7 +47,7 @@ The sets:</span>
 <br>(**6656 Entries**)
 
 * **Test set:** For the purposes of the competition, a test set is included to evaluate the quality of the model and rank competitors. The set is unlabeled but does include a balanced mix of high and low SNR.
-<br>**106 Entries**
+<br>(**106 Entries**)
 
 * **Synthetic Low SNR set:** Using readings from the training set a low SNR dataset has been artificially created by sampling the high SNR examples and artificially populating the samples with noise. This set can be used to better train the model on low SNR examples.
 <br>(**50883 Entries**)
@@ -72,10 +72,46 @@ I only used my laptop for all the competition, it has a Nvidia GPU but with only
 I mainly used **MATLAB** for testing different signal processing methods that will work well on the data. I used **Python** for implementing the signal processing methods I found and preprocess the data, train and test it using **Keras** models in **TensorFlow**.
 </span>
 
-### Data Partition
+### Data Synthesization & Partition
 <span style="color:white;">
 It is important to ensure the data is balanced and unbiased as this can lead to significant misinterpretations of the set by the model, and small inconsistencies can get extrapolated into significant errors. Since the datasets are not balanced at all in categories like object(Human/Animal), SNR(High/Low), topography(Woods, Synthetic etc.) and the amount of data from each category is limited it was a challenge to find the right partition for the training and validation data.
+<br><br>
+For example this is the code for the training dataset partition:
 </span>
+```
+    geo1=((training_df["geolocation_id"]==1)&(training_df['segment_id'] % 4 == 0))#58
+    geo2=((training_df["geolocation_id"]==2)&(training_df['segment_id'] % 3 == 0))#63
+    geo3=((training_df["geolocation_id"]==3)&(training_df['segment_id'] % 16 == 0))#65
+    geo4=((training_df["geolocation_id"]==4)&(training_df['segment_id'] % 3 == 0))#64
+    train_NH_HS=((training_df["target_type"]!="human") & (training_df["snr_type"]=="HighSNR")&np.logical_not(geo1|geo2|geo3|geo4))
+    train_NH_HS_val=((training_df["target_type"]!="human") & (training_df["snr_type"]=="HighSNR")&(geo1|geo2|geo3|geo4))#250
+
+    geo1=((training_df["geolocation_id"]==1)&(training_df['segment_id'] % 4 == 0))#59
+    geo2=((training_df["geolocation_id"]==2)&(training_df['segment_id'] % 1 == 0))#61
+    geo3=((training_df["geolocation_id"]==3)&(training_df['segment_id'] % 57 == 0))#61
+    geo4=((training_df["geolocation_id"]==4)&(training_df['segment_id'] % 5 == 0))#57
+    train_NH_LS=((training_df["target_type"]!="human") & (training_df["snr_type"]=="LowSNR")&np.logical_not(geo1|geo2|geo3|geo4))#3.8k
+    train_NH_LS_val=((training_df["target_type"]!="human") & (training_df["snr_type"]=="LowSNR")&(geo1|geo2|geo3|geo4))#238
+
+    geo1=((training_df["geolocation_id"]==1)&(training_df['segment_id'] % 4 == 0))#111
+    geo4=((training_df["geolocation_id"]==4)&(training_df['segment_id'] % 3 == 0))#123
+    train_H_HS=((training_df["target_type"]=="human") & (training_df["snr_type"]=="HighSNR")&np.logical_not(geo1|geo4))#577
+    train_H_HS_val=((training_df["target_type"]=="human") & (training_df["snr_type"]=="HighSNR")&(geo1|geo4))#234
+
+    geo1=((training_df["geolocation_id"]==1)&(training_df['date_index'] % 3 == 0))#21
+    geo4=((training_df["geolocation_id"]==4)&(training_df['segment_id'] % 3 == 0))#19
+    train_H_LS=((training_df["target_type"]=="human") & (training_df["snr_type"]=="LowSNR")&np.logical_not(geo1|geo4))#48
+    train_H_LS_val=((training_df["target_type"]=="human") & (training_df["snr_type"]=="LowSNR")&(geo1|geo4))#40
+
+    train_idx=(training_df["target_type"]=="ami")
+    train_val_idx=(training_df["target_type"]=="ami")
+    if snr==0 or snr==1:
+        train_idx+=train_NH_LS+train_H_LS
+        train_val_idx+=train_NH_LS_val+train_H_LS_val
+    if snr==0 or snr==2:
+        train_idx+=train_NH_HS+train_H_HS
+        train_val_idx+=train_NH_HS_val+train_H_HS_val
+```
 
 ### Spectrograms
 ### Micro Doppler Effect

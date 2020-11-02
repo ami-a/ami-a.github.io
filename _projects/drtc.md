@@ -68,7 +68,7 @@ In the second stage we could submit, up to two times total, the private test set
 ### My Tools
 <span style="color:white;">
 I only used my laptop for all the competition, it has a Nvidia GPU but with only 2GB of memory. Initially I had 32GB RAM but one of my sticks got fried from over processing so I got stuck with 16GB RAM close to the end (since there was a curfew so I could not have replaced it) .
-
+<br><br>
 I mainly used **MATLAB** for testing different signal processing methods that will work well on the data. I used **Python** for implementing the signal processing methods I found and preprocess the data, train and test it using **Keras** models in **TensorFlow**.
 </span>
 

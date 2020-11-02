@@ -18,6 +18,7 @@ tableb: [["Type","Python Scripts & Jupyter Notebooks"],["Input","Radar Raw Feed"
 <style>
 a    {text-decoration: underline;color: red;}
 li    {color: white;}
+.language-python highlighter-rouge {height:300px;}
 </style>
 # MAFAT Radar Challenge
 ## Introduction

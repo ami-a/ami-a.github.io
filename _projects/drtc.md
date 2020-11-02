@@ -78,6 +78,7 @@ It is important to ensure the data is balanced and unbiased as this can lead to 
 <br><br>
 For example this is the code for the training dataset partition:
 </span>
+
 ```
     geo1=((training_df["geolocation_id"]==1)&(training_df['segment_id'] % 4 == 0))#58
     geo2=((training_df["geolocation_id"]==2)&(training_df['segment_id'] % 3 == 0))#63
@@ -103,15 +104,20 @@ For example this is the code for the training dataset partition:
     train_H_LS=((training_df["target_type"]=="human") & (training_df["snr_type"]=="LowSNR")&np.logical_not(geo1|geo4))#48
     train_H_LS_val=((training_df["target_type"]=="human") & (training_df["snr_type"]=="LowSNR")&(geo1|geo4))#40
 
-    train_idx=(training_df["target_type"]=="ami")
-    train_val_idx=(training_df["target_type"]=="ami")
-    if snr==0 or snr==1:
+    train_idx=[]
+    train_val_idx=[]
+    if snr=="All" or snr=="Low":
         train_idx+=train_NH_LS+train_H_LS
         train_val_idx+=train_NH_LS_val+train_H_LS_val
-    if snr==0 or snr==2:
+    if snr=="All" or snr=="High":
         train_idx+=train_NH_HS+train_H_HS
         train_val_idx+=train_NH_HS_val+train_H_HS_val
 ```
+<span style="color:white;">
+Together with the rest of the partitions we get a balanced training and validation sets in terms of targets, SNR and geolocations. 
+<br><br>
+I had to synthesize a new dataset to create new low SNR segments with animals. I added different noises, similar to the noise in other segments, to high animal SNR segments to create this new dataset.
+</span>
 
 ### Spectrograms
 ### Micro Doppler Effect

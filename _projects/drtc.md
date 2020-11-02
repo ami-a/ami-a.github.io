@@ -41,29 +41,23 @@ Upon reception, the raw data is converted to cartesian coordinates, i.e., I/Q va
 <span style="color:white;">
 The metadata of a segment includes track id, location id, location type, day index, sensor id and the SNR level. The segments were collected from several different geographic locations, a unique id was given per location. Each location consists of one or more sensors, a sensor belongs to a single location. A unique id was given per sensor. Each sensor has been used in one or more days, each day is represented by an index. A single track appears in a single location, sensor and day. The segments were taken from longer tracks, each track was given a unique id.
 <br><br>
-In Stage 1:</span>
-* 5 Pickle files for the Training set, Public Test set (Public), and Auxiliary set (3 files).
-* 5 CSV files for metadata of the Training set, Public Test set, and Auxiliary set (3 files).
+The sets:</span>
 
-<span style="color:white;">In Stage 2:</span>
-* 2 Pickle files for the Private Test set and the full tracks of the Public Test set.
-* 2 CSV files for metadata of the Private Test set and the full tracks of the Public Test set.
-
-
-
-### Auxiliary datasets
-<span style="color:white;">
-In addition to the Training set described above, the data set also contains auxiliary data:
-</span>
-* **Synthetic** low SNR segments that were created by transforming the high SNR signals from the train set.
-* **“Background”** segments – Segments that were recorded by a sensor in parallel to segments with tracks but at a different range. These segments contain the recorded “noise.” Each segment also contains a field mapping to the original High or Low SNR track id.
-* **“Experiment”** locations – In these locations, only humans were recorded in a controlled environment, which doesn't necessarily reflect a “natural” recording.
-
+* **Training set:** As the name describes, the training set consists of a combination of human and animal, with high and low SNR readings created from authentic doppler-pulse radar recordings.
+**6656 Entries**
+* **Test set:** For the purposes of the competition, a test set is included to evaluate the quality of the model and rank competitors. The set is unlabeled but does include a balanced mix of high and low SNR.
+**106 Entries**
+* **Synthetic Low SNR set:** Using readings from the training set a low SNR dataset has been artificially created by sampling the high SNR examples and artificially populating the samples with noise. This set can be used to better train the model on low SNR examples.
+**50883 Entries**
+* **The Background set:** The background dataset includes readings gathered from the doppler-pulse radars without specific targets. This set could be used to help the model better distinguish noise in the labeled datasets and help the model distinguish relevant information from messy data.
+**31128 Entries**
+* **The Experiment set:** The final set and possibly the most interesting, the experiment set includes humans recorded by the doppler-pulse radar in a controlled environment. Whilst not natural this could be valuable for balancing the animal-heavy training set provided.
+**49071 Entries**
 
 ### Submissions
 <span style="color:white;">
 In stage 1 we could submit, up to two times a day, the public test set. Submissions are evaluated on the Area Under the Receiver Operating Characteristic Curve (ROC AUC) between the predicted probability and the observed target.
-In the second stage we could submit up to two times total, the private test set.
+In the second stage we could submit, up to two times total, the private test set.
 </span>
 
 ## My Strategy

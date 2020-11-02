@@ -44,15 +44,20 @@ The metadata of a segment includes track id, location id, location type, day ind
 The sets:</span>
 
 * **Training set:** As the name describes, the training set consists of a combination of human and animal, with high and low SNR readings created from authentic doppler-pulse radar recordings.
+<br>
 **6656 Entries**
+
 * **Test set:** For the purposes of the competition, a test set is included to evaluate the quality of the model and rank competitors. The set is unlabeled but does include a balanced mix of high and low SNR.
-**106 Entries**
+<br>**106 Entries**
+
 * **Synthetic Low SNR set:** Using readings from the training set a low SNR dataset has been artificially created by sampling the high SNR examples and artificially populating the samples with noise. This set can be used to better train the model on low SNR examples.
-**50883 Entries**
+<br>**50883 Entries**
+
 * **The Background set:** The background dataset includes readings gathered from the doppler-pulse radars without specific targets. This set could be used to help the model better distinguish noise in the labeled datasets and help the model distinguish relevant information from messy data.
-**31128 Entries**
+<br>**31128 Entries**
+
 * **The Experiment set:** The final set and possibly the most interesting, the experiment set includes humans recorded by the doppler-pulse radar in a controlled environment. Whilst not natural this could be valuable for balancing the animal-heavy training set provided.
-**49071 Entries**
+<br>**49071 Entries**
 
 ### Submissions
 <span style="color:white;">
@@ -72,6 +77,7 @@ I mainly used **MATLAB** for testing different signal processing methods that wi
 <span style="color:white;">
 It is important to ensure the data is balanced and unbiased as this can lead to significant misinterpretations of the set by the model, and small inconsistencies can get extrapolated into significant errors. Since the datasets are not balanced at all in categories like object(Human/Animal), SNR(High/Low), topography(Woods, Synthetic etc.) and the amount of data from each category is limited it was a challenge to find the right partition for the training and validation data.
 </span>
+
 ### Spectrograms
 ### Micro Doppler Effect
 

@@ -69,6 +69,9 @@ I mainly used **MATLAB** for testing different signal processing methods that wi
 </span>
 
 ### Data Partition
+<span style="color:white;">
+It is important to ensure the data is balanced and unbiased as this can lead to significant misinterpretations of the set by the model, and small inconsistencies can get extrapolated into significant errors. Since the datasets are not balanced at all in categories like object(Human/Animal), SNR(High/Low), topography(Woods, Synthetic etc.) and the amount of data from each category is limited it was a challenge to find the right partition for the training and validation data.
+</span>
 ### Spectrograms
 ### Micro Doppler Effect
 

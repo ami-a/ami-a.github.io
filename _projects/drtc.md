@@ -147,6 +147,9 @@ The extraction of the micro-Doppler spectrogram from the segments was a bit tric
 <p align="center"><img src="drtc/images/graphs/MicInv.png" width="600px"/><br>The resulting micro-Doppler spectrogram from a segment.</p>
 
 ### The Model
+
+This part was a real challenge since I was really limited in the GPU department and had more than 20K segments in my training set (and around 3-4 different spectrograms per segment + other data). My computer couldn't even use the ResNet50 for segments with one spectrogram. Initially I used simple CNN as my model and over time I added more inputs and different layers. I ended up with merging two CNN models, one RNN and a simple NN. I input different low-res (to speed up learning) spectrograms to the CNN and took one of the micro-Doppler spectrogram and ran through the RNN (in the old days radar watcher could identify humans by the sound), I also included some neurones for data like SNR. Here is an example of one of my models I tried:
+<p align="center"><img src="drtc/images/graphs/model3Inv.png" width="100%"/><br>An example of one of my models architecture.</p>
 ## Results
 
 

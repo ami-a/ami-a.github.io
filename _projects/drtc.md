@@ -147,10 +147,15 @@ The extraction of the micro-Doppler spectrogram from the segments was a bit tric
 <p align="center"><img src="drtc/images/graphs/MicInv.png" width="600px"/><br>The resulting micro-Doppler spectrogram from a segment.</p>
 
 ### The Model
-
-This part was a real challenge since I was really limited in the GPU department and had more than 20K segments in my training set (and around 3-4 different spectrograms per segment + other data). My computer couldn't even use the ResNet50 for segments with one spectrogram. Initially I used simple CNN as my model and over time I added more inputs and different layers. I ended up with merging two CNN models, one RNN and a simple NN. I input different low-res (to speed up learning) spectrograms to the CNN and took one of the micro-Doppler spectrogram and ran through the RNN (in the old days radar watcher could identify humans by the sound), I also included some neurones for data like SNR. Here is an example of one of my models I tried:
+<span style="color:white;">
+This part was a real challenge since I was really limited in the GPU department and had more than 20K segments in my training set (and around 3-4 different spectrograms per segment + other data). My computer couldn't even use the ResNet50 for segments with one spectrogram. I combined knowledge from a dozen of articles that used spectrograms and micro-Doppler spectrograms to identify object and other data to create a light but effective model architecture for this task. Initially I used simple CNN as my model and over time I added more inputs and different layers. I ended up with merging two CNN models, one RNN and a simple NN. I input different low-res (to speed up learning) spectrograms to the CNN and took one of the micro-Doppler spectrogram and ran through the RNN (in the old days radar watcher could identify humans by the sound), I also included some neurones for data like SNR. Here is an example of one of my models I tried:
+</span>
 <p align="center"><img src="drtc/images/graphs/model3Inv.png" width="100%"/><br>An example of one of my models architecture.</p>
+
 ## Results
+<span style="color:white;">
+I manged to receive around 90% accuracy (ROC_AUC) in the full public test and around 80% in the private test. I received the 30th place out of 1k+ participants including many companies like the Israel Air Industry(IAI) and Refael as well as research groups from universities. During the competition's phase 1 there were attempts at cheating, my guess was that some people submitted a few random response and via the score they manged to reproduce the correct data results. All in all I'm happy with my results, not in my score (I know I could have done much better with a decent GPU and free time), but the learning and the advance in experience I gained.
+</span>
 
 
 

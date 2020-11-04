@@ -12,7 +12,7 @@ disc: "This project is a competition by MAFAT’s DDR&D (Directorate of Defense
 <li>Utilizing micro physical effects like micro-Doppler effects to get an edge.</li>
 <li>Creating spectrograms with emphasized important data parts for better result with CNNs.</li>
 <li>Creating light and robust CNN models to be able to run big data on a small GPU memory.</li>
-<li>reconstructing modified successful models from articles and combine them into one great model that includes CNNs, RNNs and other model types.</li>
+<li>Reconstructing modified successful models from articles and combine them into one great model that includes CNNs, RNNs and other model types.</li>
 <span style=\"position:relative;left:-40px;\">The full details are just below.</span></ul>"
 tag: "Python & MATLAB"
 lang: ["Python","MATLAB"]

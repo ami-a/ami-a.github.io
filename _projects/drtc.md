@@ -4,13 +4,13 @@ is_project: true
 ind: -5
 year: "2020"
 sdisc: "MAFAT Radar Challenge —distinguishing between humans and animals in Pulse-Doppler Radar tracks."
-disc: "This project is a competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) that tackles the challenge of classifying living, non-rigid objects detected by doppler-pulse radar systems using AI. During this competition I used many data science and machine learning technologies (mainly in Python & MATLAB) and signal processing technics like:
+disc: "This project is a competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) that tackles the challenge of classifying living, non-rigid objects detected by doppler-pulse radar systems using AI. During this competition, I used many data science and machine learning technologies (mainly in Python & MATLAB) and signal processing technics like:
 <ul>
 <li>Creating new data for additional training data from new and unfamiliar data format.</li>
 <li>Balancing and partitioning large data with many different strategies for good training and validation sets.</li>
 <li>Using FFT, windows, noise filtering, noise inducing and other techniques.</li>
-<li>Utilizing micro physical effects like micro-Doppler effects to get an edge.</li>
-<li>Creating spectrograms with emphasized important data parts for better result with CNNs.</li>
+<li>Utilizing microphysical effects like micro-Doppler effects to get an edge.</li>
+<li>Creating spectrograms with emphasized important data parts for better results with CNNs.</li>
 <li>Creating light and robust CNN models to be able to run big data on a small GPU memory.</li>
 <li>Reconstructing modified successful models from articles and combine them into one great model that includes CNNs, RNNs and other model types.</li>
 <span style=\"position:relative;left:-40px;\">The full details are just below.</span></ul>"
@@ -40,7 +40,7 @@ This competition by MAFAT’s DDR&D (Directorate of Defense Research & Developme
 
 ### The Radar
 <span style="color:white;">
-The type of radar the data comes form is called a Pulse-Doppler Radar. A Pulse-Doppler Radar is a radar system that determines the range to a target using pulse-timing techniques, and uses the Doppler effect of the returned signal to determine the target object's velocity.
+The type of radar the data comes from is called a Pulse-Doppler Radar. A Pulse-Doppler Radar is a radar system that determines the range to a target using pulse-timing techniques and uses the Doppler effect of the returned signal to determine the target object's velocity.
 Each radar “stares” at a fixed, wide area of interest. Whenever an animal or a human moves within the radar’s covered area, it is detected and tracked. The dataset contains records of those tracks. The tracks in the dataset are split into 32 time-unit segments. Each record in the dataset represents a single segment.
 <br><br>
 A segment consists of a matrix with I/Q values and metadata. The matrix of each segment has a size of 32x128. The X-axis represents the pulse transmission time, also known as “slow-time”. The Y-axis represents the reception time of signals with respect to pulse transmission time divided into 128 equal sized bins, also known as “fast-time”. The Y-axis is usually referred to as “range” or “velocity” as wave propagation depends on the speed of light.
@@ -65,7 +65,7 @@ The sets:</span>
 * **Synthetic Low SNR set:** Using readings from the training set a low SNR dataset has been artificially created by sampling the high SNR examples and artificially populating the samples with noise. This set can be used to better train the model on low SNR examples.
 <br>(**50883 Entries**)
 
-* **The Background set:** The background dataset includes readings gathered from the doppler-pulse radars without specific targets. This set could be used to help the model better distinguish noise in the labeled datasets and help the model distinguish relevant information from messy data.
+* **The Background set:** The background dataset includes readings gathered from the doppler-pulse radars without specific targets. This set could be used to help the model better distinguish noise in the labelled datasets and help the model distinguish relevant information from messy data.
 <br>(**31128 Entries**)
 
 * **The Experiment set:** The final set and possibly the most interesting, the experiment set includes humans recorded by the doppler-pulse radar in a controlled environment. Whilst not natural this could be valuable for balancing the animal-heavy training set provided.
@@ -74,13 +74,13 @@ The sets:</span>
 ### Submissions
 <span style="color:white;">
 In stage 1 we could submit, up to two times a day, the public test set. Submissions are evaluated on the Area Under the Receiver Operating Characteristic Curve (ROC AUC) between the predicted probability and the observed target.
-In the second stage we could submit, up to two times total, the private test set.
+In the second stage, we could submit, up to two times total, the private test set.
 </span>
 
 ## My Strategy
 ### My Tools
 <span style="color:white;">
-I only used my laptop for all the competition, it has a Nvidia GPU but with only 2GB of memory. Initially I had 32GB of RAM but one of my sticks got fried from over training so I got stuck with 16GB of RAM close to the end (since there was a curfew so I could not have replaced it) .
+I only used my laptop for all the competition, it has an Nvidia GPU but with only 2GB of memory. Initially, I had 32GB of RAM but one of my sticks got fried from overtraining so I got stuck with 16GB of RAM close to the end (since there was a curfew so I could not have replaced it).
 <br><br>
 I mainly used **MATLAB** for testing different signal processing methods that will work well on the data. I used **Python** for implementing the signal processing methods I found and preprocess the data, train and test it using **Keras** models in **TensorFlow**.
 </span>
@@ -89,7 +89,7 @@ I mainly used **MATLAB** for testing different signal processing methods that wi
 <span style="color:white;">
 It is important to ensure the data is balanced and unbiased as this can lead to significant misinterpretations of the set by the model, and small inconsistencies can get extrapolated into significant errors. Since the datasets are not balanced at all in categories like object(Human/Animal), SNR(High/Low), topography(Woods, Synthetic etc.) and the amount of data from each category is limited it was a challenge to find the right partition for the training and validation data.
 <br><br>
-For example this is the code for the training dataset partition:
+For example, this is the code for the training dataset partition:
 </span>
 
 ```python
@@ -134,7 +134,7 @@ I had to synthesize a new dataset to create new low SNR segments with animals. I
 
 ### Spectrograms
 <span style="color:white;">
-By going to the frequency domain using the Fourier Transform we can interpret the radar data qualit easily.</span>
+By going to the frequency domain using the Fourier Transform we can interpret the radar data quality easily.</span>
 <p align="center"><img src="drtc/images/graphs/SpecInv.png" width="600px"/><br>An example of the data included for the competition split by Animal/Human and High/Low Signal-Noise-Ratio. The I/Q matrices have been converted into spectrograms for visualization, and the target's doppler center-of-mass readings have been added as blue dots. </p>
 <span style="color:white;">
 As you can see it's not easy to identify the target only by the spectrogram (especially when units of measurement are not available), but using CNN we might detect patterns that are not easy to see.
@@ -143,7 +143,7 @@ As you can see it's not easy to identify the target only by the spectrogram (esp
 ### Micro Doppler Effect
 
 <span style="color:white;">
-Since my rig was limited and training was taking days and I could not even use relatively light model like ResNet, I used my knowledge in Physics to look for an edge. The Doppler effect in this case is the shift in the light frequency due to the relative speed of the target. But targets that has motions relative to itself (or it center of mass), like the rotation of the wheels on a car or the swinging of the hands when walking, creates additional shifts in the light frequency that is called Micro-Doppler Effect.
+Since my rig was limited and training was taking days and I could not even use a relatively light model like ResNet50, I used my knowledge in Physics to look for an edge. The Doppler effect in this case is the shift in the light frequency due to the relative speed of the target. But targets that have motions relative to itself (or its centre of mass), like the rotation of the wheels on a car or the swinging of the hands when walking, create additional shifts in the light frequency that is called Micro-Doppler Effect.
 <br><br>
 Studding the MATLAB repository [kozubv/doppler_radar](https://github.com/kozubv/doppler_radar) I could simulate micro-Doppler effects that a human will create. First by creating a simulation of a human body walking:</span>
 <p align="center"><img src="drtc/images/graphs/h1d3.gif" width="600px"/><br>A simulation of human body walking in MATLAB. The dots are the spots where the light will reflect from in the radar simulation.</p>
@@ -151,7 +151,7 @@ Studding the MATLAB repository [kozubv/doppler_radar](https://github.com/kozubv/
 And the resulting micro-Doppler effect spectrogram:</span>
 <p align="center"><img src="drtc/images/graphs/Art_Mic_DopplerInv.png" width="600px"/><br>The resulting micro-Doppler effect spectrogram from the human walking simulation. The legitimates movement corresponds to the waves in the spectrogram. </p>
 <span style="color:white;">
-The extraction of the micro-Doppler spectrogram from the segments was a bit tricky since the segments only had 32 pulses to work with and not to mention the noise. Using different signal filters and windows I manged to get some decent results.
+The extraction of the micro-Doppler spectrogram from the segments was a bit tricky since the segments only had 32 pulses to work with and not to mention the noise. Using different signal filters and windows I managed to get some decent results.
 </span>
 <p align="center"><img src="drtc/images/graphs/MicInv.png" width="600px"/><br>The resulting micro-Doppler spectrogram from a segment.</p>
 
@@ -163,7 +163,7 @@ This part was a real challenge since I was really limited in the GPU department 
 
 ## Results
 <span style="color:white;">
-I manged to receive around 90% accuracy (ROC_AUC) in the full public test and around 80% in the private test. I received the 30th place out of 1k+ participants including many companies like the Israel Air Industry(IAI) and Refael as well as research groups from universities. During the competition's phase 1 there were attempts at cheating, my guess was that some people submitted a few random response and via the score they manged to reproduce the correct data results. All in all I'm happy with my results, not in my score (I know I could have done much better with a decent GPU and free time), but with the learning and the advance in experience I gained.
+I managed to receive around 90% accuracy (ROC_AUC) in the full public test and around 80% in the private test. I received the 30th place out of 1k+ participants including many companies like the Israel Air Industry(IAI) and Refael as well as research groups from universities. During the competition's phase 1 there were attempts at cheating, my guess was that some people submitted a few random responses and via the score they managed to reproduce the correct data results. All in all, I'm happy with my results, not in my score (I know I could have done much better with a decent GPU and free time), but with the learning and the advance in experience I gained.
 </span>
 
 

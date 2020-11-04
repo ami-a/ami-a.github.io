@@ -71,7 +71,7 @@ In the second stage we could submit, up to two times total, the private test set
 ## My Strategy
 ### My Tools
 <span style="color:white;">
-I only used my laptop for all the competition, it has a Nvidia GPU but with only 2GB of memory. Initially I had 32GB RAM but one of my sticks got fried from over processing so I got stuck with 16GB RAM close to the end (since there was a curfew so I could not have replaced it) .
+I only used my laptop for all the competition, it has a Nvidia GPU but with only 2GB of memory. Initially I had 32GB of RAM but one of my sticks got fried from over training so I got stuck with 16GB of RAM close to the end (since there was a curfew so I could not have replaced it) .
 <br><br>
 I mainly used **MATLAB** for testing different signal processing methods that will work well on the data. I used **Python** for implementing the signal processing methods I found and preprocess the data, train and test it using **Keras** models in **TensorFlow**.
 </span>
@@ -141,8 +141,12 @@ Studding the MATLAB repository [kozubv/doppler_radar](https://github.com/kozubv/
 <span style="color:white;">
 And the resulting micro-Doppler effect spectrogram:</span>
 <p align="center"><img src="drtc/images/graphs/Art_Mic_DopplerInv.png" width="600px"/><br>The resulting micro-Doppler effect spectrogram from the human walking simulation. The legitimates movement corresponds to the waves in the spectrogram. </p>
+<span style="color:white;">
+The extraction of the micro-Doppler spectrogram from the segments was a bit tricky since the segments only had 32 pulses to work with and not to mention the noise. Using different signal filters and windows I manged to get some decent results.
+</span>
+<p align="center"><img src="drtc/images/graphs/MicInv.png" width="600px"/><br>The resulting micro-Doppler spectrogram from a segment.</p>
 
-### Model
+### The Model
 ## Results
 
 

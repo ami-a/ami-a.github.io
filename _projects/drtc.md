@@ -8,7 +8,7 @@ disc: "This project is a competition by MAFAT’s DDR&D (Directorate of Defense
 <ul>
 <li>Creating new data for additional training data from new and unfamiliar data format.</li>
 <li>Balancing and partitioning large data with many different strategies for a good training and validation sets.</li>
-<li>Using FFT, windows noise filtering, noise inducing and other techniques.</li>
+<li>Using FFT, windows, noise filtering, noise inducing and other techniques.</li>
 <li>Utilizing micro physical effects like micro-Doppler effects to get an edge.</li>
 <li>Creating spectrograms with emphasized important data parts for better result with CNNs.</li>
 <li>Creating light and robust CNN models to be able to run big data on a small GPU memory.</li>

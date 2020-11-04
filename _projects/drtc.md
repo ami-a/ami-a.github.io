@@ -154,7 +154,7 @@ This part was a real challenge since I was really limited in the GPU department 
 
 ## Results
 <span style="color:white;">
-I manged to receive around 90% accuracy (ROC_AUC) in the full public test and around 80% in the private test. I received the 30th place out of 1k+ participants including many companies like the Israel Air Industry(IAI) and Refael as well as research groups from universities. During the competition's phase 1 there were attempts at cheating, my guess was that some people submitted a few random response and via the score they manged to reproduce the correct data results. All in all I'm happy with my results, not in my score (I know I could have done much better with a decent GPU and free time), but the learning and the advance in experience I gained.
+I manged to receive around 90% accuracy (ROC_AUC) in the full public test and around 80% in the private test. I received the 30th place out of 1k+ participants including many companies like the Israel Air Industry(IAI) and Refael as well as research groups from universities. During the competition's phase 1 there were attempts at cheating, my guess was that some people submitted a few random response and via the score they manged to reproduce the correct data results. All in all I'm happy with my results, not in my score (I know I could have done much better with a decent GPU and free time), but with the learning and the advance in experience I gained.
 </span>
 
 

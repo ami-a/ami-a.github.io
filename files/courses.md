@@ -6,7 +6,9 @@ is_project: false
 
 ## collapsible markdown?
 {::options parse_block_html="true" /}
-<details open><summary>CLICK ME</summary>
+
+<details open>
+<summary>CLICK ME</summary>
 <p>
 
 #### yes, even hidden code blocks!
@@ -17,4 +19,5 @@ print("hello world!")
 
 </p>
 </details>
+
 {::options parse_block_html="false" /}

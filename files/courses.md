@@ -4,14 +4,17 @@ is_project: false
 ---
 # Courses
 
-<details>
-<summary>Click to expand!</summary>
+## collapsible markdown?
 
-  ## Heading
-  1. A numbered
-  2. lists
-     * With some
-     * Sub bullets
+<details><summary>CLICK ME</summary>
+<p>
 
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
 </details>
 

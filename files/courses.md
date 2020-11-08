@@ -5,19 +5,15 @@ is_project: false
 # Courses
 
 ## collapsible markdown?
+
 {::options parse_block_html="true" /}
 
-<details open>
-<summary>CLICK ME</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
+<details><summary markdown="span">Let's see some code!</summary>
 ```python
-print("hello world!")
+print('Hello World!')
 ```
-
-</p>
+Of course, it has to be Hello World, right?
 </details>
+<br/>
 
 {::options parse_block_html="false" /}

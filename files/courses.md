@@ -2,6 +2,8 @@
 title: "Brute-force Windows Password"
 is_project: false
 ---
+# Courses
+
 <details>
   <summary>Click to expand!</summary>
   

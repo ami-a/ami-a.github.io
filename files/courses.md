@@ -2,6 +2,15 @@
 title: "Brute-force Windows Password"
 is_project: false
 ---
+<style>
+a    {text-decoration: underline;color: red;}
+details > summary {
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: pointer;
+}
+</style>
+
 # Courses
 
 ## collapsible markdown?

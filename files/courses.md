@@ -5,12 +5,13 @@ is_project: false
 # Courses
 
 <details>
-  <summary>Click to expand!</summary>
+<summary>Click to expand!</summary>
 
-  ## Heading
+## Heading
   1. A numbered
   2. lists
      * With some
      * Sub bullets
+
 </details>
 

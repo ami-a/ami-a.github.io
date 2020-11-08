@@ -5,7 +5,7 @@ is_project: false
 # Courses
 
 ## collapsible markdown?
-
+{::options parse_block_html="true" /}
 <details><summary>CLICK ME</summary>
 <p>
 
@@ -17,4 +17,4 @@ print("hello world!")
 
 </p>
 </details>
-
+{::options parse_block_html="false" /}

@@ -9,7 +9,7 @@ is_project: false
 
   ## Heading
   1. A numbered
-  2. list
+  2. lists
      * With some
      * Sub bullets
 </details>

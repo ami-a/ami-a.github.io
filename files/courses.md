@@ -1,6 +1,7 @@
 ---
 title: "Brute-force Windows Password"
 is_project: false
+markdown: CommonMarkGhPages
 ---
 # Courses
 

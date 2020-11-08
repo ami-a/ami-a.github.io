@@ -10,7 +10,7 @@
         gtag('js', new Date());
         gtag('config', '{{ site.google_analytics }}');
 		</script>
-		{% endif %}
+	{% endif %}
 		<script>
 		const sentence = 'Hire Me!';
 		setInterval(function () {
@@ -168,6 +168,8 @@
 
 	
 </div>
+	{% else %}
+		{{ content }}
 	{% endif %}
     
 	

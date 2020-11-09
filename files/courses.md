@@ -91,7 +91,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * Intro to Elementary Particles
 * Astrophysics and Cosmology
 * Nuclear Physics
-  </details>
+</details>
 </details>
 
 ## John Bryce College

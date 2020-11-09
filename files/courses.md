@@ -28,6 +28,7 @@ details > summary {
 details > *:not(summary){
   margin-left: 2em;
 }
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
 </style>
 
 # Courses

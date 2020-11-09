@@ -18,7 +18,14 @@ details > summary {
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Let's see some code!</summary>
+<details><summary markdown="span">Master Degree of Mathematics</summary>
+```python
+print('Hello World!')
+```
+Of course, it has to be Hello World, right?
+</details>
+<br/>
+<details><summary markdown="span">Bachelor Degree of Mathematics & Physics</summary>
 ```python
 print('Hello World!')
 ```

@@ -48,7 +48,7 @@ details > *:not(summary){
 * Topological Methods in Free Groups
 * Topics in Number Theory and Algebraic Geometry
 * Topics in Group Theory
-* M.Sc Thesis - Generators for Finite Index Subgroups of $$SL_n(𝒪_k)$$
+* M.Sc Thesis - Generators for Finite Index Subgroups of $$\mathrm{SL}_{n}\left(\mathcal{O}_{k}\right)$$
 </details>
 <details><summary markdown="span">**Bachelor Degree** of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>

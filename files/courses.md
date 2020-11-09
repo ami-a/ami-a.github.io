@@ -25,10 +25,14 @@ print('Hello World!')
 Of course, it has to be Hello World, right?
 </details>
 <details><summary markdown="span">Bachelor Degree of Mathematics & Physics</summary>
-```python
-print('Hello World!')
-```
-Of course, it has to be Hello World, right?
+  <details><summary markdown="span">Mathematics Courses</summary>
+  
+  ### Of course, it has to be Hello World, right?
+  </details>
+  <details><summary markdown="span">Physics Courses</summary>
+  
+  ### Of course, it has to be Hello World, right?
+  </details>
 </details>
 <br/>
 

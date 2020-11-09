@@ -19,7 +19,7 @@ MathJax.Hub.Queue(function() {
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full">
 </script>
 <style>
-a    {text-decoration: underline;color: red;}
+a    {color: red;}
 details {color: white;}
 details > summary {
   border: none;
@@ -38,7 +38,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">**Master Degree** of Mathematics</summary>
-* M.Sc Thesis - [Generators for Finite Index Subgroups of $$\underline{\mathrm{SL}_{n}\left(\mathcal{O}_{k}\right)}$$](Thesis.pdf)
+* M.Sc Thesis - [Generators for Finite Index Subgroups of $$\mathrm{SL}_{n}\left(\mathcal{O}_{k}\right)$$](Thesis.pdf)
 * Fundamental Concepts in Representation Theory
 * Fundamental Concepts in  Commutative Algebra
 * Fundamental Concepts in Analysis

@@ -10,6 +10,9 @@ details > summary {
   box-shadow: 3px 3px 4px black;
   cursor: pointer;
 }
+details > *:not(summary){
+  margin-left: 2em;
+}
 </style>
 
 # Courses
@@ -30,7 +33,7 @@ Of course, it has to be Hello World, right?
   ### Of course, it has to be Hello World, right?
   </details>
   <details><summary markdown="span">Physics Courses</summary>
-  
+
   ### Of course, it has to be Hello World, right?
   </details>
 </details>

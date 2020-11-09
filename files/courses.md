@@ -2,8 +2,22 @@
 title: "Brute-force Windows Password"
 is_project: false
 ---
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
+    }
+});
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full">
+</script>
 <style>
 a    {text-decoration: underline;color: red;}
 details {color: white;}
@@ -34,7 +48,7 @@ details > *:not(summary){
 * Topological Methods in Free Groups
 * Topics in Number Theory and Algebraic Geometry
 * Topics in Group Theory
-* M.Sc Thesis-Generators for Finite Index Subgroups of //SL_n(𝒪_k)//
+* M.Sc Thesis - Generators for Finite Index Subgroups of $$SL_n(𝒪_k)$$
 </details>
 <details><summary markdown="span">**Bachelor Degree** of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>

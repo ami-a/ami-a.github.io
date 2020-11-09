@@ -24,7 +24,6 @@ print('Hello World!')
 ```
 Of course, it has to be Hello World, right?
 </details>
-<br/>
 <details><summary markdown="span">Bachelor Degree of Mathematics & Physics</summary>
 ```python
 print('Hello World!')

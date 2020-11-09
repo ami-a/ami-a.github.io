@@ -2,6 +2,8 @@
 title: "Brute-force Windows Password"
 is_project: false
 ---
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 <style>
 a    {text-decoration: underline;color: red;}
 details {color: white;}
@@ -21,8 +23,18 @@ details > *:not(summary){
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">**Master Degree** of Mathematics</summary>
-* A
-* B
+* Fundamental Concepts in Representation Theory
+* Fundamental Concepts in  Commutative Algebra
+* Fundamental Concepts in Analysis
+* Workshop for Graduate Students
+* Advanced Algebra Seminar
+* Game Theory
+* Metric Embedding Theory & its Algorithmic Applications
+* Harmonic Analysis
+* Topological Methods in Free Groups
+* Topics in Number Theory and Algebraic Geometry
+* Topics in Group Theory
+* M.Sc Thesis-Generators for Finite Index Subgroups of //SL_n(𝒪_k)//
 </details>
 <details><summary markdown="span">**Bachelor Degree** of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>

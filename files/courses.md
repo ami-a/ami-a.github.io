@@ -44,6 +44,9 @@ details > *:not(summary){
 * A
 * B
 </details>
-
+<details><summary markdown="span">**Certificates**</summary>
+* A
+* B
+</details>
 
 {::options parse_block_html="false" /}

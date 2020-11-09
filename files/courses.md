@@ -29,11 +29,9 @@ Of course, it has to be Hello World, right?
 </details>
 <details><summary markdown="span">Bachelor Degree of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>
-  
   ### Of course, it has to be Hello World, right?
   </details>
   <details><summary markdown="span">Physics Courses</summary>
-
   ### Of course, it has to be Hello World, right?
   </details>
 </details>

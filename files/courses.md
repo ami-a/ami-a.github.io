@@ -73,9 +73,8 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * Mathematical Logic
 * Set Theory
 * History of Mathematics
-
-  </details>
-  <details><summary markdown="span">Physics Courses</summary>
+</details>
+<details><summary markdown="span">Physics Courses</summary>
 * C++ Programming and Matlab
 * Mechanics and Special Relativity
 * Electricity and Magnetism

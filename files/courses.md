@@ -53,10 +53,45 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 </details>
 <details><summary markdown="span">**Bachelor Degree** of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>
-### Of course, it has to be Hello World, right?
+* Infinitesimal Calculus (1)
+* Infinitesimal Calculus (2)
+* Advanced Infinitesimal Calculus (1)
+* Advanced Infinitesimal Calculus (2)
+* Complex Variables and Applications
+* Ordinary Differential Equations
+* Introduction to Partial Differential Equations
+* Equations of Mathematical Physics
+* Linear Algebra (1)
+* Linear Algebra (2)
+* Algebraic Structures (1)
+* Algebraic Structures (2)
+* Mathematical Methods I
+* Mathematical Methods II
+* Probability Theory and Applications
+* Introduction to Topology
+* Measure Theory
+* Mathematical Logic
+* Set Theory
+* History of Mathematics
+
   </details>
   <details><summary markdown="span">Physics Courses</summary>
-### Of course, it has to be Hello World, right?
+* C++ Programming and Matlab
+* Mechanics and Special Relativity
+* Electricity and Magnetism
+* Thermal Physics
+* Waves and Optics
+* Analytical Mechanics
+* Quantum Theory I
+* Quantum Theory II
+* Intro. to Statistical Physics
+* Physics Lab A
+* Physics Lab B
+* Physics Lab C
+* Basic Ideas of Modern Physics
+* Intro to Elementary Particles
+* Astrophysics and Cosmology
+* Nuclear Physics
   </details>
 </details>
 

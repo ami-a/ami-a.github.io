@@ -38,6 +38,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">**Master Degree** of Mathematics</summary>
+* M.Sc Thesis - [Generators for Finite Index Subgroups of $$\mathrm{SL}_{n}\left(\mathcal{O}_{k}\right)$$](Thesis.pdf)
 * Fundamental Concepts in Representation Theory
 * Fundamental Concepts in  Commutative Algebra
 * Fundamental Concepts in Analysis
@@ -49,7 +50,6 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * Topological Methods in Free Groups
 * Topics in Number Theory and Algebraic Geometry
 * Topics in Group Theory
-* M.Sc Thesis - Generators for Finite Index Subgroups of $$\mathrm{SL}_{n}\left(\mathcal{O}_{k}\right)$$
 </details>
 <details><summary markdown="span">**Bachelor Degree** of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>

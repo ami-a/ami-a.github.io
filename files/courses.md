@@ -21,17 +21,15 @@ details > *:not(summary){
 {::options parse_block_html="true" /}
 
 <details><summary markdown="span">Master Degree of Mathematics</summary>
-```python
-print('Hello World!')
-```
-Of course, it has to be Hello World, right?
+* A
+* B
 </details>
 <details><summary markdown="span">Bachelor Degree of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>
-  ### Of course, it has to be Hello World, right?
+### Of course, it has to be Hello World, right?
   </details>
   <details><summary markdown="span">Physics Courses</summary>
-  ### Of course, it has to be Hello World, right?
+### Of course, it has to be Hello World, right?
   </details>
 </details>
 <br/>

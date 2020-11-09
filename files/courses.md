@@ -20,11 +20,11 @@ details > *:not(summary){
 
 {::options parse_block_html="true" /}
 
-<details><summary markdown="span">Master Degree of Mathematics</summary>
+<details><summary markdown="span">**Master Degree** of Mathematics</summary>
 * A
 * B
 </details>
-<details><summary markdown="span">Bachelor Degree of Mathematics & Physics</summary>
+<details><summary markdown="span">**Bachelor Degree** of Mathematics & Physics</summary>
   <details><summary markdown="span">Mathematics Courses</summary>
 ### Of course, it has to be Hello World, right?
   </details>
@@ -32,6 +32,18 @@ details > *:not(summary){
 ### Of course, it has to be Hello World, right?
   </details>
 </details>
-<br/>
+
+## John Bryce College
+<details><summary markdown="span">**Professional Certificate** in .NET Development</summary>
+* A
+* B
+</details>
+
+## Coursera
+<details><summary markdown="span">**Specializations** in TensorFlow</summary>
+* A
+* B
+</details>
+
 
 {::options parse_block_html="false" /}

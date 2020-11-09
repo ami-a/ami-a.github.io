@@ -95,9 +95,15 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 </details>
 
 ## John Bryce College
-<details><summary markdown="span">**Professional Certificate** in .NET Development</summary>
-* A
-* B
+<details><summary markdown="span">**Professional Certificate** in .NET Development (+350 Hours)</summary>
+* Object Oriented Programming
+* .NET framework
+* Basic C# Programing
+* Advanced C# Programing
+* ASP.NET Core
+* JavaScript
+* SQL & SQL Server
+* HTML5 & CSS3
 </details>
 
 ## Coursera

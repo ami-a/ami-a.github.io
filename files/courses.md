@@ -216,7 +216,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * Training Tips and Multinode Distributed Training (2 Hours)
 * Hot Research and Intel's Roadmap (2 Hours)
 </details>
-<details><summary markdown="span">**Certificate** in Computer Vision _by University at Buffalo & The State University of New York_ (+14 Hours)</summary>
+<details><summary markdown="span">**Certificate** in Computer Vision _by University at Buffalo & University of New York_ (+14 Hours)</summary>
 * Computer Vision Overview (4 Hours)
 * Color, Light, & Image Formation (5 Hours)
 * Low-, Mid- & High-Level Vision (3 Hours)

@@ -115,9 +115,31 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * A
 * B
 </details>
-<details><summary markdown="span">**Specialization** in Advanced Data Science _by IBM_ (+00 Hours)</summary>
-* A
-* B
+<details><summary markdown="span">**Specialization** in Advanced Data Science _by IBM_ (+79 Hours)</summary>
+  <details><summary markdown="span">**Certificate** in Fundamentals of Scalable Data Science (+20 Hours)</summary>
+* Introduction the course and grading environment (5 Hours)
+* Tools that support BigData solutions (6 Hours)
+* Scaling Math for Statistics on Apache Spark (5 Hours)
+* Data Visualization of Big Data (4 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Advanced Machine Learning and Signal Processing (+27 Hours)</summary>
+* Setting the stage (6 Hours)
+* Supervised Machine Learning (10 Hours)
+* Unsupervised Machine Learning (5 Hours)
+* Digital Signal Processing in Machine Learning (6 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Applied AI with DeepLearning (+24 Hours)</summary>
+* Introduction to deep learning (6 Hours)
+* DeepLearning Frameworks (7 Hours)
+* DeepLearning Applications (7 Hours)
+* Scaling and Deployment (4 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Advanced Data Science Capstone (+8 Hours)</summary>
+* Identify DataSet and UseCase (2 Hours)
+* ETL and Feature Creation (2 Hours)
+* Model Definition and Training (1 Hours)
+* Model Evaluation, Tuning, Deployment and Documentation (3 Hours)
+</details>
 </details>
 <details><summary markdown="span">**Specialization** in AI Foundations for Business _by IBM_ (+21 Hours)</summary>
   <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+8 Hours)</summary>

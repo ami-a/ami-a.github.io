@@ -107,11 +107,39 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 </details>
 
 ## Coursera
-<details><summary markdown="span">**Specializations** in TensorFlow</summary>
+<details><summary markdown="span">**Specialization** in  Deep Learning _by deeplearning.ai_ (+00 Hours)</summary>
 * A
 * B
 </details>
-<details><summary markdown="span">**Certificates**</summary>
+<details><summary markdown="span">**Specialization** in TensorFlow _by deeplearning.ai_ (+00 Hours)</summary>
+* A
+* B
+</details>
+<details><summary markdown="span">**Specialization** in Advanced Data Science _by IBM_ (+00 Hours)</summary>
+* A
+* B
+</details>
+<details><summary markdown="span">**Specialization** in AI Foundations for Business _by IBM_ (+00 Hours)</summary>
+* A
+* B
+</details>
+<details><summary markdown="span">**Specialization** in Key Technologies for Business _by IBM_ (+00 Hours)</summary>
+* A
+* B
+</details>
+<details><summary markdown="span">**Professional Certificate** in  Applied AI _by IBM_ (+00 Hours)</summary>
+* A
+* B
+</details>
+<details><summary markdown="span">**Certificate** in Machine Learning _by Stanford_ (+00 Hours)</summary>
+* A
+* B
+</details>
+<details><summary markdown="span">**Certificate** in Practical Deep Learning _by Intel_ (+00 Hours)</summary>
+* A
+* B
+</details>
+<details><summary markdown="span">**Certificate** in Computer Vision _by The University at Buffalo_ (+00 Hours)</summary>
 * A
 * B
 </details>

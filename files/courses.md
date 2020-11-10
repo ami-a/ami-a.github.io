@@ -128,23 +128,49 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * B
 </details>
 <details><summary markdown="span">**Professional Certificate** in  Applied AI _by IBM_ (+00 Hours)</summary>
-  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
-* B
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+8 Hours)</summary>
+* What is AI? Applications and Examples of AI (1 Hours)
+* AI Concepts, Terminology, and Application Areas (2 Hours)
+* AI: Issues, Concerns and Ethical Considerations (2 Hours)
+* The Future with AI, and AI in Action (3 Hours)
 </details>
-  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
-* B
+  <details><summary markdown="span">**Certificate** in Getting Started with AI using IBM Watson (+10 Hours)</summary>
+* Watson AI Overview (2 Hours)
+* Watson AI Services (3 Hours)
+* More Watson AI Services (2 Hours)
+* Watson in Action (3 Hours)
 </details>
-  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
-* B
+  <details><summary markdown="span">**Certificate** in Building AI Powered Chatbots Without Programming (+8 Hours)</summary>
+* Introduction (1 Hours)
+* Intents (1 Hours)
+* Entities (1 Hours)
+* Dialog (1 Hours)
+* Deployment (1 Hours)
+* Context Variables & Slots (1 Hours)
+* Digressions (1 Hours)
 </details>
-  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
-* B
+  <details><summary markdown="span">**Certificate** in Python for Data Science and AI (+29 Hours)</summary>
+* Python Basics (4 Hours)
+* Python Data Structures (6 Hours)
+* Python Programming Fundamentals (7 Hours)
+* Working with Data in Python (10 Hours)
+* Analyzing US Economic Data and Building a Dashboard (2 Hours)
 </details>
-  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
-* B
+  <details><summary markdown="span">**Certificate** in Building AI Applications with Watson APIs (+13 Hours)</summary>
+* Introduction(1 Hours)
+* Watson Discovery(1 Hours)
+* Building the Chatbot(1 Hours)
+* Giving it a Voice(1 Hours)
+* Deployment(1 Hours)
+* Project (8 Hours)
 </details>
-  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
-* B
+  <details><summary markdown="span">**Certificate** in Introduction to Computer Vision with Watson and OpenCV (+60 Hours)</summary>
+* Introduction to Computer Vision (1 Hours)
+* Image Classification with IBM Watson (1 Hours)
+* Custom Classifiers with Watson Visual Recognition (1 Hours)
+* Image Processing using IBM Watson and Python (3 Hours)
+* Image Processing using OpenCV and Python (4 Hours)
+* Project: Building a Web-Based Computer Vision App using IBM Cloud (5 Hours)
 </details>
 </details>
 <details><summary markdown="span">**Certificate** in Machine Learning _by Stanford_ (+60 Hours)</summary>

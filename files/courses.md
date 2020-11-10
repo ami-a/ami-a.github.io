@@ -127,7 +127,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * A
 * B
 </details>
-<details><summary markdown="span">**Professional Certificate** in  Applied AI _by IBM_ (+00 Hours)</summary>
+<details><summary markdown="span">**Professional Certificate** in  Applied AI _by IBM_ (+83 Hours)</summary>
   <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+8 Hours)</summary>
 * What is AI? Applications and Examples of AI (1 Hours)
 * AI Concepts, Terminology, and Application Areas (2 Hours)
@@ -164,7 +164,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * Deployment(1 Hours)
 * Project (8 Hours)
 </details>
-  <details><summary markdown="span">**Certificate** in Introduction to Computer Vision with Watson and OpenCV (+60 Hours)</summary>
+  <details><summary markdown="span">**Certificate** in Introduction to Computer Vision with Watson and OpenCV (+15 Hours)</summary>
 * Introduction to Computer Vision (1 Hours)
 * Image Classification with IBM Watson (1 Hours)
 * Custom Classifiers with Watson Visual Recognition (1 Hours)

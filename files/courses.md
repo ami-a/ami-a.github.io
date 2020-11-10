@@ -131,17 +131,38 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * A
 * B
 </details>
-<details><summary markdown="span">**Certificate** in Machine Learning _by Stanford_ (+00 Hours)</summary>
-* A
-* B
+<details><summary markdown="span">**Certificate** in Machine Learning _by Stanford_ (+60 Hours)</summary>
+* Introduction (2 Hours)
+* Linear Regression with One Variable (2 Hours)
+* Linear Algebra Review (2 Hours)
+* Linear Regression with Multiple Variables (3 Hours)
+* Octave/Matlab Tutorial (5 Hours)
+* Logistic Regression (2 Hours)
+* Regularization (5 Hours)
+* Neural Networks: Representation (5 Hours)
+* Neural Networks: Learning (5 Hours)
+* Advice for Applying Machine Learning (5 Hours)
+* Machine Learning System Design (2 Hours)
+* Support Vector Machines (5 Hours)
+* Unsupervised Learning (1 Hours)
+* Dimensionality Reduction (5 Hours)
+* Anomaly Detection (2 Hours)
+* Recommender Systems (5 Hours)
+* Large Scale Machine Learning (2 Hours)
+* Application Example: Photo OCR (2 Hours)
 </details>
-<details><summary markdown="span">**Certificate** in Practical Deep Learning _by Intel_ (+00 Hours)</summary>
-* A
-* B
+<details><summary markdown="span">**Certificate** in Practical Deep Learning _by Intel_ (+16 Hours)</summary>
+* Introduction to Deep Learning and Deep Learning Basics (5 Hours)
+* Convolutional Neural Networks (CNN), Fine-Tuning and Detection (4 Hours)
+* Recurrent Neural Networks (RNN) (3 Hours)
+* Training Tips and Multinode Distributed Training (2 Hours)
+* Hot Research and Intel's Roadmap (2 Hours)
 </details>
-<details><summary markdown="span">**Certificate** in Computer Vision _by The University at Buffalo_ (+00 Hours)</summary>
-* A
-* B
+<details><summary markdown="span">**Certificate** in Computer Vision _by University at Buffalo & The State University of New York_ (+14 Hours)</summary>
+* Computer Vision Overview (4 Hours)
+* Color, Light, & Image Formation (5 Hours)
+* Low-, Mid- & High-Level Vision (3 Hours)
+* Mathematics for Computer Vision (2 Hours)
 </details>
 
 {::options parse_block_html="false" /}

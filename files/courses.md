@@ -128,8 +128,24 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * B
 </details>
 <details><summary markdown="span">**Professional Certificate** in  Applied AI _by IBM_ (+00 Hours)</summary>
-* A
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
 * B
+</details>
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
+* B
+</details>
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
+* B
+</details>
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
+* B
+</details>
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
+* B
+</details>
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+60 Hours)</summary>
+* B
+</details>
 </details>
 <details><summary markdown="span">**Certificate** in Machine Learning _by Stanford_ (+60 Hours)</summary>
 * Introduction (2 Hours)

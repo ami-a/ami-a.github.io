@@ -119,9 +119,21 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * A
 * B
 </details>
-<details><summary markdown="span">**Specialization** in AI Foundations for Business _by IBM_ (+00 Hours)</summary>
-* A
-* B
+<details><summary markdown="span">**Specialization** in AI Foundations for Business _by IBM_ (+21 Hours)</summary>
+  <details><summary markdown="span">**Certificate** in Introduction to Artificial Intelligence (+8 Hours)</summary>
+* What is AI? Applications and Examples of AI (1 Hours)
+* AI Concepts, Terminology, and Application Areas (2 Hours)
+* AI: Issues, Concerns and Ethical Considerations (2 Hours)
+* The Future with AI, and AI in Action (3 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in What is Data Science (+10 Hours)</summary>
+* Defining Data Science and What Data Scientists Do (3 Hours)
+* Data Science Topics (3 Hours)
+* Data Science in Business (4 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Framework for Deploying AI in your Enterprise (+3 Hours)</summary>
+* Introduction to AI and the AI Ladder (3 Hours)
+</details>
 </details>
 <details><summary markdown="span">**Specialization** in Key Technologies for Business _by IBM_ (+30 Hours)</summary>
   <details><summary markdown="span">**Certificate** in Introduction to Cloud Computing (+12 Hours)</summary>

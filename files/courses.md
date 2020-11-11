@@ -108,8 +108,32 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 
 ## Coursera
 <details><summary markdown="span">**Specialization** in  Deep Learning _by deeplearning.ai_ (+00 Hours)</summary>
-* A
-* B
+  <details><summary markdown="span">**Certificate** in Neural Networks and Deep Learning (+20 Hours)</summary>
+* Introduction to deep learning (2 Hours)
+* Neural Networks Basics (8 Hours)
+* Shallow neural networks (5 Hours)
+* Deep Neural Networks (5 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (+18 Hours)</summary>
+* Practical aspects of Deep Learning (8 Hours)
+* Optimization algorithms (5 Hours)
+* Hyperparameter tuning, Batch Normalization and Programming Frameworks (5 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Structuring Machine Learning Projects (+5 Hours)</summary>
+* ML Strategy (1) (2 Hours)
+* ML Strategy (2) (3 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Convolutional Neural Networks (+20 Hours)</summary>
+* Foundations of Convolutional Neural Networks (6 Hours)
+* Deep convolutional models: case studies (5 Hours)
+* Object detection (4 Hours)
+* Special applications: Face recognition & Neural style transfer (5 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Sequence Models (+15 Hours)</summary>
+* Recurrent Neural Networks (6 Hours)
+* Natural Language Processing & Word Embeddings (4 Hours)
+* Sequence models & Attention mechanism (5 Hours)
+</details>
 </details>
 <details><summary markdown="span">**Professional Certificate** in TensorFlow _by deeplearning.ai_ (+83 Hours)</summary>
   <details><summary markdown="span">**Certificate** in TensorFlow for AI, ML, and Deep Learning (+30 Hours)</summary>

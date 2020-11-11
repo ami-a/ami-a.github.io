@@ -111,9 +111,31 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * A
 * B
 </details>
-<details><summary markdown="span">**Specialization** in TensorFlow _by deeplearning.ai_ (+00 Hours)</summary>
-* A
-* B
+<details><summary markdown="span">**Professional Certificate** in TensorFlow _by deeplearning.ai_ (+83 Hours)</summary>
+  <details><summary markdown="span">**Certificate** in TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning (+30 Hours)</summary>
+* A New Programming Paradigm (6 Hours)
+* Introduction to Computer Vision (7 Hours)
+* Enhancing Vision with Convolutional Neural Networks (8 Hours)
+* Using Real-world Images (9 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Convolutional Neural Networks in TensorFlow (+28 Hours)</summary>
+* Exploring a Larger Dataset (7 Hours)
+* Augmentation: A technique to avoid overfitting (7 Hours)
+* Transfer Learning (7 Hours)
+* Multiclass Classifications (7 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Natural Language Processing in TensorFlow (+13 Hours)</summary>
+* Sentiment in text (3 Hours)
+* Word Embeddings (4 Hours)
+* Sequence models (3 Hours)
+* Sequence models and literature (3 Hours)
+</details>
+  <details><summary markdown="span">**Certificate** in Sequences, Time Series and Prediction (+12 Hours)</summary>
+* Sequences and Prediction (3 Hours)
+* Deep Neural Networks for Time Series (3 Hours)
+* Recurrent Neural Networks for Time Series (3 Hours)
+* Real-world time series data (3 Hours)
+</details>
 </details>
 <details><summary markdown="span">**Specialization** in Advanced Data Science _by IBM_ (+79 Hours)</summary>
   <details><summary markdown="span">**Certificate** in Fundamentals of Scalable Data Science (+20 Hours)</summary>

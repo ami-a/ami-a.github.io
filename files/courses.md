@@ -107,7 +107,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 </details>
 
 ## Coursera
-<details><summary markdown="span">**Specialization** in  Deep Learning _by deeplearning.ai_ (+00 Hours)</summary>
+<details><summary markdown="span">**Specialization** in  Deep Learning _by deeplearning.ai_ (+78 Hours)</summary>
   <details><summary markdown="span">**Certificate** in Neural Networks and Deep Learning (+20 Hours)</summary>
 * Introduction to deep learning (2 Hours)
 * Neural Networks Basics (8 Hours)

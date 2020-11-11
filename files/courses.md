@@ -106,7 +106,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * HTML5 & CSS3
 </details>
 
-## Coursera (+464 Hours)
+## Coursera (+25 Certificates) (+465 Hours)
 <details><summary markdown="span">**Specialization** in  Deep Learning _by deeplearning.ai_ (+78 Hours)</summary>
   <details><summary markdown="span">**Certificate** in Neural Networks and Deep Learning (+20 Hours)</summary>
 * Introduction to deep learning (2 Hours)

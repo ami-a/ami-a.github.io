@@ -304,3 +304,5 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 </details>
 
 {::options parse_block_html="false" /}
+
+_The certificates are available [here](certificates/)._

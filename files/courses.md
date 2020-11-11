@@ -112,7 +112,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * B
 </details>
 <details><summary markdown="span">**Professional Certificate** in TensorFlow _by deeplearning.ai_ (+83 Hours)</summary>
-  <details><summary markdown="span">**Certificate** in TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning (+30 Hours)</summary>
+  <details><summary markdown="span">**Certificate** in TensorFlow for AI, ML, and Deep Learning (+30 Hours)</summary>
 * A New Programming Paradigm (6 Hours)
 * Introduction to Computer Vision (7 Hours)
 * Enhancing Vision with Convolutional Neural Networks (8 Hours)

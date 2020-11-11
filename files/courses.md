@@ -114,7 +114,7 @@ code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inher
 * Shallow neural networks (5 Hours)
 * Deep Neural Networks (5 Hours)
 </details>
-  <details><summary markdown="span">**Certificate** in Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization (+18 Hours)</summary>
+  <details><summary markdown="span">**Certificate** in Improving DNNs: Hyperparameter tuning, Regularization and Optimization (+18 Hours)</summary>
 * Practical aspects of Deep Learning (8 Hours)
 * Optimization algorithms (5 Hours)
 * Hyperparameter tuning, Batch Normalization and Programming Frameworks (5 Hours)

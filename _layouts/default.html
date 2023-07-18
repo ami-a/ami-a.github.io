@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
 <title>{{ site.title }}</title>
     {% if site.google_analytics %}
@@ -68,7 +68,64 @@
 	<h4 style="margin-top:0;border-bottom: solid 1px #ffffff;">{{ page.disc }}</h4>
 	{{ content }}
 	<div class="sub-project">
-	
+	<ul class="project-topls">
+	  <li><span>Programmed in 
+		  {% assign lnsize = page.lang.size|minus: 1 %}
+		  {% for ln in page.lang %}
+		  {% assign ind = forloop.index0 | plus: 4 %}
+		  {% assign ind = ind | modulo: site.spcolors.size %}
+		  <span style="color:{{ site.spcolors[ind] }};">{{ ln }}</span><!--
+	-->{% if forloop.index<lnsize %}, 
+	   {% elsif forloop.index==lnsize and lnsize>0 %}
+		& 
+	   {% endif %}<!--
+	  -->{% endfor %}.</li>
+	  <li class="li-LOC">Over <span style="color:#ff00ff;">{{ page.LOC }}</span> lines of code.<span class="tooltiptext">This figure may include comment lines and some modified library files.</span></li>
+	  {% for item in page.parts %}	 
+		{% assign lbsize = item.lib.size|minus: 1 %}	  
+		<li>
+		{% for lb in item.lib %}{% assign ind = forloop.index0 | modulo: site.spcolors.size %}<span style="color:{{ site.spcolors[ind] }};">{{ lb }}</span><!--
+	 -->{% if forloop.index<lbsize %}, 
+		{% elsif forloop.index==lbsize and lbsize>0 %}
+		 & 
+		{% endif %}
+		{% endfor %} 
+		{{ item.con }} <span style="color:#bc13fe;">{{ item.term }}</span>.</li>
+	  {% endfor %}
+	</ul>
+
+	<table class="tablea">
+		<thead>  
+		  <tr class="tablea-head">
+			<th style="text-align: left;border:none;border-radius: 40px 0 0 40px;">Lang/Lib/Pro</th>
+			<th style="text-align: left;border:none;border-radius: 0 40px 40px 0;">Version</th>
+		  </tr>	
+		</thead>
+		<tbody>
+		{% for item in page.tablea %}
+			{% assign ind = forloop.index | modulo: site.spcolors.size %}
+		  <tr style="color:{{ site.spcolors[ind] }};">
+			<td style="text-align: left;border:none;border-radius: 40px 0 0 40px;">{{ item[0] }}</td>
+			<td style="text-align: left;border:none;border-radius: 0 40px 40px 0;">{{ item[1] }}</td>	   
+		  </tr>
+		  {% endfor %}    
+		</tbody>
+	  </table>
+
+	<br>
+
+	<table class="tableb">
+		<tbody>
+		{% for item in page.tableb %}
+			{% assign ind = forloop.index | plus: 4 %}
+			{% assign ind = ind | modulo: site.spcolors.size %}
+		  <tr class="trb">
+			<td  style="border-color:rgba(255, 255, 255, 0.05); text-align:left;border-right:none;border-radius: 40px 0 0 40px;">{{ item[0] }}</td>
+			<td  style="border-color:rgba(255, 255, 255, 0.05);text-align:left;border-left:none;border-radius: 0 40px 40px 0;color:{{ site.spcolors[ind] }};">{{ item[1] }}</td>	   
+		  </tr>
+		  {% endfor %}    
+		</tbody>
+	</table>
 	{% if page.img %}
 	<script>
 		function setimg(eele) {

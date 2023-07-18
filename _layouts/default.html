@@ -102,13 +102,7 @@
 		  </tr>	
 		</thead>
 		<tbody>
-		{% for item in page.tablea %}
-			{% assign ind = forloop.index | modulo: site.spcolors.size %}
-		  <tr style="color:red">
-			<td style="text-align: left;border:none;border-radius: 40px 0 0 40px;">{{ item[0] }}</td>
-			<td style="text-align: left;border:none;border-radius: 0 40px 40px 0;">{{ item[1] }}</td>	   
-		  </tr>
-		  {% endfor %}    
+		
 		</tbody>
 	  </table>
 

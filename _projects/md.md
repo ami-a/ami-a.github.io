@@ -6,7 +6,7 @@ year: "2020"
 sdisc: "This project is a demonstration of my TrackEverything package, it uses different models to track and detect persons with/without masks (even when their back is turned)."
 disc: "This project contains several examples of using the <b>TrackEverything</b> package, you can find instructions on installation and other explanations <a href=\"https://github.com/ami-a/TrackEverything\">here</a>. These Mask Detection examples are open-sourced framework built on top of the <b>TrackEverything</b> package and uses detection models, classification models, tracking algorithms and statistics-based decision making. The project allows you to detected people with or without masks, I used several models from different repositories or packages and combined them.<br>&nbsp;"
 tag: "Python"
-lang: ["Python"]
+c_lang: ["Python"]
 LOC: "3.3K"
 parts:
   - lib: ["TrackEverything","TensorFlow","OpenCV","<br>NumPy","Pillow","SciPy"]

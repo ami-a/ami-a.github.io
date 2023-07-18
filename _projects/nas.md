@@ -6,7 +6,7 @@ year: 2018
 sdisc: "A sophisticated and highly customizable program designed to be used by dietitians and researchers in their work."
 disc: "This project is a system aimed to be used by dietitians and researchers in the nutrition field in Israel. It gives the user the ability to do mass calculations and searchers using custom formulas that the user inputs. It has features like adding patients, outputting reports and statistics, and perform custom analysis on all the data it gathers. The system uses a scalable relational database I constructed from 4 different out-sourced databases with over 20M rows. It can even be updated when one of the four databases, changes.<br>&nbsp;"
 tag: "C# & SQL"
-lang: ["C#","SQL"]
+c_lang: ["C#","SQL"]
 LOC: "2<i style=\"color:#edff14;\">,</i>300"
 parts:
   - lib: ["Log4Net"]

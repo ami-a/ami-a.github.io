@@ -19,7 +19,7 @@ disc: "This project is a voice-activated virtual assistant similar to Google As
 <li>Smart speech isolating filter to ignore the sound that is coming out of the PC speakers to prevent false speech identification occurrences.</li>
 <span style=\"position:relative;left:-40px;\">I even integrated some of the <a style=\"text-decoration: underline;\" href=\"iqss#content\">Independent Quadcopter Security System</a> project’s function into it so that you could issue commands like “takeoff”. It was built in C# using libraries like OpenNLP & Windows Core Audio API. The program is live-building dictionaries in XML for the speech interpolator and has to do complex operations in multithreading.</span></ul>"
 tag: "C# & XML"
-lang: ["C#"]
+c_lang: ["C#"]
 LOC: "21<i style=\"color:#edff14;\">,</i>300"
 parts:
   - lib: ["OpenNLP","Microsoft Text-to-Speech","Windows Core Audio API","Facebook SDK"]

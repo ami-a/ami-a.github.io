@@ -21,7 +21,7 @@ I tested the program on different online videos and on a remote camera feed that
 <li>Use multiple feeds and combine the data</li>
 </ul><br>&nbsp;"
 tag: "Python using TensorFlow, C#"
-lang: ["Python"]
+c_lang: ["Python"]
 LOC: "2.8K"
 parts:
   - lib: ["TensorFlow","OpenCV","NumPy","Pandas","Pillow","Requests","<br>SciPy","MultiProcessing"]

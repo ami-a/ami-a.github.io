@@ -15,7 +15,7 @@ disc: "This project is a competition by MAFAT’s DDR&D (Directorate of Defense
 <li>Reconstructing modified successful models from articles and combine them into one great model that includes CNNs, RNNs and other model types.</li>
 <span style=\"position:relative;left:-40px;\">The full details are just below.</span></ul>"
 tag: "Python & MATLAB"
-lang: ["Python","MATLAB"]
+c_lang: ["Python","MATLAB"]
 LOC: "35K"
 parts:
   - lib: ["TensorFlow","OpenCV","NumPy","Pandas","Pillow","<br>SciPy","Matplotlib","Scikit-learn","Jupyter","Pickle"]

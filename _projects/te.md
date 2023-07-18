@@ -6,7 +6,7 @@ year: "2020"
 sdisc: "This package can take any detection and/or classification model and upgrade them using tracking algorithms and statistics."
 disc: "This project is an open-source package built-in Python, it uses and combines the data form object detection models, classification models, tracking algorithms and statistics-based decision making. The project allows you to take any detection/classification models from any Python library like TensorFlow or PyTorch and add to them tracking algorithms and increase the accuracy using statistical data gathered from multiple frames.<br>&nbsp;"
 tag: "Python"
-lang: ["Python"]
+c_lang: ["Python"]
 LOC: "0.9K"
 parts:
   - lib: ["OpenCV","NumPy","SciPy","Pillow","TensorFlow"]

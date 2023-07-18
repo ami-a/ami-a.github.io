@@ -6,7 +6,7 @@ year: 2007
 sdisc: "A program that turn text data into sound and sound back into text data."
 disc: " This project is a two-part program. The first one encrypts text and then convert it into sound by assigning different frequencies to a different part of the data by order and value. The second one receives an audio feed and analyzes it using the Fourier series at different intervals. Afterward, it converts it back into encrypted data by reversing the process of part one. The converting process in both parts can be changed frequently by using a code word that sets the frequency assignment rules (similar to an enigma machine).<br>&nbsp;"
 tag: "VB6"
-lang: ["Visual Basic 6"]
+c_lang: ["Visual Basic 6"]
 LOC: "1<i style=\"color:#edff14;\">,</i>800"
 parts:
   - lib: ["DirectX 8"]

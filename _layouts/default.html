@@ -69,7 +69,17 @@
 	{{ content }}
 	<div class="sub-project">
 	<ul class="project-topls">
-
+	  <li><span>Programmed in 
+		  {% assign lnsize = page.lang.size|minus: 1 %}
+		  {% for ln in page.lang %}
+		  {% assign ind = forloop.index0 | plus: 4 %}
+		  {% assign ind = ind | modulo: site.spcolors.size %}
+		  <span style="color:{{ site.spcolors[ind] }};">{{ ln }}</span><!--
+	-->{% if forloop.index<lnsize %}, 
+	   {% elsif forloop.index==lnsize and lnsize>0 %}
+		& 
+	   {% endif %}<!--
+	  -->{% endfor %}.</li>
 	  <li class="li-LOC">Over <span style="color:#ff00ff;">{{ page.LOC }}</span> lines of code.<span class="tooltiptext">This figure may include comment lines and some modified library files.</span></li>
 	  {% for item in page.parts %}	 
 		{% assign lbsize = item.lib.size|minus: 1 %}	  

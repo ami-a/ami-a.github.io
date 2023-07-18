@@ -49,6 +49,8 @@
 		<div class="tooltiptext">{{ page.sdisc }}</div>
 		{% if page.year contains curryear %}
 		<span class="hot">NEW!</span>
+		{% else %}
+		<span class="hot">{{ page.year }}</span>
 		{% endif %}
 	   </a><br style="display: none;">
 	   {% assign ind = forloop.index | modulo: 4 %}

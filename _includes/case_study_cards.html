@@ -1,19 +1,19 @@
-<!-- Case study cards: selected projects showcase -->
+<!-- Case study cards: selected work showcase -->
 <section class="case-study-cards">
   <h2>Selected Work</h2>
   <div class="cards-container">
-    {% assign featured_projects = site.projects | where: "is_project", true | sort: "ind" | slice: 0, 4 %}
-    {% if featured_projects.size > 0 %}
-      {% for project in featured_projects %}
+    {% assign featured_studies = site.case_studies | sort: "ind" | slice: 0, 4 %}
+    {% if featured_studies.size > 0 %}
+      {% for study in featured_studies %}
         <div class="case-card">
-          <h3>{{ project.title }}</h3>
-          <p class="year">{{ project.year }}</p>
-          <p class="description">{{ project.sdisc }}</p>
-          <a href="{{ site.url }}{{ project.url }}" class="card-link">View →</a>
+          <h3>{{ study.title }}</h3>
+          <p class="year">{{ study.domain }}</p>
+          <p class="description">{{ study.summary }}</p>
+          <a href="{{ site.url }}{{ study.url }}" class="card-link">View →</a>
         </div>
       {% endfor %}
     {% else %}
-      <p>Projects to be displayed.</p>
+      <p>Case studies to be displayed.</p>
     {% endif %}
   </div>
 </section>

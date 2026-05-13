@@ -1,4 +1,24 @@
-<!-- SEO, analytics, and meta tags -->
+{%- assign seo_title = page.title | default: site.title -%}
+{%- assign seo_description = page.description | default: site.description -%}
+{%- assign seo_url = site.url | append: page.url -%}
+{%- assign seo_image = site.url | append: "/img/site.png" -%}
+
+<title>{{ seo_title }}</title>
+<meta charset="UTF-8">
+<meta name="description" content="{{ seo_description | strip_newlines | strip_html | truncate: 160 }}">
+<link rel="canonical" href="{{ seo_url }}">
+
+<meta property="og:title" content="{{ seo_title }}">
+<meta property="og:description" content="{{ seo_description | strip_newlines | strip_html | truncate: 197 }}">
+<meta property="og:url" content="{{ seo_url }}">
+<meta property="og:type" content="{% if page.layout == 'case_study' %}article{% else %}website{% endif %}">
+<meta property="og:image" content="{{ seo_image }}">
+<meta property="og:image:alt" content="{{ seo_title }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ seo_title }}">
+<meta name="twitter:description" content="{{ seo_description | strip_newlines | strip_html | truncate: 197 }}">
+<meta name="twitter:image" content="{{ seo_image }}">
+
 {% if site.google_analytics %}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
@@ -19,11 +39,6 @@ setInterval(function () {
   }
 }, 120);
 </script>
-
-<meta property='og:image' content="{{ site.url }}/img/site.png"/>
-<meta charset="UTF-8">
-
-{% seo %}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">

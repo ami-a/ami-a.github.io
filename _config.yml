@@ -3,8 +3,8 @@ title: Amitai.A.
 title1: Amitai
 title2: .A
 google_analytics: UA-164229768-1
-show_downloads: true
-description: Unveiling an intriguing collection of my unclassified projects over the years,<br>this site invites you to effortlessly delve into a world of captivating innovation and remarkable narratives.
+show_downloads: false
+description: Senior AI research engineering for imaging and spatial-AI problems.
 url: "https://ami-a.github.io"
 purl: "/projects/"
 email: amitai.a.job@gmail.com
@@ -30,3 +30,22 @@ defaults:
       layout: "case_study"
 
 spcolors: ["#ff7214","#14ffc4","#ff148f","#edff14","#ff144a","#82ff14","#bc13fe","#69D1C4","#FF00FF"]
+
+# Optional front matter fields for project/case study organization:
+# 
+# archive_group: STRING
+#   - Categorize archived projects (e.g., "computer-vision", "signal-processing")
+#   - Used for filtering on /archive/ page
+#
+# visibility: STRING
+#   - "archived" — appears only in /archive/
+#   - "hidden" — does not appear anywhere (but page remains accessible)
+#   - "featured" — appears on homepage case studies section
+#   - Default (omitted): standard visibility
+#
+# commercial_relevance: STRING
+#   - "active" — currently applicable to client work
+#   - "legacy" — reference only, technology may be outdated
+#   - "research" — exploratory work, not production-ready
+#   - Default: inferred from project age/content
+

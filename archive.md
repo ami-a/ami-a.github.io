@@ -6,7 +6,11 @@ permalink: /archive/
 
 # Project Archive
 
-Placeholder introduction to archived projects and research work.
+Archived research and student projects from 2007–2020. These represent exploratory work and proof-of-concept implementations, not active client deliverables.
+
+**Note:** These projects are preserved for reference only. Technologies and approaches may be dated. For current work, see [Case Studies](/case-studies/).
+
+---
 
 {% assign sorted_projects = site.projects | sort: "ind" %}
 

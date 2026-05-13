@@ -1,0 +1,19 @@
+<!-- Case study cards: selected projects showcase -->
+<section class="case-study-cards">
+  <h2>Selected Work</h2>
+  <div class="cards-container">
+    {% assign featured_projects = site.projects | where: "is_project", true | sort: "ind" | slice: 0, 4 %}
+    {% if featured_projects.size > 0 %}
+      {% for project in featured_projects %}
+        <div class="case-card">
+          <h3>{{ project.title }}</h3>
+          <p class="year">{{ project.year }}</p>
+          <p class="description">{{ project.sdisc }}</p>
+          <a href="{{ site.url }}{{ project.url }}" class="card-link">View →</a>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>Projects to be displayed.</p>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,9 @@
+# Technical skills and expertise areas
+# Example structure for skill categorization
+
+skills:
+  - category: Computer Vision
+    items:
+      - TensorFlow
+      - MediaPipe
+      - Image Processing

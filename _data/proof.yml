@@ -1,0 +1,9 @@
+# Social proof, case studies, and key outcomes
+# Example structure for contractor credibility
+
+proof:
+  - title: Placeholder Project Impact
+    summary: Brief summary of measurable result or deliverable.
+    impact: Placeholder outcome or metric
+    year: 2024
+    category: research

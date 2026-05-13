@@ -1,0 +1,9 @@
+# Site-wide call-to-action links and buttons
+# Example structure for flexible CTA placement
+
+ctas:
+  - id: primary_contact
+    text: Get In Touch
+    url: "mailto:amitai.a.job@gmail.com"
+    type: button
+    placement: header

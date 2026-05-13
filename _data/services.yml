@@ -1,0 +1,11 @@
+# Services offered by contractor
+# Example structure for Jekyll data-driven rendering
+
+services:
+  - title: Medical Imaging / Computer Vision R&D
+    slug: medical-imaging-cv
+    audience: Biotech and medical-AI teams
+    summary: Placeholder summary for imaging research and development services.
+    outcomes:
+      - Placeholder outcome one
+      - Placeholder outcome two

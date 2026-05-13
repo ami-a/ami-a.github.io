@@ -1,0 +1,17 @@
+<!-- Proof strip: credibility and outcomes -->
+<section class="proof-strip">
+  <h2>Placeholder Proof Section</h2>
+  <div class="proof-items">
+    {% if site.data.proof.proof %}
+      {% for item in site.data.proof.proof %}
+        <div class="proof-item">
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.summary }}</p>
+          <span class="impact">{{ item.impact }} ({{ item.year }})</span>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>Proof items to be added.</p>
+    {% endif %}
+  </div>
+</section>

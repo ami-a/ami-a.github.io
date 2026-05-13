@@ -1,0 +1,24 @@
+<!-- Service cards: main service offerings -->
+<section class="service-cards">
+  <h2>Services</h2>
+  <div class="cards-container">
+    {% if site.data.services.services %}
+      {% for service in site.data.services.services %}
+        <div class="service-card">
+          <h3>{{ service.title }}</h3>
+          <p class="audience">For: {{ service.audience }}</p>
+          <p class="summary">{{ service.summary }}</p>
+          {% if service.outcomes %}
+            <ul class="outcomes">
+              {% for outcome in service.outcomes %}
+                <li>{{ outcome }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% else %}
+      <p>Services to be added.</p>
+    {% endif %}
+  </div>
+</section>

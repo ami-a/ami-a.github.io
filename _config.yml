@@ -14,11 +14,19 @@ ccode: 972
 collections:
    projects:
      output: true
+   case_studies:
+     output: true
+     permalink: /case-studies/:name/
 defaults:
   -
     scope:
         type: "projects"
     values:
-      layout: "default"
+      layout: "case_study"
+  -
+    scope:
+        type: "case_studies"
+    values:
+      layout: "case_study"
 
 spcolors: ["#ff7214","#14ffc4","#ff148f","#edff14","#ff144a","#82ff14","#bc13fe","#69D1C4","#FF00FF"]

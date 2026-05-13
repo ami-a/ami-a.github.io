@@ -1,24 +1,26 @@
 ---
-title: "Cops Detection and Tracking"
+title: "Uniform-Based Person Classification & Multi-Object Tracking"
 is_project: true
 ind: -2
 year: "2020"
-sdisc: "This project uses the wonders of machine learning to detect cops and various law enforcement personal by using CNNs and tracking algorithms to gather statistics."
-disc: "I constructed this project for academic and experimental purposes, I set the goal of being able to detect and classify a worker by uniform and other available data. I chose to do this with law enforcement personals for the convenience of gathering data.<br>The construction of this project included:
+visibility: archive
+sdisc: "A multi-object tracking system with classification capabilities, demonstrated on uniform-based person identification."
+
+disc: "I constructed this project for academic and experimental purposes, with a goal to classify people by uniform and equipment in video streams. The project demonstrated a multi-object tracking pipeline for uniform-based person identification.<br>The construction of this project included:
 <ul style=\"list-style-type:disc;\">
-<li>Utilizing different object detection models trained on the COCO dataset to gather new data and classify it</li>
-<li>Building and using a simple C# program for fast labelling</li>
-<li>Building a large labelled dataset of more than 3500 images in less than 3 hours</li>
-<li>Designing, modifying and training various CNNs for classification on this dataset</li>
-<li>Integration of tracking and filtering algorithms to the detection and classification processes</li>
-<li>Improving the end classification result of a person by using previous data gathered on that person</li>
+<li>Utilizing object detection models trained on the COCO dataset to gather and classify detections</li>
+<li>Building a simple C# tool for fast labeling</li>
+<li>Building a labeled dataset of over 3,500 images in under 3 hours</li>
+<li>Designing, modifying and training CNNs for classification</li>
+<li>Integrating tracking and filtering processes with classification outputs</li>
+<li>Improving classification results by aggregating data across frames</li>
 </ul>
-I tested the program on different online videos and on a remote camera feed that was set up on a Raspberry Pi. I got very good results on the limited data I managed to test on, but there is much room for improvement.<br>Future improvements ideas:
+I tested the system on online video and a remote camera feed on a Raspberry Pi. The implementation showed promising results and highlighted areas for further tuning.<br>Future improvement ideas:
 <ul style=\"list-style-type:disc;\">
-<li>Try a combination of RNNs and unsupervised learning methods to the statistical data for more accurate classification</li>
-<li>Use GANs to extend the dataset and improve the CNN classification model</li>
-<li>Add a version in TF Lite for the Raspberry Pi</li>
-<li>Use multiple feeds and combine the data</li>
+<li>Use RNNs and unsupervised methods to improve sequential accuracy</li>
+<li>Use GANs to augment training data and improve model robustness</li>
+<li>Add a TF Lite deployment path for edge devices</li>
+<li>Combine multiple camera feeds for broader coverage</li>
 </ul><br>&nbsp;"
 tag: "Python using TensorFlow, C#"
 c_lang: ["Python"]
@@ -34,15 +36,15 @@ img: [["cd1.png","Example"],["cd2.png","Example"],["cd3.png","Example"],["cd4.pn
 <style>
 a    {text-decoration: underline;color: red;}
 </style>
-# Cops Detection and Tracking - Pipeline Overview
+# Uniform-Based Person Classification & Multi-Object Tracking - Pipeline Overview
 
 <span style="color:white;">
-This project inspired the TrackEverything package and now has an example using it in [this](https://github.com/ami-a/CopDetection) repository.
-You can find an old part of this project in one of my repositories [here](https://gitlab.com/Byakugan/police), this repository only contains the small implementation part for webcams and not the whole project.
+This project inspired the TrackEverything package and now has a related tracking example in a public repository.
+The linked repository contains a small implementation for webcams and does not include the full project.
 </span>
 ## The Pipeline
 <span style="color:white;">
-The pipeline starts by receiving a series of images (frames) and outputs a list of tracker objects that contains the persons detected and the probability of them being a cop.</span>
+The pipeline starts by receiving a series of images (frames) and outputs a list of tracker objects that contains the persons detected and the probability of them matching a uniform-based class.</span>
 <p align="center"><img src="cd/images/charts/pro_flow.png" width="650" height="392" /></p>
 
 ## Breaking it Down to 4 Steps
@@ -53,7 +55,7 @@ First, we take the frame and passe it through an object detection model, I use t
 </span>
 ### 2nd Step - Get Classification Probabilities for the Detected Persons
 <span style="color:white;">
-After we have the persons from step 1, we put them through a classification model to determine the probability of them being a cop. I used the `Xception` CNN architecture with some added layers to train this model, I used this architecture for its low parameters count since my GPU's capacity is limited. </span>
+After we have the persons from step 1, we put them through a classification model to determine the probability of them matching a target uniform class. I used the `Xception` CNN architecture with some added layers to train this model, chosen for its low parameter count on a constrained GPU.</span>
 <p align="center"><img src="cd/images/charts/Xception.png" width="540" height="394"/></p>
 <span style="color:white;">Then, we create our `Detections` object list and which contains the positions boxes and the classification data. </span>
 ### 3rd Step - Updated the Trackers Object List
@@ -82,7 +84,7 @@ For each unmatched detector, we create a new tracker with the detector's data, f
 </span>
 ### 5th Step - Decide What to Do
 <span style="color:white;">
-After step 4 the `Trackers` list is up to date with all the statistical and current data. The tracker class has a method to return the current classifications and confidence of those scores, we then update the detectors and iterate through them. A detector with low confidence score probably came from a tracker with not enough data or the detection is poor, we mark those in orange. A detector with a high enough confidence score will be green if it's not a cop, and red/blue if it is. The unmatched trackers that are not dead will show in cyan.
+After step 4 the `Trackers` list is up to date with all the statistical and current data. The tracker class has a method to return the current classifications and confidence of those scores, we then update the detectors and iterate through them. A detector with low confidence score probably came from a tracker with not enough data or the detection is poor, we mark those in orange. A detector with a high enough confidence score will be green if it is not a target class, and red/blue if it is. The unmatched trackers that are not dead will show in cyan.
 </span>
 
 

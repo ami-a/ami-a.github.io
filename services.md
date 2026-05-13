@@ -12,6 +12,7 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
 
 {% if sorted_services.size > 0 %}
   {% for service in sorted_services %}
+    <a id="{{ service.slug }}"></a>
     ## {{ service.title }}
 
     **For:** {{ service.audience }}
@@ -59,6 +60,11 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
     ---
 
   {% endfor %}
+
+  <section class="service-examples">
+    <h2>Examples</h2>
+    <p>Explore applied research examples in the <a href="/case-studies/">case studies</a> and reach out via <a href="/contact/">contact</a> for confidential details.</p>
+  </section>
 {% else %}
   No services listed yet.
 {% endif %}

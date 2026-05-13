@@ -38,3 +38,6 @@ Useful for radar-based detection, tracking, and classification systems where spe
 
 ## Confidentiality
 High-level summary only, with no sensitive defense or radar system specifics.
+
+## Next step
+For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.

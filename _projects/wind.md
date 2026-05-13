@@ -1,10 +1,11 @@
 ---
-title: "Brute-force Windows Password"
+title: "Legacy Windows Password Research Tool"
 is_project: true
 ind: 7
 year: 2007 & 2012
-sdisc: "A simple program that can perform brute-force attack on the Windows credentials."
-disc: "This project is a program that perform brute-force attack on the Windows login credentials. I wrote it once in VB6 combined with C++ for Windows XP, at the 10th grade. And once in C# for Windows 7 (also works on 10). The latest one uses feature like multithreading and password lists to accelerate the process.<br>&nbsp;"
+visibility: archive
+sdisc: "A legacy research tool demonstrating password recovery techniques and multithreading performance."
+disc: "This project was a legacy Windows password research tool that explored password list processing and multithreaded credential testing. It was implemented in VB6/C++ for Windows XP and later ported to C# for Windows 7/10.<br>&nbsp;"
 tag: "C#/VB6 & C++"
 c_lang: ["C#","VB6","C++"]
 LOC: "2<i style=\"color:#edff14;\">,</i>800"

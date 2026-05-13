@@ -1,9 +1,10 @@
 ---
-title: "Bitcoin & Zcash Miners"
+title: "Distributed Compute / Hashing Experiments"
 is_project: true
 ind: 4
 year: 2016
-sdisc: "Elementary programs to mine Bitcoin & Zcash using mining pools."
+visibility: archive
+sdisc: "Elementary programs exploring distributed computing and hashing algorithms using mining pools."
 disc: "This project consists of two simple mining programs. The first is a Bitcoin miner written in C#, and the second is a Zcash miner written in C++. They both utilizing mining pools to get and return data.<br>&nbsp;"
 tag: "C# & C++"
 c_lang: ["C#","C++"]

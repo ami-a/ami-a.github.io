@@ -1,5 +1,5 @@
 ---
-title: "Track Everything Package"
+title: "Multi-Object Tracking Enhancement Package"
 is_project: true
 ind: -3
 year: "2020"

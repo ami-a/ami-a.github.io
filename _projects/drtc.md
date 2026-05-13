@@ -1,9 +1,10 @@
 ---
-title: "Radar Target Classification (Competition)"
+title: "Signal Classification Competition Entry"
 is_project: true
 ind: -5
 year: "2020"
-sdisc: "MAFAT Radar Challenge —distinguishing between humans and animals in Doppler-pulse radar's segments."
+visibility: archive
+sdisc: "Entry for a signal processing competition focusing on classification of radar targets."
 disc: "This project is a competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) that tackles the challenge of classifying living, non-rigid objects detected by Doppler-pulse radar systems using AI. During this competition, I used many data science and machine learning technologies (mainly in Python & MATLAB) and signal processing technics like:
 <ul>
 <li>Creating new data for additional training data from new and unfamiliar data format.</li>

@@ -9,7 +9,7 @@
           <h3>{{ study.title }}</h3>
           <p class="year">{{ study.domain }}</p>
           <p class="description">{{ study.summary }}</p>
-          <a href="{{ site.url }}{{ study.url }}" class="card-link">View →</a>
+          <a href="{{ study.url }}" class="card-link">View →</a>
         </div>
       {% endfor %}
     {% else %}

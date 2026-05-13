@@ -1,10 +1,11 @@
 ---
-title: "Independent Quadcopter Security System"
+title: "Independent Quadcopter Flight Prototype"
 is_project: true
 ind: 2
 year: 2013
-sdisc: "An independent flying and landing quadcopter that uses a sonic distance sensor and a pre-loaded patrol map."
-disc: "This project is a self-flying patrol quadcopter (drone) that follows a predetermined path and can avoid obstacles. I used an open-sourced tiny drone and an RF USB dongle to control it remotely. I also added a small RF transmitter, an Arduino Nano and a sonic distance sensor. The main control protocols were written in Python using the drone’s libraries. The program itself was written in C# and used some libraries I wrote in C++, as well as IronPython to use the Python libraries. As this drone stabilization capabilities were deficient, a lot of physics was applied to stabilize it. Unfortunately, due to some crashes, I couldn’t finish the project to the fullest. But up until this point, the drone was able to fly a predetermined path and avoid obstacles that are on the X-Y plane. I also planned to add a camera, substitute the distance sensor for a LIDAR and add wireless charging, all are very heavy and beyond this current drone lift capabilities.<br>&nbsp;"
+visibility: archive
+sdisc: "A self-flying quadcopter prototype with predefined navigation and obstacle avoidance."
+disc: "This project is a self-flying quadcopter prototype that follows a predetermined route and avoids obstacles using a sonic distance sensor. It combined Python and C# control code with Arduino and RF hardware. The prototype demonstrated navigation logic and stabilization for lightweight drone hardware.<br>&nbsp;"
 tag: "C#, C++, Python & Arduino"
 c_lang: ["C#","C++","Python","Arduino"]
 LOC: "28<i style=\"color:#edff14;\">,</i>500"

@@ -38,3 +38,6 @@ This work is relevant for diagnostic imaging systems and medical device workflow
 
 ## Confidentiality
 Details are presented at a high level to preserve NDA-sensitive application context.
+
+## Next step
+For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.

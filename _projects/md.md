@@ -1,10 +1,11 @@
 ---
-title: "Mask and Proximity Detection"
+title: "Multi-Modal Detection & Classification Pipeline"
 is_project: true
 ind: -4
 year: "2020"
-sdisc: "This project is a demonstration of my TrackEverything package, it uses different models to track and detect persons with/without masks (even when their back is turned)."
-disc: "This project contains several examples of using the <b>TrackEverything</b> package, you can find instructions on installation and other explanations <a href=\"https://github.com/ami-a/TrackEverything\">here</a>. These Mask Detection examples are open-sourced framework built on top of the <b>TrackEverything</b> package and uses detection models, classification models, tracking algorithms and statistics-based decision making. The project allows you to detected people with or without masks, I used several models from different repositories or packages and combined them.<br>&nbsp;"
+visibility: archive
+sdisc: "Demonstration of the TrackEverything package for detection and classification tasks, including proximity-based scenarios."
+disc: "This project contains several examples of using the <b>TrackEverything</b> package, which is an open-source framework for detection and classification workflows. The examples cover proximity, occlusion, and live video classification scenarios using detection models, tracking algorithms, and statistical decision logic.<br>&nbsp;"
 tag: "Python"
 c_lang: ["Python"]
 LOC: "3.3K"
@@ -23,7 +24,7 @@ a    {text-decoration: underline;color: red;}
 <span style="color:white;">
 You can find all the models and test videos [here](https://drive.google.com/drive/folders/19jsLpv8Ql_ebqYZy1vnC3Snp0dNQ8HX0?usp=sharing).</span>
 
-## Mask Example 1
+## Example 1
 
 ### The Detection Model
 <span style="color:white;">
@@ -33,14 +34,14 @@ samples. This model has been developed using [Pierluigi Ferarri's Keras implemen
 
 ### The Classification Model
 <span style="color:white;">
-After we have the heads from the detection model, I put them through a classification model to determine the probability of them being with a mask. I used the Face Mask classification model from [chandrikadeb7/Face-Mask-Detection github repository](https://github.com/chandrikadeb7/Face-Mask-Detection). It's based on the MobileNetV2 architecture, it’s also computationally efficient and thus making it easier to deploy the model to embedded systems (Raspberry Pi, Google Coral, etc.). </span>
+After we have the heads from the detection model, I put them through a classification model to determine the probability of the target condition. I used a classification model from [chandrikadeb7/Face-Mask-Detection github repository](https://github.com/chandrikadeb7/Face-Mask-Detection). It's based on the MobileNetV2 architecture, and it is computationally efficient for prototyping on embedded hardware such as Raspberry Pi or Google Coral. </span>
 <p align="center"><img src="md/images/repos/mask_class_1.png" width="540" height="328" /></p>
 
 ### Results for Example 1
 <span style="color:white;">
 I only tested it on one video I found online but the results are fair and setting could be optimized much more. The head detection is very rudimentary and has a lot of misses and partial matches.
 </span>
-## Mask Example 2
+## Example 2
 ### The Detection Model
 <span style="color:white;">
 This example uses a Face Detection model from OpenCV for detecting faces. OpenCV ships out-of-the-box with pre-trained Haar cascades that can be used for face detection and a deep learning-based face detector that has been part of OpenCV since OpenCV 3.3. In the `custom_get_detection_array` I use OpenCV to give me all the faces detected in a frame with a score of at least `detection_threshold=0.12`. Later I filter out redundant overlapping detections using the default Non-maximum Suppression (NMS) method.</span>
@@ -53,11 +54,11 @@ I used the same [classification model](#the-classification-model) as in [example
 <span style="color:white;">
 The results are fair and better from example 1, mainly since the face detector is better. The classification model is not very good and has a lot of misses, but optimizing the detector's parameters can make better results.
 </span>
-## Mask Example 3
+## Example 3
 
 #### The Detection Model
 <span style="color:white;">
-This example uses a Mask Detection and Classification model from [PureHing/face-mask-detection-tf2 github repository](https://github.com/PureHing/face-mask-detection-tf2) for detecting faces and classify them. This model is a lightweight face mask detection model based on ssd and the backbone is MobileNet and RFB. Since this model also classifies there is no need for an additional classification model. In the `detection_vars.py` I use the model to give me all the heads detected in a frame with a score of at least `DETECTION_THRESHOLD=0.4` and later I filter out redundant overlapping detections using the default Non-maximum Suppression (NMS) method. I also receive classification data score from the model and input them as a vector for the detector. </span>
+This example uses a detection and classification model from [PureHing/face-mask-detection-tf2 github repository](https://github.com/PureHing/face-mask-detection-tf2) for face and head detection. The lightweight SSD model uses a MobileNet/RFB backbone and provides classification output, so a second model is not required. In the `detection_vars.py` I use the model to detect heads with a score of at least `DETECTION_THRESHOLD=0.4` and later filter overlapping detections using Non-maximum Suppression. I also receive classification scores from the model and pass them into the detector. </span>
 <p align="center"><img src="md/images/repos/mask_class_3.png" width="540" height="325" /></p>
 
 ### Results for Example 3

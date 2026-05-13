@@ -38,6 +38,7 @@ Selected applied research and engineering work for medical imaging, spatial AI, 
   <section class="case-cta">
     <p>See how these technical paths align with your project and contact the team for a confidentiality review.</p>
     <a href="/contact/" class="cta-button cta-primary">Contact for details</a>
+    <p><a href="/services/">Review service offerings</a></p>
   </section>
 
   <p class="case-note">Some details are presented at a high level for confidentiality. Full technical scope is available on request.</p>

@@ -38,3 +38,6 @@ Applicable to robotics, inspection, and situational awareness systems where real
 
 ## Confidentiality
 High-level summary only, preserving NDA-sensitive spatial AI application details.
+
+## Next step
+For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.

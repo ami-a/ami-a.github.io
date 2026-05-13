@@ -1,10 +1,11 @@
 ---
-title: "Lockdown Screen"
+title: "Legacy Windows Access Control Prototype"
 is_project: true
 ind: 8
 year: 2011
-sdisc: "A loginscreen for Windows with time depended password and encryption fail-safe."
-disc: "This project is a cool program that locks you out of Windows until you provide a password. The password changes every two minutes or so, and using numbers that run in the background it can be calculated. Failing to enter the correct password three times will result in file encryption and in the addition of another password layer to go through. This program disables every way to shut it down and locks out the mouse and command keys like ctrl+alt+del. It was designed to run on Windows 7, but I tried it in Windows 10, and I could not find a way to bypass it without a restart.<br>&nbsp;"
+visibility: archive
+sdisc: "A legacy Windows access control prototype with time-based password handling."
+disc: "This project was a Windows access control prototype that required a time-based password to unlock. It demonstrated password state handling and desktop access flow control. The implementation was designed for Windows 7 and tested on Windows 10.<br>&nbsp;"
 tag: "C# & Flash"
 c_lang: ["C#"]
 LOC: "1<i style=\"color:#edff14;\">,</i>250"

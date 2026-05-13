@@ -27,3 +27,5 @@ I start with the technical challenge and data constraints, then build a focused 
 ## Contact
 
 For project inquiries or a request for a CV and portfolio, please reach out via the contact page.
+
+See examples in the <a href="/case-studies/">Case Studies</a> section, and review technical notes at <a href="/technical-notes/">Technical Notes</a>.

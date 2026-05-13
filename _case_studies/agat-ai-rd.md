@@ -26,3 +26,6 @@ Intended to represent AI research and development work after source verification
 
 ## Confidentiality
 No proprietary details are included in this placeholder page.
+
+## Next step
+For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.

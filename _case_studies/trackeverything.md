@@ -38,3 +38,6 @@ Relevant for surveillance, logistics, and automation systems requiring robust mu
 
 ## Confidentiality
 Presented at a high level to avoid over-sharing implementation details.
+
+## Next step
+For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.

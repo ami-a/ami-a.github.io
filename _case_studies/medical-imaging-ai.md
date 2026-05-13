@@ -4,10 +4,10 @@ ind: 1
 domain: Medical Imaging AI
 summary: Short placeholder summary for medical imaging AI research.
 metrics:
-  - value: "~5 µm"
+  - value: "High precision"
     label: precision workflow
-  - value: "95%+"
-    label: detection accuracy
+  - value: "High accuracy"
+    label: detection performance
 stack:
   - Python
   - OpenCV
@@ -25,7 +25,7 @@ The project needed sensitive handling of clinical-style data and a practical pat
 Built an imaging model pipeline using Python, OpenCV, PyTorch, and TensorFlow. Emphasis was placed on validation, data preprocessing, and reproducible model evaluation.
 
 ## Result
-Delivered a working pipeline with close to 5 µm precision and 95%+ detection accuracy in initial validation.
+Delivered a working pipeline with high precision and strong detection performance in initial validation.
 
 ## Commercial relevance
 This work is relevant for diagnostic imaging systems and medical device workflows where precision and reproducibility matter.

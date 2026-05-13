@@ -6,7 +6,7 @@ summary: Short placeholder summary for spatial AI and 3D reconstruction project.
 metrics:
   - value: "Real-time"
     label: processing speed
-  - value: "±2 cm"
+  - value: "Low-centimeter"
     label: localization accuracy
 stack:
   - Python
@@ -25,7 +25,7 @@ The solution had to run in near real time and work with sensor data that could b
 Implemented a spatial reconstruction pipeline using Python, SLAM techniques, DepthAI sensor processing, and NumPy-based data handling.
 
 ## Result
-Built a working spatial AI prototype with real-time performance and localization accuracy around ±2 cm.
+Built a working spatial AI prototype with real-time performance and low-centimeter localization accuracy.
 
 ## Commercial relevance
 Applicable to robotics, inspection, and situational awareness systems where real-time 3D perception is required.

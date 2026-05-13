@@ -6,7 +6,7 @@ permalink: /contact/
 
 # Contact
 
-If you are looking for senior AI research engineering support, this page helps you prepare a strong first inquiry.
+If you are looking for support from a senior AI research engineer, this page helps you prepare a strong first inquiry.
 
 ## Best first message
 

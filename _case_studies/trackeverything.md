@@ -4,9 +4,9 @@ ind: 3
 domain: Computer Vision
 summary: Short placeholder summary for multi-object tracking system.
 metrics:
-  - value: "10,000+"
-    label: objects tracked simultaneously
-  - value: "60 FPS"
+  - value: "High object count"
+    label: objects tracked
+  - value: "High throughput"
     label: inference speed
 stack:
   - Python
@@ -25,7 +25,7 @@ The solution had to integrate detection outputs with tracking logic and support 
 Built the TrackEverything pipeline in Python, combining detection, tracking algorithms, and statistical data fusion to maintain object identity over time.
 
 ## Result
-Delivered a working object tracking prototype capable of tracking 10,000+ objects simultaneously with performance around 60 FPS.
+Delivered a working object tracking prototype capable of tracking large object counts with high throughput.
 
 ## Commercial relevance
 Relevant for surveillance, logistics, and automation systems requiring robust multi-object tracking.

@@ -6,34 +6,41 @@ permalink: /case-studies/
 
 # Case Studies
 
-Placeholder introduction to case studies and research work.
+Selected applied research and engineering work for medical imaging, spatial AI, computer vision, and signal processing.
 
 {% assign sorted_studies = site.case_studies | sort: "ind" %}
 
 {% if sorted_studies.size > 0 %}
-  {% for study in sorted_studies %}
-    ## [{{ study.title }}]({{ site.url }}{{ study.url }})
+  <div class="case-study-grid">
+    {% for study in sorted_studies %}
+      <article class="case-study-card">
+        <p class="case-domain">{{ study.domain }}</p>
+        <h2><a href="{{ site.url }}{{ study.url }}">{{ study.title }}</a></h2>
+        <p class="case-summary">{{ study.summary }}</p>
 
-    **Domain:** {{ study.domain }}
+        {% if study.metrics %}
+          <ul class="case-metrics">
+            {% for metric in study.metrics %}
+              <li><strong>{{ metric.value }}</strong> {{ metric.label }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
 
-    {{ study.summary }}
+        {% if study.stack %}
+          <p class="case-stack">Stack: {{ study.stack | join: ", " }}</p>
+        {% endif %}
 
-    {% if study.metrics %}
-    **Key Metrics:**
-    {% for metric in study.metrics %}
-    - {{ metric.value }} — {{ metric.label }}
+        <p><a href="{{ site.url }}{{ study.url }}">Read full case study →</a></p>
+      </article>
     {% endfor %}
-    {% endif %}
+  </div>
 
-    {% if study.stack %}
-    **Stack:** {{ study.stack | join: ", " }}
-    {% endif %}
+  <section class="case-cta">
+    <p>See how these technical paths align with your project and contact the team for a confidentiality review.</p>
+    <a href="/contact/" class="cta-button cta-primary">Contact for details</a>
+  </section>
 
-    [Read more →]({{ site.url }}{{ study.url }})
-
-    ---
-
-  {% endfor %}
+  <p class="case-note">Some details are presented at a high level for confidentiality. Full technical scope is available on request.</p>
 {% else %}
-  No case studies available yet.
+  <p>No case studies available yet.</p>
 {% endif %}

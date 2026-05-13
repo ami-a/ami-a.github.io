@@ -15,13 +15,26 @@ stack:
   - TensorFlow
 ---
 
-Placeholder case study content for medical imaging AI pipeline.
+## Problem
+A medical imaging workflow required an AI pipeline for high-precision feature detection in imaging data.
 
-## Challenge
-Short placeholder description of the challenge.
+## Constraints
+The project needed sensitive handling of clinical-style data and a practical path from research prototype toward deployment.
 
 ## Approach
-Short placeholder description of the approach taken.
+Built an imaging model pipeline using Python, OpenCV, PyTorch, and TensorFlow. Emphasis was placed on validation, data preprocessing, and reproducible model evaluation.
 
-## Results
-Short placeholder description of measurable results.
+## Result
+Delivered a working pipeline with close to 5 µm precision and 95%+ detection accuracy in initial validation.
+
+## Commercial relevance
+This work is relevant for diagnostic imaging systems and medical device workflows where precision and reproducibility matter.
+
+## Stack
+- Python
+- OpenCV
+- PyTorch
+- TensorFlow
+
+## Confidentiality
+Details are presented at a high level to preserve NDA-sensitive application context.

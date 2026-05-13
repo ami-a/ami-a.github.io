@@ -15,13 +15,26 @@ stack:
   - Pandas
 ---
 
-Placeholder case study content for TrackEverything object tracking system.
+## Problem
+A vision system needed scalable multi-object tracking for live video streams.
 
-## Challenge
-Short placeholder description of tracking challenges at scale.
+## Constraints
+The solution had to integrate detection outputs with tracking logic and support high-throughput inference.
 
 ## Approach
-Short placeholder description of multi-object tracking implementation.
+Built the TrackEverything pipeline in Python, combining detection, tracking algorithms, and statistical data fusion to maintain object identity over time.
 
-## Results
-Short placeholder description of throughput and accuracy improvements.
+## Result
+Delivered a working object tracking prototype capable of tracking 10,000+ objects simultaneously with performance around 60 FPS.
+
+## Commercial relevance
+Relevant for surveillance, logistics, and automation systems requiring robust multi-object tracking.
+
+## Stack
+- Python
+- YOLOv8
+- OpenCV
+- Pandas
+
+## Confidentiality
+Presented at a high level to avoid over-sharing implementation details.

@@ -1,13 +1,7 @@
 <!-- CTA band: primary calls to action -->
 <section class="cta-band">
   <div class="cta-content">
-    {% if site.data.site_ctas.ctas %}
-      {% for cta in site.data.site_ctas.ctas %}
-        {% if cta.placement == "homepage" or cta.placement == "all" %}
-          <a href="{{ cta.url }}" class="cta-button cta-{{ cta.type }}">{{ cta.text }}</a>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    <a href="mailto:{{ site.email }}" class="cta-button cta-primary">Get In Touch</a>
+    <p>Ready to scope a medical imaging, computer vision, or spatial AI project?</p>
+    <a href="mailto:{{ site.email }}" class="cta-button cta-primary">Email Amitai</a>
   </div>
 </section>

@@ -5,7 +5,68 @@ services:
   - title: Medical Imaging / Computer Vision R&D
     slug: medical-imaging-cv
     audience: Biotech and medical-AI teams
-    summary: Placeholder summary for imaging research and development services.
-    outcomes:
-      - Placeholder outcome one
-      - Placeholder outcome two
+    summary: Work on imaging pipelines, model development, and validation for diagnostic and vision systems.
+    best_for:
+      - Medical imaging or vision teams with complex data
+      - Research programs that require NDA-sensitive handling
+      - Projects needing technical leadership on prototype development
+    typical_problems:
+      - Noisy or inconsistent imaging inputs
+      - Limited labeled data for model training
+      - Unclear path from research to deployment
+    typical_outcomes:
+      - Validated prototype model and technical review
+      - Roadmap for product integration
+      - Risk profile for model behavior and performance
+    how_engagements_start: Begin with a technical scope review and dataset assessment.
+    not_fit:
+      - Basic data-entry automation
+      - Prebuilt model selection without research work
+      - Pure marketing or design-only work
+    example: Defined a vision pipeline for a medical imaging workflow.
+
+  - title: Research Engineering Sprint
+    slug: research-engineering-sprint
+    audience: Product teams and innovation labs
+    summary: Short-term engineering sprints to test feasibility, validate algorithms, and clarify technical risk.
+    best_for:
+      - Teams that need rapid technical proof points
+      - Research concepts with uncertain feasibility
+      - Projects that need a focused, senior engineer-led sprint
+    typical_problems:
+      - Ambiguous product requirements
+      - Unproven model or sensor approach
+      - High technical risk in early design
+    typical_outcomes:
+      - Working proof-of-concept code
+      - Measurable validation criteria
+      - Clear next-step recommendations
+    how_engagements_start: Start with a one-day technical planning session.
+    not_fit:
+      - Long-term feature development
+      - Pure UX/product design engagements
+      - Commodity IT work
+    example: Delivered a validated prototype in a focused research sprint.
+
+  - title: AI / CV Technical Due Diligence
+    slug: ai-cv-technical-due-diligence
+    audience: Investors, acquisition teams, and internal product owners
+    summary: Evaluate AI and computer vision technology, architecture, and deployment readiness.
+    best_for:
+      - Investment or M&A teams reviewing AI assets
+      - Product owners validating technical claims
+      - Teams preparing acquisitions or strategic partnerships
+    typical_problems:
+      - Unverified AI performance claims
+      - Unclear architecture or data lineage
+      - Unknown production readiness
+    typical_outcomes:
+      - Technical due diligence report
+      - Architecture and risk assessment
+      - Practical recommendations for next steps
+    how_engagements_start: Review available technical documentation and run a short assessment.
+    not_fit:
+      - Strategic market research
+      - Full software implementation
+      - High-level business planning without technical work
+    example: Assessed computer vision readiness for a product acquisition.

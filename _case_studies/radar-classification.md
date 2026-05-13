@@ -15,13 +15,26 @@ stack:
   - Matplotlib
 ---
 
-Placeholder case study content for radar signal classification.
+## Problem
+A radar classification system needed to distinguish between targets using pulse-Doppler radar data.
 
-## Challenge
-Short placeholder description of radar signal classification problem.
+## Constraints
+The solution had to handle noisy radar signals and provide fast inference for real-time use cases.
 
 ## Approach
-Short placeholder description of deep learning model architecture.
+Developed a deep learning classification pipeline using Python, PyTorch, SciPy, and signal-processing features derived from radar spectrograms.
 
-## Results
-Short placeholder description of classification performance and deployment outcomes.
+## Result
+Built a classifier prototype with 99.2% accuracy and inference latency under 100 ms in validation tests.
+
+## Commercial relevance
+Useful for radar-based detection, tracking, and classification systems where speed and accuracy are critical.
+
+## Stack
+- Python
+- PyTorch
+- SciPy
+- Matplotlib
+
+## Confidentiality
+High-level summary only, with no sensitive defense or radar system specifics.

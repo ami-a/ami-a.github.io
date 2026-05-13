@@ -6,18 +6,24 @@ permalink: /about/
 
 # About
 
-## Professional Background
+Amitai is a senior AI research engineer focused on medical imaging, computer vision, spatial AI, and practical AI R&D execution. He combines technical leadership with hands-on engineering to move research concepts into product-ready systems.
 
-Short placeholder text about professional experience and background.
+## Selected experience
 
-## Approach
+Selected experience includes Meta Reality Labs, QuantumCyte, and AGAT Software. This background supports work across imaging systems, sensor-aware perception, and AI research programs.
 
-Short placeholder text about work philosophy and approach to research engineering.
+## Technical strengths
 
-## Current Focus
+- Medical imaging and vision pipeline development
+- Spatial AI, 3D reconstruction, and sensor fusion
+- AI research engineering for prototype validation
+- LLM systems and technical due diligence support
+- Mathematical foundation from Hebrew University
 
-Short placeholder text about current interests and research areas.
+## How I work
 
-- Medical imaging & computer vision
-- Spatial AI and 3D reconstruction
-- Signal processing and deep learning
+I start with the technical challenge and data constraints, then build a focused prototype with measurable validation criteria. Engagements are kept lean, with a clear path from research findings to engineering readiness.
+
+## Contact
+
+For project inquiries or a request for a CV and portfolio, please reach out via the contact page.

@@ -15,13 +15,26 @@ stack:
   - NumPy
 ---
 
-Placeholder case study content for spatial AI and 3D reconstruction.
+## Problem
+A spatial AI system needed robust 3D reconstruction and localization from live sensor streams.
 
-## Challenge
-Short placeholder description of the spatial AI challenge.
+## Constraints
+The solution had to run in near real time and work with sensor data that could be noisy or variable.
 
 ## Approach
-Short placeholder description of reconstruction methodology.
+Implemented a spatial reconstruction pipeline using Python, SLAM techniques, DepthAI sensor processing, and NumPy-based data handling.
 
-## Results
-Short placeholder description of spatial accuracy and performance metrics.
+## Result
+Built a working spatial AI prototype with real-time performance and localization accuracy around ±2 cm.
+
+## Commercial relevance
+Applicable to robotics, inspection, and situational awareness systems where real-time 3D perception is required.
+
+## Stack
+- Python
+- SLAM
+- DepthAI
+- NumPy
+
+## Confidentiality
+High-level summary only, preserving NDA-sensitive spatial AI application details.

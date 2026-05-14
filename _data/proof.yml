@@ -1,27 +1,23 @@
-# Verified proof points and outcomes
-# These reflect demonstrated working prototypes and documented research
+# Claim-safe proof point references for optional future rendering.
+# Keep aligned with public case-study copy.
 
 proof:
-  - title: Medical Imaging Workflow Development
-    summary: Built working pipeline for high-precision feature detection in imaging data with validated precision workflow and reproducible model evaluation.
-    impact: Working prototype with documented validation approach
-    year: 2024
+  - title: Medical Imaging AI Pipeline
+    summary: AI-based software connecting medical segmentation, scan interpretation, geometric calibration, spatial alignment, and precision output generation.
+    impact: Close to 5 µm precision workflow and patent filings.
     category: medical-imaging
 
-  - title: Spatial AI & 3D Reconstruction
-    summary: Delivered working spatial AI prototype with real-time processing and documented localization design.
-    impact: Working prototype with real-time performance constraints documented
-    year: 2023
+  - title: Spatial AI and Wearable Interaction Prototypes
+    summary: Research and prototype work involving wearable-device interaction, spatial representations, and multimodal embeddings for AR/VR environments.
+    impact: Working demo in an NDA-sensitive research context.
     category: spatial-ai
 
-  - title: Multi-Object Tracking at Scale
-    summary: Developed working tracking pipeline for live-stream processing with scalable inference design and identity-consistency logic.
-    impact: Working system architecture with efficient inference design
-    year: 2023
+  - title: TrackEverything
+    summary: Open-source Python package for wrapping detection or classification models with tracking and multi-frame evidence aggregation.
+    impact: Model-agnostic tracking layer for video AI workflows.
     category: computer-vision
 
-  - title: Radar Signal Classification
-    summary: Built working classifier prototype with validated performance against noisy radar data and documented fast-inference design.
-    impact: Working classifier with fast inference and clear deployment constraints
-    year: 2023
+  - title: Doppler Radar Target Classification
+    summary: Signal-processing and machine-learning pipeline using spectrograms, filtering, and constrained deep-learning experimentation.
+    impact: Placed 30th out of 1,000+ participants.
     category: signal-processing

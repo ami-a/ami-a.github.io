@@ -4,11 +4,10 @@ title1: Amitai
 title2: .A
 google_analytics: UA-164229768-1
 show_downloads: false
-description: Senior AI research engineering for imaging and spatial-AI problems.
+description: Senior AI research engineering for medical imaging AI, computer vision, spatial AI, and research-to-product execution.
 url: "https://ami-a.github.io"
 purl: "/projects/"
 email: amitai.a.job@gmail.com
-phone: 0
 ccode: 972
 calendar_url: ""
 
@@ -47,6 +46,6 @@ spcolors: ["#ff7214","#14ffc4","#ff148f","#edff14","#ff144a","#82ff14","#bc13fe"
 # commercial_relevance: STRING
 #   - "active" — currently applicable to client work
 #   - "legacy" — reference only, technology may be outdated
-#   - "research" — exploratory work, not production-ready
+#   - "research" — exploratory work, not presented as current client work
 #   - Default: inferred from project age/content
 

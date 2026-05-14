@@ -2,42 +2,38 @@
 layout: page
 title: About
 permalink: /about/
+description: About Amitai Assayag, senior AI research engineer specializing in medical imaging AI, computer vision, spatial AI, and research-to-product execution.
 ---
 
 # About
 
-Amitai is a senior AI research engineer focused on medical imaging, computer vision, spatial AI, and practical AI R&D execution. He combines technical leadership with hands-on engineering to move research concepts toward engineering-ready systems.
+I am a senior AI research engineer and AI R&D lead specializing in medical imaging AI, computer vision, spatial AI, LLM systems, and research-to-product execution.
+
+I work best on problems where the technical risk is real: ambiguous research, difficult data, precision-sensitive imaging, spatial representation, prototype validation, or AI claims that need serious technical review.
 
 ## Selected experience
 
-Selected experience includes Meta Reality Labs, QuantumCyte, and AGAT Software. This background supports work across imaging systems, sensor-aware perception, and AI research programs.
+- Meta Reality Labs — spatial AI, AR/VR, wearable-device prototypes, multimodal embeddings, and device-oriented research implementation
+- QuantumCyte — medical-imaging AI, microscopy/pathology workflows, segmentation-to-output pipelines, calibration, spatial alignment, close to 5 µm precision workflows, and patent filings
+- AGAT Software — AI R&D leadership, LLM systems, AI assistants, anomaly detection, and customer-facing AI capabilities
+- Hebrew University of Jerusalem — M.Sc. Mathematics, mathematical modeling, abstraction, and research reasoning
 
 ## Technical strengths
 
-- Medical imaging and vision pipeline development
-- Spatial AI, 3D reconstruction, and sensor fusion
-- AI research engineering for prototype validation
-- LLM systems and technical due diligence support
-- Mathematical foundation from Hebrew University
+- Medical imaging, microscopy, pathology AI, segmentation, registration, calibration, and spatial alignment
+- Computer vision, tracking, image processing, model evaluation, and research implementation
+- Spatial AI, 3D scene representations, multimodal embeddings, Gaussian splatting, surfels, and CLIP-like models
+- LLM systems, RAG, vector databases, AI assistants, and production-oriented ML workflows
+- Python, C++, CUDA, PyTorch, TensorFlow, OpenCV, OpenSlide, VIPS, AWS, and Git
 
 ## How I work
 
-I start with the technical challenge and data constraints, then build a focused prototype with measurable validation criteria. Engagements are kept lean, with a clear path from research findings to engineering readiness.
+I usually start by clarifying the technical risk, data constraints, current architecture, and likely failure modes. From there, the work can become a short assessment, focused sprint, implementation retainer, or advisory relationship.
 
-## Engagement approach
+Available for selected contract, advisory, and research-engineering engagements.
 
-Available for selected contract, advisory, and research-engineering engagements. Typical work:
+[View CV]({{ '/files/2020engD.pdf' | relative_url }})
 
-- **Sprint model:** 1-3 week focused engineering cycles for feasibility testing, algorithm validation, or technical assessment
-- **Advisory retainer:** Monthly reserved capacity for due diligence, architecture review, or ongoing technical guidance
-- **Research-to-product:** Partnership-style engagement to move prototypes toward production readiness
-
-First step is always a technical scope review and data assessment to clarify constraints, timeline, and deliverables.
-
-## Contact
-
-For project inquiries or a request for a CV and portfolio, please reach out via the contact page.
-
-Typical first step: email with project description, technical challenge, current stack, and timeline. Response target: 1-2 business days.
-
-See examples in the <a href="/case-studies/">Case Studies</a> section.
+[View services]({{ '/services/' | relative_url }}){: .cta-button .cta-primary }
+[View case studies]({{ '/case-studies/' | relative_url }}){: .cta-button .cta-secondary }
+[Contact]({{ '/contact/' | relative_url }}){: .cta-button .cta-secondary }

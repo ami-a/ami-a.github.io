@@ -2,11 +2,14 @@
 layout: page
 title: Case Studies
 permalink: /case-studies/
+description: Selected case studies in medical imaging AI, spatial AI, computer vision, signal processing, and AI R&D leadership.
 ---
 
 # Case Studies
 
-Selected applied research and engineering work for medical imaging, spatial AI, computer vision, and signal processing.
+Selected work across medical imaging AI, computer vision, spatial AI, signal processing, and research-to-product execution.
+
+Some details are generalized because of client confidentiality, NDA-sensitive research, or patent sensitivity.
 
 {% assign sorted_studies = site.case_studies | sort: "ind" %}
 
@@ -15,7 +18,7 @@ Selected applied research and engineering work for medical imaging, spatial AI, 
     {% for study in sorted_studies %}
       <article class="case-study-card">
         <p class="case-domain">{{ study.domain }}</p>
-        <h2><a href="{{ site.url }}{{ study.url }}">{{ study.title }}</a></h2>
+        <h2><a href="{{ study.url | relative_url }}">{{ study.title }}</a></h2>
         <p class="case-summary">{{ study.summary }}</p>
 
         {% if study.metrics %}
@@ -27,21 +30,23 @@ Selected applied research and engineering work for medical imaging, spatial AI, 
         {% endif %}
 
         {% if study.stack %}
-          <p class="case-stack">Stack: {{ study.stack | join: ", " }}</p>
+          <p class="case-stack">
+            {% for item in study.stack %}
+              <span class="stack-chip">{{ item }}</span>{% unless forloop.last %} {% endunless %}
+            {% endfor %}
+          </p>
         {% endif %}
 
-        <p><a href="{{ site.url }}{{ study.url }}">Read full case study &rarr;</a></p>
+        <p><a href="{{ study.url | relative_url }}">Read case study &rarr;</a></p>
       </article>
     {% endfor %}
   </div>
-
-  <section class="case-cta">
-    <p>See how these technical paths align with your project and contact Amitai for a confidentiality review.</p>
-    <a href="/contact/" class="cta-button cta-primary">Contact for details</a>
-    <p><a href="/services/">Review service offerings</a></p>
-  </section>
-
-  <p class="case-note">Some details are presented at a high level for confidentiality. Full technical scope is available on request.</p>
 {% else %}
   <p>No case studies available yet.</p>
 {% endif %}
+
+## Looking for help with a difficult technical problem?
+
+If your team is dealing with imaging, spatial AI, computer vision, feasibility risk, or technical diligence, the usual first step is a short technical assessment.
+
+[Request a technical assessment]({{ '/contact/' | relative_url }}){: .cta-button .cta-primary }

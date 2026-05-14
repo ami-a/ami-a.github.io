@@ -12,8 +12,7 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
 
 {% if sorted_services.size > 0 %}
   {% for service in sorted_services %}
-    <a id="{{ service.slug }}"></a>
-    ## {{ service.title }}
+    ## {{ service.title }} {: #{{ service.slug }} }
 
     **For:** {{ service.audience }}
 

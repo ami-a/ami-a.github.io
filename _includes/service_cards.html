@@ -8,6 +8,9 @@
           <h3>{{ service.title }}</h3>
           <p class="audience">For: {{ service.audience }}</p>
           <p class="summary">{{ service.summary }}</p>
+          {% if service.proof_hint %}
+            <p class="proof-hint">{{ service.proof_hint }}</p>
+          {% endif %}
           {% if service.typical_duration %}
             <p class="engagement-preview"><em>{{ service.typical_duration }}</em></p>
           {% endif %}
@@ -18,7 +21,7 @@
               {% endfor %}
             </ul>
           {% endif %}
-          <a href="/services/#{{ service.slug }}" class="card-link">Explore this service →</a>
+          <a href="/services/#{{ service.slug }}" class="card-link">Explore this service &rarr;</a>
         </div>
       {% endfor %}
     {% else %}

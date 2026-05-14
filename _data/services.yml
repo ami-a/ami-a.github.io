@@ -1,81 +1,57 @@
-# Services offered by contractor
-# Example structure for Jekyll data-driven rendering
-
 services:
   - title: Medical Imaging / Computer Vision R&D
     slug: medical-imaging-cv
     audience: Biotech and medical-AI teams
-    summary: Work on imaging pipelines, model development, and validation for diagnostic and vision systems.
-    engagement_type: Contract, advisory, or retained R&D
-    typical_start: After technical scope and dataset review
-    typical_duration: Monthly reserved capacity or project-based engagements
-    best_for:
-      - Medical imaging or vision teams with complex data
-      - Research programs that require NDA-sensitive handling
-      - Projects needing technical leadership on prototype development
-    typical_problems:
-      - Noisy or inconsistent imaging inputs
-      - Limited labeled data for model training
-      - Unclear path from research to deployment
-    typical_outcomes:
-      - Validated prototype model and technical review
-      - Roadmap for product integration
-      - Risk profile for model behavior and performance
-    how_engagements_start: Begin with a technical scope review and dataset assessment.
-    not_fit:
-      - Basic data-entry automation
-      - Prebuilt model selection without research work
-      - Pure marketing or design-only work
-    example: Defined a vision pipeline for a medical imaging workflow.
+    summary: Senior technical support for imaging-heavy products involving segmentation, registration, calibration, spatial alignment, microscopy, pathology, or precision image-processing workflows.
+    typical_start: After scope review
+    typical_duration: 1–3 week sprint or monthly retained R&D
+    engagement_type: Sprint, advisory, or retained R&D
+    problems:
+      - Medical image segmentation or post-processing is unreliable
+      - Scans, microscopy images, or spatial data need alignment or calibration
+      - Research code needs to become a working technical pipeline
+      - AI outputs must connect to physical or lab workflows
+    outcomes:
+      - Clear technical risk assessment
+      - Prototype or production-oriented imaging pipeline
+      - Improved spatial alignment, calibration, or workflow reliability
+      - Practical roadmap for implementation or validation
+    proof_hint: Medical-imaging AI work involving segmentation, scan interpretation, geometric calibration, spatial alignment, precision output generation, lab validation, and patent filings.
 
   - title: Research Engineering Sprint
     slug: research-engineering-sprint
-    audience: Product teams and innovation labs
-    summary: Short-term engineering sprints to test feasibility, validate algorithms, and clarify technical risk.
-    engagement_type: Focused sprint or rapid assessment
-    typical_start: After initial planning, subject to scope and availability
-    typical_duration: 1-4 week sprints, depending on scope
-    best_for:
-      - Teams that need rapid technical proof points
-      - Research concepts with uncertain feasibility
-      - Projects that need a focused, senior engineer-led sprint
-    typical_problems:
-      - Ambiguous product requirements
-      - Unproven model or sensor approach
-      - High technical risk in early design
-    typical_outcomes:
-      - Working proof-of-concept code
-      - Measurable validation criteria
-      - Clear next-step recommendations
-    how_engagements_start: Start with a one-day technical planning session.
-    not_fit:
-      - Long-term feature development
-      - Pure UX/product design engagements
-      - Commodity IT work
-    example: Produced validation criteria and next-step recommendations in a focused research sprint.
+    audience: AI startups and R&D teams
+    summary: Focused research-to-product execution for teams that need a prototype, paper implementation, benchmark, feasibility answer, or architecture path through an ambiguous technical problem.
+    typical_start: After problem and data review
+    typical_duration: Usually scoped in 1–3 week blocks
+    engagement_type: Fixed-scope sprint or senior hourly execution
+    problems:
+      - A promising AI method needs to be tested quickly
+      - A prototype is blocked by research uncertainty
+      - A paper or open-source method needs adaptation to real data
+      - The team needs senior technical judgment before committing engineering budget
+    outcomes:
+      - Feasibility assessment
+      - Working prototype or benchmark
+      - Technical constraints and failure modes
+      - Recommended implementation path
+    proof_hint: Experience turning ambiguous AI ideas into working prototypes across Meta Reality Labs, QuantumCyte, and AGAT Software.
 
   - title: AI / CV Technical Due Diligence
-    slug: ai-cv-technical-due-diligence
-    audience: Investors, acquisition teams, and internal product owners
-    summary: Evaluate AI and computer vision technology, architecture, and deployment readiness.
-    engagement_type: Assessment or advisory retainer
-    typical_start: After documentation review; timing depends on scope and access
-    typical_duration: 1-3 week assessment or ongoing advisory capacity
-    best_for:
-      - Investment or M&A teams reviewing AI assets
-      - Product owners validating technical claims
-      - Teams preparing acquisitions or strategic partnerships
-    typical_problems:
-      - Unverified AI performance claims
-      - Unclear architecture or data lineage
-      - Unknown production readiness
-    typical_outcomes:
-      - Technical due diligence report
-      - Architecture and risk assessment
+    slug: ai-cv-technical-diligence
+    audience: Founders, investors, and technical leaders
+    summary: Independent assessment of whether an AI, computer-vision, medical-imaging, or spatial-AI claim is technically real, scalable, defensible, and execution-ready.
+    typical_start: After brief technical material review
+    typical_duration: Lightweight review, diligence memo, or deeper technical assessment
+    engagement_type: Advisory, diligence, or technical review
+    problems:
+      - A vendor, startup, or internal team claims strong AI/CV performance
+      - Technical risk is unclear before investment or product commitment
+      - Model, data, architecture, or deployment claims need expert review
+      - Leadership needs a clear go/no-go technical opinion
+    outcomes:
+      - Clear technical risk map
+      - Feasibility and scalability assessment
+      - Architecture and data-quality review
       - Practical recommendations for next steps
-    how_engagements_start: Review available technical documentation and run a short assessment.
-    not_fit:
-      - Strategic market research
-      - Full software implementation
-      - High-level business planning without technical work
-    example: Assessed computer vision readiness for a product acquisition.
+    proof_hint: Senior AI R&D background across computer vision, spatial AI, medical imaging, LLM systems, and production-oriented AI workflows.

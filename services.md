@@ -8,16 +8,18 @@ permalink: /services/
 
 Focused engineering services for medical imaging, computer vision, spatial AI, and technical diligence.
 
-{% assign sorted_services = site.data.services.services | sort: "title" %}
+{% assign sorted_services = site.data.services.services %}
 
 {% if sorted_services.size > 0 %}
   <div class="services-container">
     {% for service in sorted_services %}
       <article class="service-item">
+        {% assign service_problems = service.problems | default: service.typical_problems %}
+        {% assign service_outcomes = service.outcomes | default: service.typical_outcomes %}
         <h2 id="{{ service.slug }}">{{ service.title }}</h2>
         <p><strong>For:</strong> {{ service.audience }}</p>
         <p>{{ service.summary }}</p>
-        
+
         {% if service.engagement_type or service.typical_start or service.typical_duration %}
         <div class="service-engagement-details">
           {% if service.engagement_type %}
@@ -31,7 +33,7 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
           {% endif %}
         </div>
         {% endif %}
-        
+
         {% if service.best_for %}
         <h3>Best for:</h3>
         <ul>
@@ -40,18 +42,22 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
           {% endfor %}
         </ul>
         {% endif %}
-        {% if service.typical_problems %}
+        {% if service.proof_hint %}
+        <h3>Relevant proof:</h3>
+        <p>{{ service.proof_hint }}</p>
+        {% endif %}
+        {% if service_problems %}
         <h3>Typical problems:</h3>
         <ul>
-          {% for item in service.typical_problems %}
+          {% for item in service_problems %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
         {% endif %}
-        {% if service.typical_outcomes %}
+        {% if service_outcomes %}
         <h3>Typical outcomes:</h3>
         <ul>
-          {% for item in service.typical_outcomes %}
+          {% for item in service_outcomes %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>

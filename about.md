@@ -34,6 +34,8 @@ Available for selected contract, advisory, and research-engineering engagements.
 
 [View CV]({{ '/files/2020engD.pdf' | relative_url }})
 
-[View services]({{ '/services/' | relative_url }}){: .cta-button .cta-primary }
-[View case studies]({{ '/case-studies/' | relative_url }}){: .cta-button .cta-secondary }
-[Contact]({{ '/contact/' | relative_url }}){: .cta-button .cta-secondary }
+<div class="about-actions">
+  <a href="{{ '/services/' | relative_url }}" class="cta-button cta-primary">View services</a>
+  <a href="{{ '/case-studies/' | relative_url }}" class="cta-button cta-secondary">View case studies</a>
+  <a href="{{ '/contact/' | relative_url }}" class="cta-button cta-secondary">Contact</a>
+</div>

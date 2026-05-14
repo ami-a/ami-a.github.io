@@ -230,6 +230,7 @@ body {
   color: #062b2b;
   font-weight: 700;
   text-decoration: none;
+  min-height: 44px;
 }
 
 @media (max-width: 680px) {
@@ -244,6 +245,7 @@ body {
   .site-nav-cta {
     width: 100%;
     text-align: center;
+    min-height: 48px;
   }
 }
 
@@ -266,6 +268,47 @@ body {
   margin: 0;
   font-size: 1.15rem;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.5rem;
+  min-height: 44px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-primary {
+  background: #00ffe1;
+  color: #062b2b;
+  border: 1px solid rgba(0, 255, 225, 0.3);
+}
+
+.cta-primary:hover {
+  background: #b9fff1;
+  box-shadow: 0 18px 40px -30px rgba(0, 255, 225, 0.55);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #00ffe1;
+  border: 2px solid #00ffe1;
+}
+
+.cta-secondary:hover {
+  background: rgba(0, 255, 225, 0.1);
+  color: #ffffff;
 }
 
 /* Section layout */
@@ -424,6 +467,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   min-width: 220px;
+  min-height: 44px;
   padding: 0.95rem 1.5rem;
   border-radius: 999px;
   background: #00ffe1;
@@ -462,6 +506,45 @@ section h2 {
   color: rgba(255, 255, 255, 0.78);
 }
 
+/* Archive and services containers */
+.archive-container,
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.project-card,
+.service-item {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  flex-grow: 1;
+}
+.project-card h2,
+.service-item h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+.project-card h3,
+.service-item h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.project-card p,
+.service-item p {
+  margin-bottom: 0.85rem;
+}
+.project-card hr,
+.service-item hr {
+  margin: 1.5rem 0 0;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 /* Tables on case-study pages */
 .tablea, .tableb {
   width: 100%;
@@ -474,6 +557,20 @@ section h2 {
 }
 .tablea thead th {
   font-weight: 700;
+}
+
+@media (max-width: 680px) {
+  .tablea tr td,
+  .tableb tr td {
+    padding: 0.7rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .tablea {
+    font-size: 0.9rem;
+  }
+  .tableb {
+    font-size: 0.9rem;
+  }
 }
 
 /* Footer spacing */
@@ -493,17 +590,87 @@ section h2 {
   }
 }
 
+@media (max-width: 768px) {
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+  main {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 680px) {
   .hero {
-    padding-top: 2rem;
+    padding: 1.5rem 0 1rem;
   }
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  .hero-actions .cta-button {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.85rem 1.25rem;
   }
   .page-header {
-    padding: 1.5rem 1rem 2rem;
+    padding: 1.25rem 1rem 1.5rem;
+  }
+  .page-header .project-name {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+  .page-header .project-tagline {
+    font-size: 0.95rem;
+  }
+  .header-contact {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .header-contact a {
+    word-break: break-word;
+  }
+  .cta-band {
+    padding: 1.5rem 0 2rem;
+  }
+  .cta-band .cta-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-band .cta-content p {
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
   }
   .cta-band .cta-button {
     width: 100%;
+    min-width: auto;
+    min-height: 48px;
+    padding: 0.85rem 1.25rem;
+  }
+  .cards-container {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .service-card,
+  .case-card,
+  .proof-item,
+  .model-tier {
+    min-height: auto;
+    padding: 1.25rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .main-content {
+    padding: 1.5rem 1rem 2rem;
+    max-width: 100%;
   }
 }

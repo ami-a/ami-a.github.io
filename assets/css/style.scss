@@ -368,6 +368,14 @@ section h2 {
   font-size: 0.95rem;
 }
 
+.service-card .engagement-preview {
+  display: block;
+  margin: 0.5rem 0 1rem 0;
+  color: rgba(0, 255, 225, 0.65);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .service-card ul,
 .model-tier ul,
 .fit-column ul,
@@ -543,6 +551,31 @@ section h2 {
   margin: 1.5rem 0 0;
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Service engagement details timeline */
+.service-engagement-details {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 255, 225, 0.05);
+  border-left: 3px solid rgba(0, 255, 225, 0.3);
+  border-radius: 0.5rem;
+}
+
+.service-engagement-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.service-engagement-details p:last-child {
+  margin-bottom: 0;
+}
+
+.engagement-type,
+.typical-start,
+.typical-duration {
+  margin-bottom: 0.5rem;
 }
 
 /* Tables on case-study pages */

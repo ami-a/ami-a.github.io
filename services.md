@@ -17,6 +17,21 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
         <h2 id="{{ service.slug }}">{{ service.title }}</h2>
         <p><strong>For:</strong> {{ service.audience }}</p>
         <p>{{ service.summary }}</p>
+        
+        {% if service.engagement_type or service.typical_start or service.typical_duration %}
+        <div class="service-engagement-details">
+          {% if service.engagement_type %}
+          <p class="engagement-type"><strong>Engagement type:</strong> {{ service.engagement_type }}</p>
+          {% endif %}
+          {% if service.typical_start %}
+          <p class="typical-start"><strong>Typical start:</strong> {{ service.typical_start }}</p>
+          {% endif %}
+          {% if service.typical_duration %}
+          <p class="typical-duration"><strong>Typical duration:</strong> {{ service.typical_duration }}</p>
+          {% endif %}
+        </div>
+        {% endif %}
+        
         {% if service.best_for %}
         <h3>Best for:</h3>
         <ul>

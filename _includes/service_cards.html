@@ -8,6 +8,9 @@
           <h3>{{ service.title }}</h3>
           <p class="audience">For: {{ service.audience }}</p>
           <p class="summary">{{ service.summary }}</p>
+          {% if service.typical_duration %}
+            <p class="engagement-preview"><em>{{ service.typical_duration }}</em></p>
+          {% endif %}
           {% if service.outcomes %}
             <ul class="outcomes">
               {% for outcome in service.outcomes %}

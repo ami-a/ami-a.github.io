@@ -4,10 +4,10 @@ ind: 2
 domain: Spatial AI
 summary: Short placeholder summary for spatial AI and 3D reconstruction project.
 metrics:
-  - value: "Real-time"
-    label: processing speed
-  - value: "Low-centimeter"
-    label: localization accuracy
+  - value: "Working prototype"
+    label: with real-time performance
+  - value: "Documented constraints"
+    label: and localization design
 stack:
   - Python
   - SLAM
@@ -25,7 +25,7 @@ The solution had to run in near real time and work with sensor data that could b
 Implemented a spatial reconstruction pipeline using Python, SLAM techniques, DepthAI sensor processing, and NumPy-based data handling.
 
 ## Result
-Built a working spatial AI prototype with real-time performance and low-centimeter localization accuracy.
+Built a working spatial AI prototype with real-time processing capability and documented localization design validated in testing.
 
 ## Commercial relevance
 Applicable to robotics, inspection, and situational awareness systems where real-time 3D perception is required.

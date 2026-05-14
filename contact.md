@@ -35,6 +35,10 @@ Please include:
 
 [Email Amitai]({{ "mailto:" | append: site.email | append: "?subject=" | append: "Project%20Inquiry%20for%20AI%20Research%20Engineering" | append: "&body=" | append: "Please%20describe%20your%20project%2C%20technical%20challenge%2C%20data%2Fstack%2C%20timeline%2C%20and%20confidentiality%20requirements." }})
 
+## Response & timeline
+
+Typical response within 1–2 business days. Scope review and feasibility assessment usually happen in the first 2–3 weeks. Sprint work typically begins after clear alignment on technical constraints and deliverables.
+
 ## Learn more
 
 - [Services](/services/)

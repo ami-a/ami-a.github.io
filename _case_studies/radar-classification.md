@@ -4,10 +4,10 @@ ind: 4
 domain: Signal Processing
 summary: Short placeholder summary for radar classification model.
 metrics:
-  - value: "High accuracy"
-    label: classification performance
-  - value: "Low latency"
-    label: inference speed
+  - value: "Working classifier"
+    label: with validated accuracy
+  - value: "Fast inference"
+    label: design documented
 stack:
   - Python
   - PyTorch
@@ -25,7 +25,7 @@ The solution had to handle noisy radar signals and provide fast inference for re
 Developed a deep learning classification pipeline using Python, PyTorch, SciPy, and signal-processing features derived from radar spectrograms.
 
 ## Result
-Built a classifier prototype with high accuracy and low-latency inference in validation tests.
+Built a working classifier prototype with documented validation criteria and fast-inference design. Performance evaluated against noisy radar signals with clear constraints documented for deployment.
 
 ## Commercial relevance
 Useful for radar-based detection, tracking, and classification systems where speed and accuracy are critical.

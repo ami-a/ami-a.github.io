@@ -1,9 +1,27 @@
-# Social proof, case studies, and key outcomes
-# Example structure for contractor credibility
+# Verified proof points and outcomes
+# These reflect demonstrated working prototypes and documented research
 
 proof:
-  - title: Placeholder Project Impact
-    summary: Brief summary of measurable result or deliverable.
-    impact: Placeholder outcome or metric
+  - title: Medical Imaging Workflow Development
+    summary: Built working pipeline for high-precision feature detection in imaging data with validated precision workflow and reproducible model evaluation.
+    impact: Working prototype with documented validation approach
     year: 2024
-    category: research
+    category: medical-imaging
+
+  - title: Spatial AI & 3D Reconstruction
+    summary: Delivered working spatial AI prototype with real-time processing and documented localization design.
+    impact: Working prototype with real-time performance constraints documented
+    year: 2023
+    category: spatial-ai
+
+  - title: Multi-Object Tracking at Scale
+    summary: Developed working tracking pipeline for live-stream processing with scalable inference design and identity-consistency logic.
+    impact: Working system architecture with efficient inference design
+    year: 2023
+    category: computer-vision
+
+  - title: Radar Signal Classification
+    summary: Built working classifier prototype with validated performance against noisy radar data and documented fast-inference design.
+    impact: Working classifier with fast inference and clear deployment constraints
+    year: 2023
+    category: signal-processing

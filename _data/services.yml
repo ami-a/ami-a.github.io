@@ -6,6 +6,9 @@ services:
     slug: medical-imaging-cv
     audience: Biotech and medical-AI teams
     summary: Work on imaging pipelines, model development, and validation for diagnostic and vision systems.
+    engagement_type: Contract, advisory, or retained R&D
+    typical_start: After technical scope and dataset review
+    typical_duration: Monthly reserved capacity or project-based engagements
     best_for:
       - Medical imaging or vision teams with complex data
       - Research programs that require NDA-sensitive handling
@@ -29,6 +32,9 @@ services:
     slug: research-engineering-sprint
     audience: Product teams and innovation labs
     summary: Short-term engineering sprints to test feasibility, validate algorithms, and clarify technical risk.
+    engagement_type: Focused sprint or rapid assessment
+    typical_start: Within 1–2 weeks of initial planning session
+    typical_duration: 1–4 week sprints depending on scope
     best_for:
       - Teams that need rapid technical proof points
       - Research concepts with uncertain feasibility
@@ -52,6 +58,9 @@ services:
     slug: ai-cv-technical-due-diligence
     audience: Investors, acquisition teams, and internal product owners
     summary: Evaluate AI and computer vision technology, architecture, and deployment readiness.
+    engagement_type: Assessment or advisory retainer
+    typical_start: 1–2 week turnaround from documentation review
+    typical_duration: 1–3 week assessment or ongoing advisory capacity
     best_for:
       - Investment or M&A teams reviewing AI assets
       - Product owners validating technical claims

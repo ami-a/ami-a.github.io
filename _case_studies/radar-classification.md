@@ -1,43 +1,55 @@
 ---
-title: Radar Signal Classification with Deep Learning
+title: Doppler Radar Target Classification
 ind: 4
-domain: Signal Processing
-summary: High-level case study for noisy radar signal classification and fast-inference constraints.
+domain: Signal Processing / Machine Learning
+summary: Signal-processing and machine-learning pipeline for Doppler-pulse radar target classification using spectrograms, filtering, and constrained deep-learning experimentation.
 metrics:
-  - value: "Working classifier"
-    label: with documented validation
-  - value: "Fast inference"
-    label: design documented
+  - value: "30th"
+    label: competition placement
+  - value: "1,000+"
+    label: participants
+  - value: "Constrained"
+    label: GPU experimentation
 stack:
   - Python
-  - PyTorch
-  - SciPy
-  - Matplotlib
+  - Signal Processing
+  - FFT
+  - Spectrograms
+  - CNN
+  - RNN
 ---
 
+# Doppler Radar Target Classification
+
 ## Problem
-A radar classification system needed to distinguish between targets using pulse-Doppler radar data.
+
+Radar classification requires extracting useful information from noisy time-series signals. The goal was to classify target types from Doppler-pulse radar data using signal-processing and machine-learning methods.
 
 ## Constraints
-The solution had to handle noisy radar signals and provide fast inference for real-time use cases.
+
+- Noisy radar signals
+- Limited compute resources
+- Need to transform raw signals into useful model inputs
+- Competition environment with many participants
 
 ## Approach
-Developed a deep learning classification pipeline using Python, PyTorch, SciPy, and signal-processing features derived from radar spectrograms.
+
+Built a pipeline using signal processing, filtering, FFT-based features, spectrogram representations, and deep-learning experimentation with CNN/RNN-style architectures.
+
+The work focused on extracting micro-Doppler patterns and turning difficult radar signals into learnable representations.
 
 ## Result
-Built a working classifier prototype with documented validation criteria and fast-inference design. Performance evaluated against noisy radar signals with clear constraints documented for deployment.
+
+Produced a competitive radar-classification solution.
+
+Placed 30th out of 1,000+ participants.
 
 ## Commercial relevance
-Useful for radar-based detection, tracking, and classification systems where speed and accuracy are critical.
 
-## Stack
-- Python
-- PyTorch
-- SciPy
-- Matplotlib
+This case demonstrates ability to work with scientific signals, constrained data, noisy measurements, feature engineering, and ML experimentation.
 
-## Confidentiality
-High-level summary only, with no sensitive defense or radar system specifics.
+It is relevant to medical imaging, biotech instrumentation, sensor AI, radar, robotics, and other domains where the input data is not clean web data.
 
-## Next step
-For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.
+## Confidentiality note
+
+This is a public project case study based on existing project material.

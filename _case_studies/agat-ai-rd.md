@@ -1,32 +1,57 @@
 ---
-title: AGAT AI R&D
+title: AI R&D Leadership for Cybersecurity and Compliance Products
 ind: 5
-domain: AI Research
-summary: Unpublished pending approved source material.
-published: false
-stack: []
+domain: AI R&D Leadership
+summary: Led applied AI R&D for cybersecurity and compliance products, including AI assistants, LLM workflows, anomaly detection, and customer-facing AI capabilities.
+metrics:
+  - value: "2-person"
+    label: AI team leadership
+  - value: "Customer-facing"
+    label: AI product workflows
+  - value: "End-to-end"
+    label: research to delivery
+stack:
+  - Python
+  - LangChain
+  - LLaMA
+  - TensorFlow
+  - PyTorch
+  - Vector databases
+  - AWS
 ---
 
+# AI R&D Leadership for Cybersecurity and Compliance Products
+
 ## Problem
-This case study is pending approved source material and will be expanded once factual details are available.
+
+Cybersecurity and compliance products often need AI capabilities that are practical, explainable enough for users, and integrated into real product workflows.
+
+The work required moving from research exploration to customer-facing implementation.
 
 ## Constraints
-The available repository content did not include verified details for this project.
+
+- Production-oriented product environment
+- Customer-facing AI behavior
+- Need to evaluate fast-moving AI methods
+- Need to balance research, architecture, prototyping, and delivery
+- Small AI team
 
 ## Approach
-A concise public description will be added after review of approved project information.
+
+Led AI R&D for cybersecurity and compliance products, managing a small AI team and owning research, architecture, prototyping, implementation, and customer-facing delivery.
+
+Built AI assistant systems, LLM-related workflows, retrieval/orchestration methods, anomaly-detection systems, and applied ML capabilities.
 
 ## Result
-A public summary will be provided once factual outcomes are confirmed.
+
+Delivered customer-facing AI capabilities and led end-to-end AI development from feasibility research through implementation and deployment-oriented workflows.
 
 ## Commercial relevance
-Intended to represent AI research and development work after source verification.
 
-## Stack
-- Pending approved source material
+This case demonstrates technical leadership, hands-on implementation, and the ability to convert ambiguous AI opportunities into practical product capabilities.
 
-## Confidentiality
-No proprietary details are included in this placeholder page.
+It supports advisory, research-engineering, technical-diligence, and retained AI R&D engagements.
 
-## Next step
-For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.
+## Confidentiality note
+
+Customer and product details are generalized.

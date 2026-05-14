@@ -1,43 +1,56 @@
 ---
-title: Medical Imaging AI Pipeline
+title: Medical Imaging AI Pipeline for Precision Workflows
 ind: 1
 domain: Medical Imaging AI
-summary: High-level case study for an imaging pipeline focused on preprocessing, model evaluation, and deployment constraints.
+summary: AI-based software connecting medical segmentation, scan interpretation, geometric calibration, spatial alignment, and precision output generation.
 metrics:
-  - value: "Working pipeline"
-    label: with precision validation
-  - value: "Documented approach"
-    label: to deployment readiness
+  - value: "Close to 5 µm"
+    label: precision workflow
+  - value: "2"
+    label: patent filings
+  - value: "Contract R&D"
+    label: engagement type
 stack:
   - Python
   - OpenCV
   - PyTorch
-  - TensorFlow
+  - CUDA
+  - OpenSlide
+  - VIPS
 ---
 
+# Medical Imaging AI Pipeline for Precision Workflows
+
 ## Problem
-A medical imaging workflow required an AI pipeline for high-precision feature detection in imaging data.
+
+Medical-imaging workflows often fail at the boundary between AI output and physical execution. Segmentation alone is not enough; the system must preserve geometry, calibration, spatial alignment, and downstream workflow constraints.
 
 ## Constraints
-The project needed sensitive handling of clinical-style data and a practical path from research prototype toward deployment.
+
+- Medical scan and microscopy data
+- Precision-sensitive output requirements
+- Calibration and spatial-alignment complexity
+- Lab-validation feedback loops
+- Confidential implementation details
 
 ## Approach
-Built an imaging model pipeline using Python, OpenCV, PyTorch, and TensorFlow. Emphasis was placed on validation, data preprocessing, and reproducible model evaluation.
+
+Designed and developed AI-based software connecting medical segmentation outputs, scan interpretation, geometric transformations, calibration logic, spatial alignment, and final output generation.
+
+The work combined computer vision, medical image analysis, performance optimization, and practical engineering needed to connect AI results with experimental workflows.
 
 ## Result
-Delivered a working pipeline with validated precision workflow and documented model evaluation. Implementation focused on reproducible validation and practical deployment constraints.
+
+The workflow reached close to 5 µm precision in tissue-printing contexts and supported experimental validation using customer samples.
+
+The work also contributed to two software patent filings related to AI-based software and precision medical-imaging workflows.
 
 ## Commercial relevance
-This work is relevant for diagnostic imaging systems and medical device workflows where precision and reproducibility matter.
 
-## Stack
-- Python
-- OpenCV
-- PyTorch
-- TensorFlow
+This case shows ability to operate across AI, image processing, calibration, physical-world constraints, and production-oriented scientific workflows.
 
-## Confidentiality
-Details are presented at a high level to preserve NDA-sensitive application context.
+It is directly relevant to biotech and medical-AI teams working with microscopy, pathology, segmentation, registration, calibration, spatial alignment, or high-precision imaging pipelines.
 
-## Next step
-For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.
+## Confidentiality note
+
+Some details are generalized due to client confidentiality and patent sensitivity.

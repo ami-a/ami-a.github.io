@@ -112,7 +112,30 @@ layout: default
 	
 </div>
 	{% else %}
-		{{ content }}
+		{% if page.metrics or page.stack %}
+		<div class="case-study-details">
+			<article class="case-main">
+				{{ content }}
+			</article>
+			<aside class="case-sidebar" aria-label="Case study details">
+				{% if page.metrics %}
+				<h2>At a glance</h2>
+				<dl>
+					{% for metric in page.metrics %}
+					<dt>{{ metric.value }}</dt>
+					<dd>{{ metric.label }}</dd>
+					{% endfor %}
+				</dl>
+				{% endif %}
+				{% if page.stack %}
+				<h2>Stack</h2>
+				<p>{{ page.stack | join: ", " }}</p>
+				{% endif %}
+			</aside>
+		</div>
+		{% else %}
+			{{ content }}
+		{% endif %}
 	{% endif %}
 
   {% include footer.html %}

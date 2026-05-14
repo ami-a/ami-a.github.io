@@ -1,43 +1,54 @@
 ---
-title: Spatial AI & 3D Reconstruction
+title: Spatial AI and Wearable Interaction Prototypes
 ind: 2
-domain: Spatial AI
-summary: High-level case study for live sensor processing, reconstruction, and localization constraints.
+domain: Spatial AI / AR-VR
+summary: Research and prototype work involving wearable-device interaction, spatial representations, and multimodal embeddings for AR/VR environments.
 metrics:
-  - value: "Working prototype"
-    label: with near-real-time constraints
-  - value: "Documented constraints"
-    label: and localization design
+  - value: "Working demo"
+    label: device-oriented prototype
+  - value: "NDA-sensitive"
+    label: research context
+  - value: "Spatial AI"
+    label: domain
 stack:
   - Python
-  - SLAM
-  - DepthAI
-  - NumPy
+  - Embeddings
+  - CLIP-like models
+  - Gaussian splatting
+  - Surfels
+  - AR/VR prototypes
 ---
 
+# Spatial AI and Wearable Interaction Prototypes
+
 ## Problem
-A spatial AI system needed robust 3D reconstruction and localization from live sensor streams.
+
+Emerging AR/VR and wearable devices require AI systems that understand interaction, spatial context, and physical environments. The technical challenge is not just model performance; it is translating early-stage research into working device-oriented prototypes.
 
 ## Constraints
-The solution had to run in near real time and work with sensor data that could be noisy or variable.
+
+- NDA-sensitive research environment
+- Device-oriented prototype constraints
+- Spatial and scene-identification ambiguity
+- Multimodal representation challenges
+- Need to turn research concepts into demonstrable systems
 
 ## Approach
-Implemented a spatial reconstruction pipeline using Python, SLAM techniques, DepthAI sensor processing, and NumPy-based data handling.
+
+Worked on AI-driven capabilities for emerging AR/VR and wearable devices, including spatial-AI research involving 3D scene representations, multimodal embeddings, Gaussian splatting, surfels, and CLIP-like embedding models.
+
+Also owned software implementation for a hand-control interaction demo on wearable hardware.
 
 ## Result
-Built a working spatial AI prototype with real-time processing capability and documented localization design validated in testing.
+
+Built and evaluated working research prototypes and produced evidence for potential improvements in spatial and scene-identification workflows.
+
+Some outcomes and implementation details are intentionally generalized because of NDA constraints.
 
 ## Commercial relevance
-Applicable to robotics, inspection, and situational awareness systems where real-time 3D perception is required.
 
-## Stack
-- Python
-- SLAM
-- DepthAI
-- NumPy
+This case is relevant to teams working on spatial AI, robotics, AR/VR, 3D scene understanding, multimodal embeddings, device prototypes, or research-to-product execution.
 
-## Confidentiality
-High-level summary only, preserving NDA-sensitive spatial AI application details.
+## Confidentiality note
 
-## Next step
-For project inquiries or a confidential scope review, see <a href="/services/">Services</a> and <a href="/contact/">Contact</a>.
+Details are summarized at a high level due to NDA-sensitive work.

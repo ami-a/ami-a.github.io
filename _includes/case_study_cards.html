@@ -8,8 +8,18 @@
         <div class="case-card">
           <h3>{{ study.title }}</h3>
           <p class="year">{{ study.domain }}</p>
-          <p class="description">{{ study.summary }}</p>
-          <a href="{{ study.url }}" class="card-link">View →</a>
+          <p class="description">
+            {{ study.summary }}
+            {% if study.metrics %}
+              <br>
+              <span class="metrics">
+              {% for metric in study.metrics limit: 2 %}
+                <span class="metric-chip">{{ metric.value }}{% if metric.label %} {{ metric.label }}{% endif %}</span>{% unless forloop.last %} / {% endunless %}
+              {% endfor %}
+              </span>
+            {% endif %}
+          </p>
+          <a href="{{ study.url | relative_url }}" class="card-link">View →</a>
         </div>
       {% endfor %}
     {% else %}

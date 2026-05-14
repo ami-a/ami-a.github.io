@@ -2,6 +2,7 @@
 layout: page
 title: Technical Notes
 permalink: /technical-notes/
+published: false
 ---
 
 # Technical Notes

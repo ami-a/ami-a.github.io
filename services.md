@@ -72,7 +72,7 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
         <h3>Example:</h3>
         <p>{{ service.example }}</p>
         {% endif %}
-        <p><a href="/contact/">Contact for details →</a></p>
+        <p><a href="/contact/">Contact for details &rarr;</a></p>
         <hr>
       </article>
     {% endfor %}

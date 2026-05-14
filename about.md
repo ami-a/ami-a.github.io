@@ -6,7 +6,7 @@ permalink: /about/
 
 # About
 
-Amitai is a senior AI research engineer focused on medical imaging, computer vision, spatial AI, and practical AI R&D execution. He combines technical leadership with hands-on engineering to move research concepts into product-ready systems.
+Amitai is a senior AI research engineer focused on medical imaging, computer vision, spatial AI, and practical AI R&D execution. He combines technical leadership with hands-on engineering to move research concepts toward engineering-ready systems.
 
 ## Selected experience
 
@@ -28,7 +28,7 @@ I start with the technical challenge and data constraints, then build a focused 
 
 Available for selected contract, advisory, and research-engineering engagements. Typical work:
 
-- **Sprint model:** 1–3 week focused engineering cycles for feasibility testing, algorithm validation, or technical assessment
+- **Sprint model:** 1-3 week focused engineering cycles for feasibility testing, algorithm validation, or technical assessment
 - **Advisory retainer:** Monthly reserved capacity for due diligence, architecture review, or ongoing technical guidance
 - **Research-to-product:** Partnership-style engagement to move prototypes toward production readiness
 
@@ -38,6 +38,6 @@ First step is always a technical scope review and data assessment to clarify con
 
 For project inquiries or a request for a CV and portfolio, please reach out via the contact page.
 
-Typical first step: email with project description, technical challenge, current stack, and timeline. Response within 1–2 business days.
+Typical first step: email with project description, technical challenge, current stack, and timeline. Response target: 1-2 business days.
 
-See examples in the <a href="/case-studies/">Case Studies</a> section, and review technical notes at <a href="/technical-notes/">Technical Notes</a>.
+See examples in the <a href="/case-studies/">Case Studies</a> section.

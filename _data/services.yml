@@ -33,8 +33,8 @@ services:
     audience: Product teams and innovation labs
     summary: Short-term engineering sprints to test feasibility, validate algorithms, and clarify technical risk.
     engagement_type: Focused sprint or rapid assessment
-    typical_start: Within 1–2 weeks of initial planning session
-    typical_duration: 1–4 week sprints depending on scope
+    typical_start: After initial planning, subject to scope and availability
+    typical_duration: 1-4 week sprints, depending on scope
     best_for:
       - Teams that need rapid technical proof points
       - Research concepts with uncertain feasibility
@@ -52,15 +52,15 @@ services:
       - Long-term feature development
       - Pure UX/product design engagements
       - Commodity IT work
-    example: Delivered a validated prototype in a focused research sprint.
+    example: Produced validation criteria and next-step recommendations in a focused research sprint.
 
   - title: AI / CV Technical Due Diligence
     slug: ai-cv-technical-due-diligence
     audience: Investors, acquisition teams, and internal product owners
     summary: Evaluate AI and computer vision technology, architecture, and deployment readiness.
     engagement_type: Assessment or advisory retainer
-    typical_start: 1–2 week turnaround from documentation review
-    typical_duration: 1–3 week assessment or ongoing advisory capacity
+    typical_start: After documentation review; timing depends on scope and access
+    typical_duration: 1-3 week assessment or ongoing advisory capacity
     best_for:
       - Investment or M&A teams reviewing AI assets
       - Product owners validating technical claims

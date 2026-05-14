@@ -2,10 +2,10 @@
 title: Radar Signal Classification with Deep Learning
 ind: 4
 domain: Signal Processing
-summary: Short placeholder summary for radar classification model.
+summary: High-level case study for noisy radar signal classification and fast-inference constraints.
 metrics:
   - value: "Working classifier"
-    label: with validated accuracy
+    label: with documented validation
   - value: "Fast inference"
     label: design documented
 stack:

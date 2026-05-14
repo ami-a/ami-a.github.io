@@ -41,9 +41,9 @@ Please include:
 [Schedule time]({{ site.calendar_url }})
 {% endif %}
 
-## Response & timeline
+## Response & scoping timeline
 
-Typical response within 1–2 business days. Scope review and feasibility assessment usually happen in the first 2–3 weeks. Sprint work typically begins after clear alignment on technical constraints and deliverables.
+Typical response target: 1-2 business days. Scope review and feasibility assessment often take 2-3 weeks, depending on data access and project complexity. Sprint work begins after clear alignment on technical constraints and deliverables.
 
 ## Learn more
 

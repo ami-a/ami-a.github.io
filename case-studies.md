@@ -30,13 +30,13 @@ Selected applied research and engineering work for medical imaging, spatial AI, 
           <p class="case-stack">Stack: {{ study.stack | join: ", " }}</p>
         {% endif %}
 
-        <p><a href="{{ site.url }}{{ study.url }}">Read full case study →</a></p>
+        <p><a href="{{ site.url }}{{ study.url }}">Read full case study &rarr;</a></p>
       </article>
     {% endfor %}
   </div>
 
   <section class="case-cta">
-    <p>See how these technical paths align with your project and contact the team for a confidentiality review.</p>
+    <p>See how these technical paths align with your project and contact Amitai for a confidentiality review.</p>
     <a href="/contact/" class="cta-button cta-primary">Contact for details</a>
     <p><a href="/services/">Review service offerings</a></p>
   </section>

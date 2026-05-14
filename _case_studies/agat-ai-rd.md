@@ -2,7 +2,8 @@
 title: AGAT AI R&D
 ind: 5
 domain: AI Research
-summary: Placeholder case study for AGAT AI research and development.
+summary: Unpublished pending approved source material.
+published: false
 stack: []
 ---
 

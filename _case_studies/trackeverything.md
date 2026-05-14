@@ -2,7 +2,7 @@
 title: TrackEverything - Object Tracking at Scale
 ind: 3
 domain: Computer Vision
-summary: Short placeholder summary for multi-object tracking system.
+summary: High-level case study for detection, tracking, and identity consistency in live video streams.
 metrics:
   - value: "Working system"
     label: for scalable tracking
@@ -25,7 +25,7 @@ The solution had to integrate detection outputs with tracking logic and support 
 Built the TrackEverything pipeline in Python, combining detection, tracking algorithms, and statistical data fusion to maintain object identity over time.
 
 ## Result
-Delivered a working object tracking prototype with scalable tracking design and efficient inference pipeline. Architecture supports high-throughput live-stream processing with documented identity-consistency logic.
+Built a working object tracking prototype with scalable tracking design and an efficient inference pipeline. Architecture supports high-throughput live-stream processing with documented identity-consistency logic.
 
 ## Commercial relevance
 Relevant for surveillance, logistics, and automation systems requiring robust multi-object tracking.

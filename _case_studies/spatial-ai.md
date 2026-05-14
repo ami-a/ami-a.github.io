@@ -2,10 +2,10 @@
 title: Spatial AI & 3D Reconstruction
 ind: 2
 domain: Spatial AI
-summary: Short placeholder summary for spatial AI and 3D reconstruction project.
+summary: High-level case study for live sensor processing, reconstruction, and localization constraints.
 metrics:
   - value: "Working prototype"
-    label: with real-time performance
+    label: with near-real-time constraints
   - value: "Documented constraints"
     label: and localization design
 stack:

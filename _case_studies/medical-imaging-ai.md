@@ -2,7 +2,7 @@
 title: Medical Imaging AI Pipeline
 ind: 1
 domain: Medical Imaging AI
-summary: Short placeholder summary for medical imaging AI research.
+summary: High-level case study for an imaging pipeline focused on preprocessing, model evaluation, and deployment constraints.
 metrics:
   - value: "Working pipeline"
     label: with precision validation

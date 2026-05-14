@@ -12,12 +12,12 @@ If you are looking for support from a senior AI research engineer, this page hel
 
 Please include:
 
-- What you are building
-- The main technical bottleneck
-- Current data and stack
-- Timeline or desired milestone
-- Engagement type (research sprint, prototype, diligence)
-- Confidentiality constraints
+- [ ] What you are building
+- [ ] The main technical bottleneck
+- [ ] Current data and stack
+- [ ] Timeline or desired milestone
+- [ ] Engagement type (research sprint, prototype, diligence)
+- [ ] Confidentiality constraints
 
 ## Best fit
 
@@ -34,6 +34,12 @@ Please include:
 ## Email
 
 [Email Amitai]({{ "mailto:" | append: site.email | append: "?subject=" | append: "Project%20Inquiry%20for%20AI%20Research%20Engineering" | append: "&body=" | append: "Please%20describe%20your%20project%2C%20technical%20challenge%2C%20data%2Fstack%2C%20timeline%2C%20and%20confidentiality%20requirements." }})
+
+{% if site.calendar_url != "" %}
+## Book a 20-min intro call
+
+[Schedule time]({{ site.calendar_url }})
+{% endif %}
 
 ## Response & timeline
 

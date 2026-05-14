@@ -2,54 +2,53 @@
 layout: page
 title: Contact
 permalink: /contact/
+description: Contact Amitai Assayag for senior AI research engineering, medical imaging AI, computer vision, spatial AI, or technical diligence.
 ---
 
 # Contact
 
-If you are looking for support from a senior AI research engineer, this page helps you prepare a strong first inquiry.
+Best first message:
 
-## Best first message
+- What you are building
+- The technical bottleneck
+- Current data type or technical stack
+- Timeline
+- Whether this is advisory, sprint, or ongoing R&D work
+- Any confidentiality constraints
 
-Please include:
+I usually start with a short technical assessment before deeper implementation work.
 
-- [ ] What you are building
-- [ ] The main technical bottleneck
-- [ ] Current data and stack
-- [ ] Timeline or desired milestone
-- [ ] Engagement type (research sprint, prototype, diligence)
-- [ ] Confidentiality constraints
+{% assign email_subject = "Technical assessment request" | url_encode %}
+{% capture email_body %}What we are building:
+Technical bottleneck:
+Current data/stack:
+Timeline:
+Engagement type:
+Confidentiality constraints:{% endcapture %}
+
+[Email Amitai](mailto:{{ site.email }}?subject={{ email_subject }}&body={{ email_body | url_encode }}){: .cta-button .cta-primary }
+
+{% if site.calendar_url and site.calendar_url != "" %}
+## Book a 20-min intro call
+
+[Book a 20-min intro call]({{ site.calendar_url }})
+{% endif %}
 
 ## Best fit
 
-- Medical imaging or computer vision research projects
-- Spatial AI, 3D perception, and signal-processing work
-- Prototype validation or technical due diligence
+- Medical imaging, microscopy, pathology, segmentation, registration, calibration, or spatial alignment
+- Computer-vision systems that need research-level judgment
+- Spatial-AI or 3D scene-representation problems
+- AI technical diligence or feasibility review
 
 ## Not a fit
 
-- General marketing or content work
-- Low-cost commodity AI tooling
-- Immediate requests for a one-week turnkey solution
-
-## Email
-
-[Email Amitai]({{ "mailto:" | append: site.email | append: "?subject=" | append: "Project%20Inquiry%20for%20AI%20Research%20Engineering" | append: "&body=" | append: "Please%20describe%20your%20project%2C%20technical%20challenge%2C%20data%2Fstack%2C%20timeline%2C%20and%20confidentiality%20requirements." }})
-
-{% if site.calendar_url != "" %}
-## Book a 20-min intro call
-
-[Schedule time]({{ site.calendar_url }})
-{% endif %}
-
-## Response & scoping timeline
-
-Typical response target: 1-2 business days. Scope review and feasibility assessment often take 2-3 weeks, depending on data access and project complexity. Sprint work begins after clear alignment on technical constraints and deliverables.
+- Academic ghostwriting
+- Crypto projects
+- Low-budget generic automation
+- Projects that require inflated or unsupported AI claims
 
 ## Learn more
 
-- [Services](/services/)
-- [Case Studies](/case-studies/)
-
----
-
-**Preferred:** Email with the project scope, technical bottleneck, and timeline.
+- [Services]({{ '/services/' | relative_url }})
+- [Case Studies]({{ '/case-studies/' | relative_url }})

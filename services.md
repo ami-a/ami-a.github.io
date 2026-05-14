@@ -20,6 +20,9 @@ The strongest fit is a technical problem where failure is expensive: unreliable 
         {% assign service_problems = service.problems | default: service.typical_problems %}
         {% assign service_outcomes = service.outcomes | default: service.typical_outcomes %}
         <h2 id="{{ service.slug }}">{{ service.title }}</h2>
+        {% if service.featured %}
+        <p class="service-featured-label">Primary focus</p>
+        {% endif %}
         <p><strong>For:</strong> {{ service.audience }}</p>
         <p>{{ service.summary }}</p>
 
@@ -83,5 +86,7 @@ The strongest fit is a technical problem where failure is expensive: unreliable 
 - Work that depends on unsupported or inflated AI claims
 
 If the problem is difficult, technical, and expensive to get wrong, send a concise technical brief.
+
+Available for selected contract, advisory, and retained R&D engagements.
 
 [Request a technical assessment]({{ '/contact/' | relative_url }}){: .cta-button .cta-primary }

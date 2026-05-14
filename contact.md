@@ -18,6 +18,8 @@ Best first message:
 
 I usually start with a short technical assessment before deeper implementation work.
 
+Available for selected contract, advisory, and retained R&D engagements.
+
 {% assign email_subject = "Technical assessment request" | url_encode %}
 {% capture email_body %}What we are building:
 Technical bottleneck:

@@ -1,6 +1,7 @@
 services:
   - title: Medical Imaging / Computer Vision R&D
     slug: medical-imaging-cv
+    featured: true
     audience: Biotech and medical-AI teams
     summary: Senior technical support for imaging-heavy products involving segmentation, registration, calibration, spatial alignment, microscopy, pathology, or precision image-processing workflows.
     typical_start: After scope review

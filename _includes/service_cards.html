@@ -6,6 +6,9 @@
       {% for service in site.data.services.services %}
         <div class="service-card">
           <h3>{{ service.title }}</h3>
+          {% if service.featured %}
+            <span class="service-featured-label">Primary focus</span>
+          {% endif %}
           <p class="audience">For: {{ service.audience }}</p>
           <p class="summary">{{ service.summary }}</p>
           {% if service.typical_duration %}
@@ -18,7 +21,7 @@
               {% endfor %}
             </ul>
           {% endif %}
-          <a href="/contact/" class="card-link">Request assessment &rarr;</a>
+          <a href="{{ '/services/' | relative_url }}#{{ service.slug }}" class="card-link">View service &rarr;</a>
         </div>
       {% endfor %}
     {% else %}

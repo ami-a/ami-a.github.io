@@ -9,6 +9,8 @@ is_homepage: true
 
 {% include proof_strip.html %}
 
+{% include problem_framing.html %}
+
 {% include service_cards.html %}
 
 {% include case_study_cards.html %}

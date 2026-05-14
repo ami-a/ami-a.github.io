@@ -2,17 +2,20 @@
 layout: page
 title: Services
 permalink: /services/
+description: Senior AI research engineering services for medical imaging, computer vision, spatial AI, and technical diligence.
 ---
 
 # Services
 
-Focused engineering services for medical imaging, computer vision, spatial AI, and technical diligence.
+I work with funded biotech, medical-AI, and frontier-AI teams when the problem requires both research judgment and implementation ownership.
 
-{% assign sorted_services = site.data.services.services %}
+The strongest fit is a technical problem where failure is expensive: unreliable imaging accuracy, ambiguous R&D, weak feasibility evidence, poor spatial alignment, or AI claims that need independent review.
 
-{% if sorted_services.size > 0 %}
+{% assign services = site.data.services.services | default: site.data.services %}
+
+{% if services.size > 0 %}
   <div class="services-container">
-    {% for service in sorted_services %}
+    {% for service in services %}
       <article class="service-item">
         {% assign service_problems = service.problems | default: service.typical_problems %}
         {% assign service_outcomes = service.outcomes | default: service.typical_outcomes %}
@@ -20,73 +23,65 @@ Focused engineering services for medical imaging, computer vision, spatial AI, a
         <p><strong>For:</strong> {{ service.audience }}</p>
         <p>{{ service.summary }}</p>
 
-        {% if service.engagement_type or service.typical_start or service.typical_duration %}
+        {% if service.typical_duration or service.engagement_type %}
         <div class="service-engagement-details">
-          {% if service.engagement_type %}
-          <p class="engagement-type"><strong>Engagement type:</strong> {{ service.engagement_type }}</p>
-          {% endif %}
-          {% if service.typical_start %}
-          <p class="typical-start"><strong>Typical start:</strong> {{ service.typical_start }}</p>
-          {% endif %}
           {% if service.typical_duration %}
-          <p class="typical-duration"><strong>Typical duration:</strong> {{ service.typical_duration }}</p>
+          <p><strong>Typical duration:</strong> {{ service.typical_duration }}</p>
+          {% endif %}
+          {% if service.engagement_type %}
+          <p><strong>Engagement type:</strong> {{ service.engagement_type }}</p>
           {% endif %}
         </div>
         {% endif %}
 
-        {% if service.best_for %}
-        <h3>Best for:</h3>
-        <ul>
-          {% for item in service.best_for %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        {% if service.proof_hint %}
-        <h3>Relevant proof:</h3>
-        <p>{{ service.proof_hint }}</p>
-        {% endif %}
         {% if service_problems %}
-        <h3>Typical problems:</h3>
+        <h3>Typical problems</h3>
         <ul>
           {% for item in service_problems %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
         {% endif %}
+
         {% if service_outcomes %}
-        <h3>Typical outcomes:</h3>
+        <h3>Typical outcomes</h3>
         <ul>
           {% for item in service_outcomes %}
           <li>{{ item }}</li>
           {% endfor %}
         </ul>
         {% endif %}
-        {% if service.how_engagements_start %}
-        <h3>How engagements start:</h3>
-        <p>{{ service.how_engagements_start }}</p>
+
+        {% if service.proof_hint %}
+        <h3>Relevant proof</h3>
+        <p>{{ service.proof_hint }}</p>
         {% endif %}
-        {% if service.not_fit %}
-        <h3>Not a fit:</h3>
-        <ul>
-          {% for item in service.not_fit %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        {% if service.example %}
-        <h3>Example:</h3>
-        <p>{{ service.example }}</p>
-        {% endif %}
-        <p><a href="/contact/">Contact for details &rarr;</a></p>
+
+        <p><a href="{{ '/contact/' | relative_url }}">Request a technical assessment &rarr;</a></p>
         <hr>
       </article>
     {% endfor %}
   </div>
-  <section class="service-examples">
-    <h2>Examples</h2>
-    <p>Explore applied research examples in the <a href="/case-studies/">case studies</a> and reach out via <a href="/contact/">contact</a> for confidential details.</p>
-  </section>
 {% else %}
-  No services listed yet.
+  <p>No services listed yet.</p>
 {% endif %}
+
+## How engagements usually start
+
+1. **Technical assessment:** Clarify the problem, data, constraints, risk, and likely implementation path.
+
+2. **Sprint or technical plan:** Build a prototype, benchmark, feasibility study, or architecture plan.
+
+3. **Retainer or advisory relationship:** Continue with reserved senior R&D capacity, implementation ownership, or technical review.
+
+## Not a fit
+
+- Commodity dashboard or CRUD work
+- Low-budget MVP factories
+- Academic ghostwriting
+- Crypto projects
+- Work that depends on unsupported or inflated AI claims
+
+If the problem is difficult, technical, and expensive to get wrong, send a concise technical brief.
+
+[Request a technical assessment]({{ '/contact/' | relative_url }}){: .cta-button .cta-primary }

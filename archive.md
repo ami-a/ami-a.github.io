@@ -15,22 +15,19 @@ Archived research and student projects from 2007–2020. These represent explora
 {% assign sorted_projects = site.projects | sort: "ind" %}
 
 {% if sorted_projects.size > 0 %}
-  {% for project in sorted_projects %}
-    ## [{{ project.title }}]({{ site.url }}{{ project.url }})
-
-    **Year:** {{ project.year }}
-
-    {{ project.sdisc }}
-
-    {% if project.c_lang %}
-    **Languages:** {{ project.c_lang | join: ", " }}
-    {% endif %}
-
-    [View details →]({{ site.url }}{{ project.url }})
-
-    ---
-
-  {% endfor %}
+  <div class="archive-container">
+    {% for project in sorted_projects %}
+      <article class="project-card">
+        <h2><a href="{{ site.url }}{{ project.url }}">{{ project.title }}</a></h2>
+        <p class="project-year"><strong>Year:</strong> {{ project.year }}</p>
+        <p class="project-summary">{{ project.sdisc }}</p>
+        {% if project.c_lang %}
+        <p class="project-languages"><strong>Languages:</strong> {{ project.c_lang | join: ", " }}</p>
+        {% endif %}
+        <p><a href="{{ site.url }}{{ project.url }}">View details →</a></p>
+      </article>
+    {% endfor %}
+  </div>
 {% else %}
   No archived projects available.
 {% endif %}

@@ -8,20 +8,17 @@
           <h3>{{ service.title }}</h3>
           <p class="audience">For: {{ service.audience }}</p>
           <p class="summary">{{ service.summary }}</p>
-          {% if service.proof_hint %}
-            <p class="proof-hint">{{ service.proof_hint }}</p>
-          {% endif %}
           {% if service.typical_duration %}
             <p class="engagement-preview"><em>{{ service.typical_duration }}</em></p>
           {% endif %}
           {% if service.outcomes %}
             <ul class="outcomes">
-              {% for outcome in service.outcomes %}
+              {% for outcome in service.outcomes limit:3 %}
                 <li>{{ outcome }}</li>
               {% endfor %}
             </ul>
           {% endif %}
-          <a href="/services/#{{ service.slug }}" class="card-link">Explore this service &rarr;</a>
+          <a href="/contact/" class="card-link">Request assessment &rarr;</a>
         </div>
       {% endfor %}
     {% else %}

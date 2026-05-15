@@ -85,7 +85,7 @@ The strongest fit is a technical problem where failure is expensive: unreliable 
 - Crypto projects
 - Work that depends on unsupported or inflated AI claims
 
-If the problem is difficult, technical, and expensive to get wrong, send a concise technical brief.
+If the problem is difficult, technical, and expensive to get wrong, send a concise technical brief or book a technical-fit call from the contact page.
 
 Available for selected contract, advisory, and retained R&D engagements.
 

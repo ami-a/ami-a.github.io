@@ -31,9 +31,13 @@ Confidentiality constraints:{% endcapture %}
 [Email Amitai](mailto:{{ site.email }}?subject={{ email_subject }}&body={{ email_body | url_encode }}){: .cta-button .cta-primary }
 
 {% if site.calendar_url and site.calendar_url != "" %}
-## Book a 20-min intro call
+## Book a technical-fit call
 
-[Book a 20-min intro call]({{ site.calendar_url }})
+For funded teams evaluating medical imaging AI, computer vision, spatial AI, research-engineering, or technical diligence support.
+
+This call is for fit and scoping. Technical implementation advice, debugging, architecture review, or diligence work is handled as a paid assessment.
+
+[Book a 20-min technical fit call]({{ site.calendar_url }}){: .cta-button .cta-secondary }
 {% endif %}
 
 ## Best fit

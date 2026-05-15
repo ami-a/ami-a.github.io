@@ -2,17 +2,17 @@
 <header class="page-header" role="banner">
   <nav class="site-nav" role="navigation" aria-label="Primary">
     <ul class="site-nav-list">
-      <li><a href="/services/" class="site-nav-link{% if page.url == "/services/" %} current{% endif %}"{% if page.url == "/services/" %} aria-current="page"{% endif %}>Services</a></li>
-      <li><a href="/case-studies/" class="site-nav-link{% if page.url == "/case-studies/" %} current{% endif %}"{% if page.url == "/case-studies/" %} aria-current="page"{% endif %}>Case Studies</a></li>
-      <li><a href="/about/" class="site-nav-link{% if page.url == "/about/" %} current{% endif %}"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
+      <li><a href="{{ '/services/' | relative_url }}" class="site-nav-link{% if page.url == "/services/" %} current{% endif %}"{% if page.url == "/services/" %} aria-current="page"{% endif %}>Services</a></li>
+      <li><a href="{{ '/case-studies/' | relative_url }}" class="site-nav-link{% if page.url == "/case-studies/" %} current{% endif %}"{% if page.url == "/case-studies/" %} aria-current="page"{% endif %}>Case Studies</a></li>
+      <li><a href="{{ '/about/' | relative_url }}" class="site-nav-link{% if page.url == "/about/" %} current{% endif %}"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
     </ul>
-    <a href="/contact/" class="site-nav-cta">Contact</a>
+    <a href="{{ '/contact/' | relative_url }}" class="site-nav-cta">Contact</a>
   </nav>
 
   <div class="header-top">
-    <h1 class="project-name"><a id="maintitle" href="/">{{ site.title1 }}<span style="color:#00ff99;">{{ site.title2 }}</span>.</a></h1>
+    <h1 class="project-name"><a id="maintitle" href="{{ '/' | relative_url }}">{{ site.title1 }}<span style="color:#00ff99;">{{ site.title2 }}</span>.</a></h1>
     <span class="header-contact" style="color:#00ff99;">e. <a href="mailto:{{ site.email }}" style="color:#ffffff;">{{ site.email }}</a>
-    &nbsp;&nbsp;<br class="hidden-ss">&nbsp;&nbsp;cv. <a href="/files/2020engD.pdf" style="color:#ffffff;">eng</a></span>
+    &nbsp;&nbsp;<br class="hidden-ss">&nbsp;&nbsp;cv. <a href="{{ '/files/2020engD.pdf' | relative_url }}" style="color:#ffffff;">eng</a></span>
   </div>
   <h2 class="project-tagline">{{ site.description | replace: "spatial AI and", "spatial AI<br>and" }}</h2>
 </header>

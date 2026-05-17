@@ -21,7 +21,7 @@ a { text-decoration: underline; color: red; }
 .project-copy p, .project-copy li { color: white; }
 </style>
 
-<div class="project-copy">
+<div class="project-copy" markdown="1">
 
 # TrackEverything — Pipeline Overview
 

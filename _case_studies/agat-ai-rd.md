@@ -4,11 +4,11 @@ ind: 5
 domain: AI R&D Leadership
 summary: Led applied AI R&D for cybersecurity and compliance products, including AI assistants, LLM workflows, anomaly detection, and customer-facing AI capabilities.
 metrics:
-  - value: "2-person"
+  - value: "Teaching & Inspiring"
     label: AI team leadership
-  - value: "Customer-facing"
+  - value: "Customer-Facing"
     label: AI product workflows
-  - value: "End-to-end"
+  - value: "End-to-End"
     label: research to delivery
 stack:
   - Python

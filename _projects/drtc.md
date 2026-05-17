@@ -1,20 +1,21 @@
 ---
-title: "Signal Classification Competition Entry"
+title: "MAFAT Radar Classification Challenge"
 is_project: true
 ind: -5
 year: "2020"
 visibility: archive
-sdisc: "Entry for a signal processing competition focusing on classification of radar targets."
-disc: "This project is a competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) that tackles the challenge of classifying living, non-rigid objects detected by Doppler-pulse radar systems using AI. During this competition, I used many data science and machine learning technologies (mainly in Python & MATLAB) and signal processing technics like:
+sdisc: "Competition entry for AI-based classification of radar targets from Doppler-pulse radar signals."
+disc: "This project was my entry in a MAFAT DDR&D radar signal-classification competition focused on identifying living, non-rigid targets from Doppler-pulse radar data using AI. I built a full signal-processing and machine-learning pipeline in Python and MATLAB, combining data synthesis, balanced partitioning, FFT-based transformations, filtering, micro-Doppler analysis, spectrogram generation, and lightweight neural-network design under limited GPU constraints.<br>&nbsp;<br>
+Key work included:
 <ul>
-<li>Creating new data for additional training data from new and unfamiliar data format.</li>
-<li>Balancing and partitioning large data with many different strategies for good training and validation sets.</li>
-<li>Using FFT, windows, noise filtering, noise inducing and other techniques.</li>
-<li>Utilizing microphysical effects like micro-Doppler effects to get an edge.</li>
-<li>Creating spectrograms with emphasized important data parts for better results with CNNs.</li>
-<li>Creating light and robust CNN models to be able to run big data on a small GPU memory.</li>
-<li>Reconstructing modified successful models from articles and combine them into one great model that includes CNNs, RNNs and other model types.</li>
-<span style=\"position:relative;left:-40px;\">The full details are just below.</span></ul>"
+<li>Creating additional training data from unfamiliar radar-data formats.</li>
+<li>Balancing and partitioning large, uneven datasets across target type, SNR, geolocation, sensor, and day.</li>
+<li>Using FFT, windowing, noise filtering, noise injection, and other signal-processing techniques.</li>
+<li>Leveraging micro-Doppler effects to extract stronger target-discrimination signals.</li>
+<li>Generating enhanced spectrograms that emphasized useful signal regions for CNN-based models.</li>
+<li>Designing lightweight, robust CNN models that could train on large radar datasets with limited GPU memory.</li>
+<li>Reconstructing and combining successful model ideas from research papers into hybrid architectures using CNNs, RNNs, and dense neural-network components.</li>
+<span style=\"position:relative;left:-40px;\">Full technical details are below.</span></ul>"
 tag: "Python & MATLAB"
 c_lang: ["Python","MATLAB"]
 LOC: "35K"
@@ -33,64 +34,67 @@ pre {
   overflow-y: auto;
 }
 </style>
+
 # MAFAT Radar Challenge
+
 ## Introduction
 <span style="color:white;">
-This competition by MAFAT’s DDR&D (Directorate of Defense Research & Development) tackles the challenge of classifying living, non-rigid objects detected by doppler-pulse radar systems. The competition was divided into two stages, where the first stage was mainly for training and the second stage for testing. This challenge had over **1K participants**. You can view the competition site [here](https://competitions.codalab.org/competitions/25389).
+This project was my entry in a MAFAT DDR&D (Directorate of Defense Research & Development) competition focused on classifying living, non-rigid objects detected by Doppler-pulse radar systems. The competition was divided into two stages: a first stage focused mainly on public-test evaluation and model development, and a second stage focused on private-test evaluation. The challenge had over **1K participants**. You can view the competition site [here](https://competitions.codalab.org/competitions/25389).
 </span>
 
 ### The Radar
 <span style="color:white;">
-The type of radar the data comes from is called a Pulse-Doppler Radar. A Pulse-Doppler Radar is a radar system that determines the range to a target using pulse-timing techniques and uses the Doppler effect of the returned signal to determine the target object's velocity.
-Each radar “stares” at a fixed, wide area of interest. Whenever an animal or a human moves within the radar’s covered area, it is detected and tracked. The dataset contains records of those tracks. The tracks in the dataset are split into 32 time-unit segments. Each record in the dataset represents a single segment.
+The dataset was collected using Pulse-Doppler Radar. A Pulse-Doppler Radar system determines a target’s range using pulse-timing techniques and uses the Doppler effect in the returned signal to estimate the target object’s velocity.
 <br><br>
-A segment consists of a matrix with I/Q values and metadata. The matrix of each segment has a size of 32x128. The X-axis represents the pulse transmission time, also known as “slow-time”. The Y-axis represents the reception time of signals with respect to pulse transmission time divided into 128 equal sized bins, also known as “fast-time”. The Y-axis is usually referred to as “range” or “velocity” as wave propagation depends on the speed of light.
+Each radar “stares” at a fixed, wide area of interest. When an animal or human moves inside the covered area, the radar detects and tracks it. The dataset contains records from those tracks. Tracks were split into 32 time-unit segments, and each record in the dataset represents one segment.
 <br><br>
-The radar’s raw, original received signal is a wave defined by amplitude, frequency, and phase. Frequency and phase are treated as a single-phase parameter. Amplitude and phase are represented in polar coordinates relative to the transmitted burst/wave. 
-Upon reception, the raw data is converted to cartesian coordinates, i.e., I/Q values. The values in the matrix are complex numbers: I represents the real part, and Q represents the imaginary part.
+Each segment consists of a matrix of I/Q values and metadata. The matrix size is 32x128. The X-axis represents pulse transmission time, also known as “slow-time”. The Y-axis represents signal reception time with respect to pulse transmission time, divided into 128 equal-size bins, also known as “fast-time”. The Y-axis is usually interpreted as “range” or “velocity”, since wave propagation depends on the speed of light.
+<br><br>
+The radar’s raw received signal is a wave defined by amplitude, frequency, and phase. Frequency and phase are treated as a single phase parameter. Amplitude and phase are represented in polar coordinates relative to the transmitted burst/wave. After reception, the raw data is converted to cartesian coordinates as I/Q values. The matrix values are complex numbers: I represents the real part, and Q represents the imaginary part.
 </span>
-<p align="center"><img src="drtc/images/graphs/rawInv.png" width="800"/><br>Example of a raw segment from the data, which was converted to power units. Each pulse was fired in “slow-time” intervals (32 times per segment).</p>
+
+<p align="center"><img src="drtc/images/graphs/rawInv.png" width="800"/><br>Example of a raw segment from the data, converted to power units. Each pulse was fired in “slow-time” intervals, 32 times per segment.</p>
 
 ### Data & Dataset Structure
 <span style="color:white;">
-The metadata of a segment includes track id, location id, location type, day index, sensor id and the SNR level. The segments were collected from several different geographic locations, a unique id was given per location. Each location consists of one or more sensors, a sensor belongs to a single location. A unique id was given per sensor. Each sensor has been used in one or more days, each day is represented by an index. A single track appears in a single location, sensor and day. The segments were taken from longer tracks, each track was given a unique id.
+The metadata for each segment includes track id, location id, location type, day index, sensor id, and SNR level. Segments were collected from several geographic locations, with a unique id assigned to each location. Each location contains one or more sensors, and each sensor belongs to a single location. Sensors were used across one or more days, with each day represented by an index. A single track appears in one location, one sensor, and one day. Segments were extracted from longer tracks, and each track received a unique id.
 <br><br>
-The sets:</span>
+The datasets:</span>
 
-* **Training set:** As the name describes, the training set consists of a combination of human and animal, with high and low SNR readings created from authentic doppler-pulse radar recordings.
+* **Training set:** A labeled combination of human and animal examples, with high-SNR and low-SNR readings created from authentic Doppler-pulse radar recordings.
 <br>(**6656 Entries**)
 
-* **Test set:** For the purposes of the competition, a test set is included to evaluate the quality of the model and rank competitors. The set is unlabeled but does include a balanced mix of high and low SNR.
+* **Test set:** An unlabeled set used to evaluate model quality and rank competitors. The set included a balanced mix of high-SNR and low-SNR examples.
 <br>(**106 Entries**)
 
-* **Synthetic Low SNR set:** Using readings from the training set a low SNR dataset has been artificially created by sampling the high SNR examples and artificially populating the samples with noise. This set can be used to better train the model on low SNR examples.
+* **Synthetic Low SNR set:** A low-SNR dataset artificially created from training-set readings by sampling high-SNR examples and adding noise. This set was useful for improving model robustness on low-SNR examples.
 <br>(**50883 Entries**)
 
-* **The Background set:** The background dataset includes readings gathered from the doppler-pulse radars without specific targets. This set could be used to help the model better distinguish noise in the labelled datasets and help the model distinguish relevant information from messy data.
+* **The Background set:** Radar readings collected without specific targets. This set helped the model distinguish target-relevant signal from messy background noise.
 <br>(**31128 Entries**)
 
-* **The Experiment set:** The final set and possibly the most interesting, the experiment set includes humans recorded by the doppler-pulse radar in a controlled environment. Whilst not natural this could be valuable for balancing the animal-heavy training set provided.
+* **The Experiment set:** Human recordings captured by Doppler-pulse radar in a controlled environment. Although not naturalistic, this dataset was valuable for balancing the animal-heavy training data.
 <br>(**49071 Entries**)
 
 ### Submissions
 <span style="color:white;">
-In stage 1 we could submit, up to two times a day, the public test set. Submissions are evaluated on the Area Under the Receiver Operating Characteristic Curve (ROC AUC) between the predicted probability and the observed target.
-In the second stage, we could submit, up to two times total, the private test set.
+In stage 1, competitors could submit predictions for the public test set up to two times per day. Submissions were evaluated using Area Under the Receiver Operating Characteristic Curve (ROC AUC) between predicted probabilities and observed targets. In stage 2, competitors could submit predictions for the private test set up to two times total.
 </span>
 
 ## My Strategy
-### My Tools
+
+### Tools & Constraints
 <span style="color:white;">
-I only used my laptop for all the competition, it has an Nvidia GPU but with only 2GB of memory. Initially, I had 32GB of RAM but one of my sticks got fried from overtraining so I got stuck with 16GB of RAM close to the end (since there was a curfew so I could not have replaced it).
+I completed the competition using only my laptop. It had an Nvidia GPU, but only 2GB of GPU memory. I initially had 32GB of RAM, but one RAM stick failed from heavy training near the end of the competition, leaving me with 16GB of RAM during the final period.
 <br><br>
-I mainly used **MATLAB** for testing different signal processing methods that will work well on the data. I used **Python** for implementing the signal processing methods I found and preprocess the data, train and test it using **Keras** models in **TensorFlow**.
+I mainly used **MATLAB** to test signal-processing methods and inspect how different transformations behaved on the radar data. I used **Python** to implement the selected preprocessing pipeline, train models, evaluate predictions, and run deep-learning experiments with **Keras** models in **TensorFlow**.
 </span>
 
-### Data Synthesization & Partition
+### Data Synthesis & Partitioning
 <span style="color:white;">
-It is important to ensure the data is balanced and unbiased as this can lead to significant misinterpretations of the set by the model, and small inconsistencies can get extrapolated into significant errors. Since the datasets are not balanced at all in categories like object(Human/Animal), SNR(High/Low), topography(Woods, Synthetic etc.) and the amount of data from each category is limited it was a challenge to find the right partition for the training and validation data.
+Balanced and unbiased data partitioning was one of the most important parts of the project. Small inconsistencies in a dataset can be amplified by a model into significant prediction errors, especially when categories are unevenly represented. The original datasets were imbalanced across several dimensions, including target type (Human/Animal), SNR (High/Low), topography, geolocation, sensor, and data source. Because the amount of data in some categories was limited, finding a reliable split for training and validation required careful control.
 <br><br>
-For example, this is the code for the training dataset partition:
+For example, this is part of the code used for the training dataset partition:
 </span>
 
 ```python
@@ -127,48 +131,61 @@ For example, this is the code for the training dataset partition:
         train_idx+=train_NH_HS+train_H_HS
         train_val_idx+=train_NH_HS_val+train_H_HS_val
 ```
+
 <span style="color:white;">
-Together with the rest of the partitions we get a balanced training and validation sets in terms of targets, SNR and geolocations. 
+Together with the rest of the partitioning logic, this produced training and validation sets that were more balanced across targets, SNR levels, and geolocations.
 <br><br>
-I had to synthesize a new dataset to create new low SNR segments with animals. I added different noises, similar to the noise in other segments, to high SNR animal segments to create this new dataset.
+I also synthesized a new dataset of low-SNR animal segments by adding noise patterns, similar to those observed in other segments, to high-SNR animal segments. This helped strengthen model exposure to low-quality radar readings.
 </span>
 
 ### Spectrograms
 <span style="color:white;">
-By going to the frequency domain using the Fourier Transform we can interpret the radar data quality easily.</span>
-<p align="center"><img src="drtc/images/graphs/SpecInv.png" width="600px"/><br>An example of the data included for the competition split by Animal/Human and High/Low Signal-Noise-Ratio. The I/Q matrices have been converted into spectrograms for visualization, and the target's doppler center-of-mass readings have been added as blue dots. </p>
+Moving the radar data into the frequency domain using the Fourier Transform made it easier to inspect signal quality and expose patterns that were not obvious in the raw I/Q matrices.</span>
+
+<p align="center"><img src="drtc/images/graphs/SpecInv.png" width="600px"/><br>An example of the competition data split by Animal/Human and High/Low Signal-Noise-Ratio. The I/Q matrices were converted into spectrograms for visualization, and the target's Doppler center-of-mass readings were added as blue dots.</p>
+
 <span style="color:white;">
-As you can see it's not easy to identify the target only by the spectrogram (especially when units of measurement are not available), but using CNN we might detect patterns that are not easy to see.
+The spectrograms show that the target class is not easy to identify visually, especially when measurement units are unavailable. However, CNNs can often detect weak patterns that are difficult to isolate manually.
 </span>
 
-### Micro Doppler Effect
-
+### Micro-Doppler Effect
 <span style="color:white;">
-Since my rig was limited and training was taking days and I could not even use a relatively light model like ResNet50, I used my knowledge in Physics to look for an edge. The Doppler effect in this case is the shift in the light frequency due to the relative speed of the target. But targets that have motions relative to itself (or its centre of mass), like the rotation of the wheels on a car or the swinging of the hands when walking, create additional shifts in the light frequency that is called Micro-Doppler Effect.
+Because my hardware was limited and model training could take days, I looked for signal-processing advantages that could improve performance without simply increasing model size. A relatively lightweight model such as ResNet50 was already too heavy for my setup, so I used my physics background to focus on micro-Doppler information.
 <br><br>
-Studding the MATLAB repository [kozubv/doppler_radar](https://github.com/kozubv/doppler_radar) I could simulate micro-Doppler effects that a human will create. First by creating a simulation of a human body walking:</span>
-<p align="center"><img src="drtc/images/graphs/h1d3.gif" width="600px"/><br>A simulation of human body walking in MATLAB. The dots are the spots where the light will reflect from in the radar simulation.</p>
-<span style="color:white;">
-And the resulting micro-Doppler effect spectrogram:</span>
-<p align="center"><img src="drtc/images/graphs/Art_Mic_DopplerInv.png" width="600px"/><br>The resulting micro-Doppler effect spectrogram from the human walking simulation. The legitimates movement corresponds to the waves in the spectrogram. </p>
-<span style="color:white;">
-The extraction of the micro-Doppler spectrogram from the segments was a bit tricky since the segments only had 32 pulses to work with and not to mention the noise. Using different signal filters and windows I managed to get some decent results.
+The Doppler effect is the shift in frequency caused by the relative motion of a target. Targets with internal motion relative to their own center of mass, such as rotating wheels or swinging arms during walking, produce additional frequency shifts known as the Micro-Doppler Effect.
+<br><br>
+By studying the MATLAB repository [kozubv/doppler_radar](https://github.com/kozubv/doppler_radar), I simulated the micro-Doppler effects a walking human could create. The first step was simulating a walking human body:
 </span>
+
+<p align="center"><img src="drtc/images/graphs/h1d3.gif" width="600px"/><br>A simulation of a human body walking in MATLAB. The dots are the reflection points used in the radar simulation.</p>
+
+<span style="color:white;">
+The resulting micro-Doppler spectrogram:</span>
+
+<p align="center"><img src="drtc/images/graphs/Art_Mic_DopplerInv.png" width="600px"/><br>The resulting micro-Doppler spectrogram from the human walking simulation. The leg movement corresponds to the wave patterns in the spectrogram.</p>
+
+<span style="color:white;">
+Extracting micro-Doppler spectrograms from the competition segments was difficult because each segment contained only 32 pulses and the data was noisy. By combining signal filters, windows, and different extraction configurations, I was able to produce usable micro-Doppler representations.
+</span>
+
 <p align="center"><img src="drtc/images/graphs/MicInv.png" width="600px"/><br>The resulting micro-Doppler spectrogram from a segment.</p>
 
 ### The Model
 <span style="color:white;">
-This part was a real challenge since I was really limited in the GPU department and had more than 20K segments in my training set (and around 3-4 different spectrograms per segment + other data). My computer couldn't even use the ResNet50 for segments with one spectrogram. I combined knowledge from a dozen of articles that used spectrograms and micro-Doppler spectrograms to identify the object and other data to create a light but effective model architecture for this task. Initially, I used simple CNN as my model and over time I added more inputs and different layers. I ended up with merging two CNN models, one RNN and a simple NN. I input different low-res (to speed up learning) spectrograms to the CNN and took one of the micro-Doppler spectrograms and ran through the RNN (in the old days radar watcher could identify humans by the sound), I also included some neurones for data like SNR. Here is an example of one of the models I constructed:
+Model design was constrained by hardware. The training set contained more than 20K segments, and each segment could produce around 3-4 different spectrograms plus metadata. My computer could not run ResNet50 even with a single spectrogram input per segment, so the architecture had to be lightweight, modular, and efficient.
+<br><br>
+I combined ideas from multiple research articles that used spectrograms and micro-Doppler spectrograms for object identification. The model started as a simple CNN and gradually evolved into a multi-input hybrid architecture. The final direction merged two CNN branches, one RNN branch, and a simple dense neural-network branch. Low-resolution spectrograms were passed into CNN components to reduce training cost, one of the micro-Doppler spectrograms was passed through the RNN branch, and metadata such as SNR was passed into dense layers.
+<br><br>
+This design used both visual-like frequency-domain features and sequence-oriented radar cues. The RNN path was especially relevant because, historically, experienced radar operators could sometimes identify targets by sound-like signal patterns.
+<br><br>
+Here is an example of one of the model architectures I constructed:
 </span>
-<p align="center"><img src="drtc/images/graphs/model3Inv.png" width="100%"/><br>An example of one of my models' architecture.</p>
+
+<p align="center"><img src="drtc/images/graphs/model3Inv.png" width="100%"/><br>An example of one of my model architectures.</p>
 
 ## Results
 <span style="color:white;">
-I managed to receive around 90% accuracy (ROC_AUC) in the full public test and around 80% in the private test. I received the 30th place out of 1k+ participants including many companies like the Israel Air Industry(IAI) and Refael as well as research groups from universities. During the competition's phase 1 there were attempts at cheating, my guess was that some people submitted a few random responses and via the score they managed to reproduce the correct data results. All in all, I'm happy with my results, not in my score (I know I could have done much better with a decent GPU and free time), but with the learning and the advance in experience I gained.
+I reached around 90% accuracy (ROC AUC) on the full public test and around 80% on the private test. I placed 30th out of 1K+ participants, including companies such as Israel Aerospace Industries (IAI) and Rafael, as well as university research groups.
+<br><br>
+During phase 1, there appeared to be attempts at cheating. My guess was that some competitors submitted random predictions and used the returned scores to reconstruct parts of the correct results. Even with limited hardware and available time, this project was valuable because it strengthened my practical experience in radar signal processing, data synthesis, model design under constraints, and applied AI research.
 </span>
-
-
-
-
-
-

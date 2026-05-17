@@ -1,10 +1,10 @@
 ---
-title: "Multi-Object Tracking Enhancement Package"
+title: "TrackEverything — Multi-Object Tracking Enhancement Package"
 is_project: true
 ind: -3
 year: "2020"
-sdisc: "This package can take any detection and/or classification model and upgrade them using tracking algorithms and statistics."
-disc: "This project is an open-source package built-in Python, it uses and combines the data form object detection models, classification models, tracking algorithms and statistics-based decision making. The project allows you to take any detection/classification models from any Python library like TensorFlow or PyTorch and add to them tracking algorithms and increase the accuracy using statistical data gathered from multiple frames.<br>&nbsp;"
+sdisc: "A Python package that upgrades detection and classification models with object tracking, temporal statistics, and multi-frame decision logic."
+disc: "TrackEverything is an open-source Python package that combines object detection, classification, tracking algorithms, and statistics-based decision making. It can take detection and/or classification models from Python libraries such as TensorFlow or PyTorch, add tracking logic on top of them, and improve reliability by using statistical evidence collected across multiple frames.<br>&nbsp;"
 tag: "Python"
 c_lang: ["Python"]
 LOC: "0.9K"
@@ -16,53 +16,87 @@ tablea: [["Python","3.8.1"],["OpenCV","4.2.0.34"],["NumPy","1.18.4"],["SciPy","1
 tableb: [["Type","Python Package"],["Input","Camera/Video Feed"],["Output","Enhanced Object Tracking & Classification"]]
 ---
 <style>
-a    {text-decoration: underline;color: red;}
+a { text-decoration: underline; color: red; }
+.project-copy { color: white; }
+.project-copy p, .project-copy li { color: white; }
 </style>
-# Track Everything - Pipeline Overview
 
-<span style="color:white;">
-You can find this project in one of my repositories [here](https://github.com/ami-a/TrackEverything).
-</span>
+<div class="project-copy">
+
+# TrackEverything — Pipeline Overview
+
+TrackEverything is available on GitHub [here](https://github.com/ami-a/TrackEverything).
+
+## The Core Idea
+
+Most detection and classification models make predictions frame by frame. TrackEverything adds temporal memory on top of those predictions.
+
+Instead of treating every frame as an isolated event, the package connects detections across time, maintains tracker objects for detected entities, accumulates classification statistics, and uses multi-frame evidence to produce more stable tracking and classification results.
+
 ## The Pipeline
-<span style="color:white;">
-The pipeline starts by receiving a series of images (frames) and outputs a list of tracker objects that contains the objects detected and the probability of them being in a class.</span>
+
+The pipeline receives a sequence of images or video frames and outputs a list of tracker objects. Each tracker represents an observed object, its current location, its tracking history, and the probability of that object belonging to each class.
+
 <p align="center"><img src="te/images/charts/pro_flow.png" width="650" height="424" /></p>
 
-## Breaking it Down to 5 Steps
+## Breaking the Pipeline Down into 5 Steps
 
-### 1st Step - Get All Detections in Current Frame 
-<span style="color:white;">
-First, we take the frame and passe it through an object detection model, we can use any Python model, then filter out redundant overlapping detections using the Non-maximum Suppression (NMS) method and add all of the detection to the `detections` list.
-</span>
-### 2nd Step - Get Classification Probabilities for the Detected Objects
-<span style="color:white;">
-After we have the detections from step 1, we put them through a classification model to determine the probability of them being in a certain class (if no classification model is supplied the classification is applied during the previous step). We do this by cropping the frame to the object bounding box and then pass it through the classification model. We add this data as a vector of probabilities to each of the detection in the `detections` list. </span>
-### 3rd Step - Updated the Trackers Object List
-<span style="color:white;">
-We have a list of `trackers` object which is a class that contains among other things an OpenCV tracker object, unique ID, previous statistics about this ID and indicators for the accuracy of this tracker. In the first frame, this `trackers` list is empty and then in step 4, it's being filled with new trackers matching the detected objects. If the `trackers` list is not empty, in this step we update the trackers' positions using the current frame and dispose of failed trackers.
-</span>
-### 4th Step - Matching Detection with Trackers
-<span style="color:white;">
-Using intersection over union (IOU) of a tracker bounding box and detection bounding box as a metric. We solve the linear sum assignment problem (also known as minimum weight matching in bipartite graphs) for the IOU matrix using the Hungarian algorithm (also known as Munkres algorithm). The machine learning package `SciPy` has a build-in utility function that implements the Hungarian algorithm.
-</span>
+### 1st Step — Get All Detections in the Current Frame
+
+The current frame is passed through an object detection model. The package is designed to work with Python-based detection models, including models from libraries such as TensorFlow or PyTorch.
+
+After detection, redundant overlapping bounding boxes are filtered using Non-Maximum Suppression, or NMS. The remaining detections are added to the `detections` list.
+
+### 2nd Step — Get Classification Probabilities for Detected Objects
+
+After the detections are collected, each detected object is passed through a classification model to estimate its class probabilities.
+
+This is done by cropping the frame around each object’s bounding box and passing the cropped region into the classification model. The resulting probability vector is added to the corresponding item in the `detections` list.
+
+If no separate classification model is supplied, classification can be handled during the detection step instead.
+
+### 3rd Step — Update the Tracker Object List
+
+The package maintains a list of `trackers`. Each tracker object contains an OpenCV tracker, a unique ID, historical statistics for that ID, and indicators describing the reliability of the tracker.
+
+On the first frame, the `trackers` list is empty. New trackers are later created from unmatched detections.
+
+On later frames, existing trackers are updated using the current frame. Trackers that fail or become unreliable are removed.
+
+### 4th Step — Match Detections with Trackers
+
+The package matches current-frame detections with existing trackers using Intersection over Union, or IOU, between detection bounding boxes and tracker bounding boxes.
+
+The IOU matrix is then solved as a linear assignment problem, also known as minimum-weight matching in bipartite graphs. This is done using the Hungarian algorithm, also known as the Munkres algorithm.
+
+SciPy provides a built-in implementation through `linear_sum_assignment`.
+
 ```bash
 matched_idx = linear_sum_assignment(-iou_matrix)
 ```
-<span style="color:white;">
-The linear_sum_assignment function by default minimizes the cost, so we need to reverse the sign of IOU matrix for maximization.<br>
-The result will look like this:
-</span>
+
+The `linear_sum_assignment` function minimizes cost by default, so the IOU matrix is multiplied by `-1` in order to maximize IOU instead.
+
+The result looks like this:
+
 <p align="center"><img src="te/images/charts/detection_track_match.png" width="548" height="426"/></p>
-<span style="color:white;">
-For each unmatched detector, we create a new tracker with the detector's data, for the unmatched trackers we update the accuracy indicators for the tracker and remove any that are way off. For the matched ones, we update the tracker position to the more accurate detection box, we get the classification data and use the `StatisticalCalculator` class to adjust the results.
-</span>
-### 5th Step - Decide What to Do
-<span style="color:white;">
-After step 4 the `trackers` list is up to date with all the statistical and current data. The tracker class has a method to return the current classifications and confidence of those scores, we then update the detectors and iterate through them. A detector with a low confidence score probably came from a tracker with not enough data or the detection is poor, we can mark those using the `uncertainty` parameters in the `VisualizationVars`. We can then draw all the results or get the results directly from the `detections` list.
-</span>
 
+After matching:
 
+- unmatched detections become new trackers;
+- unmatched trackers have their accuracy indicators updated and may be removed if they drift too far;
+- matched trackers are corrected using the more accurate detection bounding box;
+- classification data is updated;
+- the `StatisticalCalculator` class adjusts the final class probabilities using accumulated multi-frame evidence.
 
+### 5th Step — Decide What to Output
 
+After the matching step, the `trackers` list contains the current tracking state, historical statistics, classification probabilities, and confidence indicators.
 
+Each tracker can return its current class prediction and the confidence of that prediction. These results are then used to update the detections.
 
+Low-confidence detections may come from weak detections, limited tracker history, or uncertain classification evidence. These can be marked using the `uncertainty` parameters in `VisualizationVars`.
+
+The final results can then be visualized on the frame or accessed directly from the `detections` list.
+
+</div>

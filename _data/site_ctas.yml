@@ -4,6 +4,6 @@
 ctas:
   - id: primary_contact
     text: Get In Touch
-    url: "mailto:amitai.a.job@gmail.com"
+    url: "mailto:amitai@assayag.ai"
     type: button
     placement: header

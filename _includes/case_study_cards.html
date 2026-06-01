@@ -1,6 +1,7 @@
 <!-- Case study cards: selected work showcase -->
 <section class="case-study-cards">
-  <h2>Selected Work</h2>
+  <p class="section-kicker">Selected work</p>
+  <h2>Proof-backed case studies</h2>
   <div class="cards-container">
     {% assign featured_studies = site.case_studies | sort: "ind" | slice: 0, 4 %}
     {% if featured_studies.size > 0 %}
@@ -19,7 +20,7 @@
               </span>
             {% endif %}
           </p>
-          <a href="{{ study.url | relative_url }}" class="card-link">View →</a>
+          <a href="{{ study.url | relative_url }}" class="card-link">View &rarr;</a>
         </div>
       {% endfor %}
     {% else %}
